@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F1A4210-E955-49BC-80F3-8F4A4119CEC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SSDBankERPSystem.My.MyApplication</StartupObject>
+    <RootNamespace>SSDBankERPSystem</RootNamespace>
+    <AssemblyName>SSDBankERPSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SSDBankERPSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SSDBankERPSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmpRptDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpRptDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hrDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hrDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hrDBDataSet.vb">
+      <DependentUpon>hrDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hrDBDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hrDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hrDBDataSet1.vb">
+      <DependentUpon>hrDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hrDBDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hrDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Announcements.Designer.vb">
+      <DependentUpon>Announcements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Announcements.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditBranches.Designer.vb">
+      <DependentUpon>EditBranches.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditBranches.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditClasses.Designer.vb">
+      <DependentUpon>EditClasses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditClasses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditDepartments.Designer.vb">
+      <DependentUpon>EditDepartments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditDepartments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditDocumentTypes.Designer.vb">
+      <DependentUpon>EditDocumentTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditDocumentTypes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeePositions.Designer.vb">
+      <DependentUpon>EditEmployeePositions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeePositions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditEmployees.Designer.vb">
+      <DependentUpon>EditEmployees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditEmployees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeesDocuments.Designer.vb">
+      <DependentUpon>EditEmployeesDocuments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeesDocuments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeesFinishings.Designer.vb">
+      <DependentUpon>EditEmployeesFinishings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeesFinishings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeesHolidays.Designer.vb">
+      <DependentUpon>EditEmployeesHolidays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeesHolidays.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeesMovements.Designer.vb">
+      <DependentUpon>EditEmployeesMovements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeesMovements.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeesPromosions.Designer.vb">
+      <DependentUpon>EditEmployeesPromosions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditEmployeesPromosions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EditInvestigations.Designer.vb">
+      <DependentUpon>EditInvestigations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EditInvestigations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Employees.Designer.vb">
+      <DependentUpon>Employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Employees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\EmployeesList.Designer.vb">
+      <DependentUpon>EmployeesList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\EmployeesList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\ExportEmployees.Designer.vb">
+      <DependentUpon>ExportEmployees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\ExportEmployees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\SystemSettings.Designer.vb">
+      <DependentUpon>SystemSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\SystemSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ConnectAndFunction.vb" />
+    <Compile Include="Modules\CurrencyInfo.vb" />
+    <Compile Include="Modules\Module1.vb" />
+    <Compile Include="Modules\modWebcam.vb" />
+    <Compile Include="Modules\ToWord.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReportDS\EmployeeFininshingDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeFininshingDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDS\EmployeeHolidaysDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeHolidaysDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDS\EmployeeMoveRrtDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeMoveRrtDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDS\EmployeePromosionDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeePromosionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDS\EmployeePromosionDS.vb">
+      <DependentUpon>EmployeePromosionDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDS\InvestigationsDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvestigationsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\EmployeesRpt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeesRpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\FininshingsReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FininshingsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\HolidaysReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidaysReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\InvestigationsReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvestigationsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\MovementsReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovementsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PromosionReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PromosionReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForms\Announcements.resx">
+      <DependentUpon>Announcements.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditBranches.resx">
+      <DependentUpon>EditBranches.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditClasses.resx">
+      <DependentUpon>EditClasses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditDepartments.resx">
+      <DependentUpon>EditDepartments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditDocumentTypes.resx">
+      <DependentUpon>EditDocumentTypes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditEmployeePositions.resx">
+      <DependentUpon>EditEmployeePositions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditEmployees.resx">
+      <DependentUpon>EditEmployees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditEmployeesDocuments.resx">
+      <DependentUpon>EditEmployeesDocuments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditEmployeesFinishings.resx">
+      <DependentUpon>EditEmployeesFinishings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditEmployeesHolidays.resx">
+      <DependentUpon>EditEmployeesHolidays.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditEmployeesMovements.resx">
+      <DependentUpon>EditEmployeesMovements.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditEmployeesPromosions.resx">
+      <DependentUpon>EditEmployeesPromosions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EditInvestigations.resx">
+      <DependentUpon>EditInvestigations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Employees.resx">
+      <DependentUpon>Employees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\EmployeesList.resx">
+      <DependentUpon>EmployeesList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\ExportEmployees.resx">
+      <DependentUpon>ExportEmployees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\SystemSettings.resx">
+      <DependentUpon>SystemSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\EmployeesRpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EmployeesRpt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FininshingsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FininshingsReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HolidaysReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HolidaysReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvestigationsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InvestigationsReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MovementsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MovementsReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PromosionReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PromosionReport.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="EmpRptDS.xsc">
+      <DependentUpon>EmpRptDS.xsd</DependentUpon>
+    </None>
+    <None Include="EmpRptDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmpRptDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="EmpRptDS.xss">
+      <DependentUpon>EmpRptDS.xsd</DependentUpon>
+    </None>
+    <None Include="hrDBDataSet.xsc">
+      <DependentUpon>hrDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hrDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hrDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hrDBDataSet.xss">
+      <DependentUpon>hrDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hrDBDataSet1.xsc">
+      <DependentUpon>hrDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="hrDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hrDBDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hrDBDataSet1.xss">
+      <DependentUpon>hrDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="hrDBDataSet2.xsc">
+      <DependentUpon>hrDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="hrDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hrDBDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hrDBDataSet2.xss">
+      <DependentUpon>hrDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDS\EmployeeFininshingDS.xsc">
+      <DependentUpon>EmployeeFininshingDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDS\EmployeeFininshingDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeFininshingDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDS\EmployeeFininshingDS.xss">
+      <DependentUpon>EmployeeFininshingDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDS\EmployeeHolidaysDS.xsc">
+      <DependentUpon>EmployeeHolidaysDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDS\EmployeeHolidaysDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeHolidaysDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDS\EmployeeHolidaysDS.xss">
+      <DependentUpon>EmployeeHolidaysDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDS\EmployeeMoveRrtDS.xsc">
+      <DependentUpon>EmployeeMoveRrtDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDS\EmployeeMoveRrtDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeeMoveRrtDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDS\EmployeeMoveRrtDS.xss">
+      <DependentUpon>EmployeeMoveRrtDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDS\EmployeePromosionDS.xsc">
+      <DependentUpon>EmployeePromosionDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDS\EmployeePromosionDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmployeePromosionDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDS\EmployeePromosionDS.xss">
+      <DependentUpon>EmployeePromosionDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDS\InvestigationsDS.xsc">
+      <DependentUpon>InvestigationsDS.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDS\InvestigationsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InvestigationsDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDS\InvestigationsDS.xss">
+      <DependentUpon>InvestigationsDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Add.jpg" />
+    <Content Include="Images\cancel.png" />
+    <Content Include="Images\if_Save_27876.png" />
+    <Content Include="Images\LogimImage3.jpg" />
+    <Content Include="Images\LoginImage1.jpg" />
+    <Content Include="Images\LoginImage2.jpg" />
+    <Content Include="Images\LoginImage4.png" />
+    <Content Include="Images\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
