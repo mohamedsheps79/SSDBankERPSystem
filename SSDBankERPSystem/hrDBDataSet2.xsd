@@ -2544,6 +2544,8 @@ SELECT UserID, UserName, UserPassword, UserType, MainUserType FROM Users WHERE (
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" type="xs:string" minOccurs="0" />
+              <xs:element name="QualificationName" msprop:Generator_ColumnVarNameInTable="columnQualificationName" msprop:Generator_ColumnPropNameInRow="QualificationName" msprop:Generator_ColumnPropNameInTable="QualificationNameColumn" msprop:Generator_UserColumnName="QualificationName" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -2571,6 +2573,7 @@ SELECT UserID, UserName, UserPassword, UserType, MainUserType FROM Users WHERE (
               <xs:element name="DecisionNo" msprop:Generator_ColumnVarNameInTable="columnDecisionNo" msprop:Generator_ColumnPropNameInRow="DecisionNo" msprop:Generator_ColumnPropNameInTable="DecisionNoColumn" msprop:Generator_UserColumnName="DecisionNo" type="xs:int" minOccurs="0" />
               <xs:element name="DecisionDate" msprop:Generator_ColumnVarNameInTable="columnDecisionDate" msprop:Generator_ColumnPropNameInRow="DecisionDate" msprop:Generator_ColumnPropNameInTable="DecisionDateColumn" msprop:Generator_UserColumnName="DecisionDate" type="xs:dateTime" minOccurs="0" />
               <xs:element name="DecisionDocument" msprop:Generator_ColumnVarNameInTable="columnDecisionDocument" msprop:Generator_ColumnPropNameInRow="DecisionDocument" msprop:Generator_ColumnPropNameInTable="DecisionDocumentColumn" msprop:Generator_UserColumnName="DecisionDocument" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

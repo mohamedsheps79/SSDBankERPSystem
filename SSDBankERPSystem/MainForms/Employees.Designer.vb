@@ -218,6 +218,7 @@ Partial Class Employees
         Me.ToolStripSeparator30 = New System.Windows.Forms.ToolStripSeparator()
         Me.TabPage8 = New System.Windows.Forms.TabPage()
         Me.DataGridView8 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewButtonColumn7 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.PositionIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmployeeIDDataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmployeeNameDataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -231,7 +232,6 @@ Partial Class Employees
         Me.ClassName2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PositionDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewButtonColumn7 = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.EmployeePositionsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.HrDBDataSet12 = New SSDBankERPSystem.hrDBDataSet1()
         Me.ToolStrip8 = New System.Windows.Forms.ToolStrip()
@@ -244,20 +244,19 @@ Partial Class Employees
         Me.ToolStripSeparator34 = New System.Windows.Forms.ToolStripSeparator()
         Me.TabPage9 = New System.Windows.Forms.TabPage()
         Me.DataGridView9 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewButtonColumn8 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.TrainingIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeeIDDataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TrainingNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BeginDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EndDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TrainingPlaceDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DecisionNoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DecisionDateDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DecisionDocumentDataGridViewImageColumn = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.EmployeesTrainingsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.HrDBDataSet2 = New SSDBankERPSystem.hrDBDataSet2()
         Me.ToolStrip9 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton10 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator35 = New System.Windows.Forms.ToolStripSeparator()
@@ -268,20 +267,19 @@ Partial Class Employees
         Me.ToolStripSeparator38 = New System.Windows.Forms.ToolStripSeparator()
         Me.TabPage10 = New System.Windows.Forms.TabPage()
         Me.DataGridView10 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewButtonColumn9 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.EmployeeQualificationIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeeIDDataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeeNameDataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.QualIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.QualificationName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.IssueDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CountryDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CityDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.InstituteDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FacultyDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SpecializationDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeesQualificationsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ToolStrip10 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton11 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator39 = New System.Windows.Forms.ToolStripSeparator()
@@ -298,6 +296,8 @@ Partial Class Employees
         Me.EmployeesPromotionsTableAdapter = New SSDBankERPSystem.hrDBDataSetTableAdapters.EmployeesPromotionsTableAdapter()
         Me.EmployeesMovementsTableAdapter = New SSDBankERPSystem.hrDBDataSetTableAdapters.EmployeesMovementsTableAdapter()
         Me.EmployeesDocumentsTableAdapter = New SSDBankERPSystem.hrDBDataSetTableAdapters.EmployeesDocumentsTableAdapter()
+        Me.EmployeesTrainingsTableAdapter = New SSDBankERPSystem.hrDBDataSet2TableAdapters.EmployeesTrainingsTableAdapter()
+        Me.EmployeesQualificationsTableAdapter = New SSDBankERPSystem.hrDBDataSet2TableAdapters.EmployeesQualificationsTableAdapter()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.ToolStrip5.SuspendLayout()
@@ -337,9 +337,12 @@ Partial Class Employees
         Me.ToolStrip8.SuspendLayout()
         Me.TabPage9.SuspendLayout()
         CType(Me.DataGridView9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmployeesTrainingsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HrDBDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip9.SuspendLayout()
         Me.TabPage10.SuspendLayout()
         CType(Me.DataGridView10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EmployeesQualificationsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip10.SuspendLayout()
         CType(Me.EmployeePositionsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -1729,12 +1732,23 @@ Partial Class Employees
         DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView8.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
         Me.DataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView8.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.PositionIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn7, Me.EmployeeNameDataGridViewTextBoxColumn6, Me.FromJobIDDataGridViewTextBoxColumn, Me.JobName1DataGridViewTextBoxColumn, Me.JobIDDataGridViewTextBoxColumn1, Me.JobName2DataGridViewTextBoxColumn, Me.FromClassIDDataGridViewTextBoxColumn, Me.ClassName1DataGridViewTextBoxColumn, Me.ClassIDDataGridViewTextBoxColumn1, Me.ClassName2DataGridViewTextBoxColumn, Me.PositionDateDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn7, Me.DataGridViewButtonColumn7})
+        Me.DataGridView8.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn7, Me.PositionIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn7, Me.EmployeeNameDataGridViewTextBoxColumn6, Me.FromJobIDDataGridViewTextBoxColumn, Me.JobName1DataGridViewTextBoxColumn, Me.JobIDDataGridViewTextBoxColumn1, Me.JobName2DataGridViewTextBoxColumn, Me.FromClassIDDataGridViewTextBoxColumn, Me.ClassName1DataGridViewTextBoxColumn, Me.ClassIDDataGridViewTextBoxColumn1, Me.ClassName2DataGridViewTextBoxColumn, Me.PositionDateDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn7})
         Me.DataGridView8.DataSource = Me.EmployeePositionsBindingSource1
         Me.DataGridView8.Location = New System.Drawing.Point(3, 32)
         Me.DataGridView8.Name = "DataGridView8"
         Me.DataGridView8.Size = New System.Drawing.Size(1245, 411)
         Me.DataGridView8.TabIndex = 11
+        '
+        'DataGridViewButtonColumn7
+        '
+        Me.DataGridViewButtonColumn7.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn7.Name = "DataGridViewButtonColumn7"
+        Me.DataGridViewButtonColumn7.ReadOnly = True
+        Me.DataGridViewButtonColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewButtonColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewButtonColumn7.Text = "..."
+        Me.DataGridViewButtonColumn7.ToolTipText = "Edit"
+        Me.DataGridViewButtonColumn7.Width = 80
         '
         'PositionIDDataGridViewTextBoxColumn
         '
@@ -1824,17 +1838,6 @@ Partial Class Employees
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "Status"
         Me.DataGridViewTextBoxColumn7.HeaderText = "الحالة"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewButtonColumn7
-        '
-        Me.DataGridViewButtonColumn7.HeaderText = "Edit"
-        Me.DataGridViewButtonColumn7.Name = "DataGridViewButtonColumn7"
-        Me.DataGridViewButtonColumn7.ReadOnly = True
-        Me.DataGridViewButtonColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewButtonColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewButtonColumn7.Text = "..."
-        Me.DataGridViewButtonColumn7.ToolTipText = "Edit"
-        Me.DataGridViewButtonColumn7.Width = 80
         '
         'EmployeePositionsBindingSource1
         '
@@ -1929,101 +1932,12 @@ Partial Class Employees
         DataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView9.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle19
         Me.DataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView9.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewButtonColumn8})
-        Me.DataGridView9.DataSource = Me.EmployeePositionsBindingSource1
+        Me.DataGridView9.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn8, Me.TrainingIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn8, Me.TrainingNameDataGridViewTextBoxColumn, Me.BeginDateDataGridViewTextBoxColumn, Me.EndDateDataGridViewTextBoxColumn, Me.TrainingPlaceDataGridViewTextBoxColumn, Me.DecisionNoDataGridViewTextBoxColumn, Me.DecisionDateDataGridViewTextBoxColumn1, Me.DecisionDocumentDataGridViewImageColumn})
+        Me.DataGridView9.DataSource = Me.EmployeesTrainingsBindingSource
         Me.DataGridView9.Location = New System.Drawing.Point(3, 32)
         Me.DataGridView9.Name = "DataGridView9"
         Me.DataGridView9.Size = New System.Drawing.Size(1245, 411)
         Me.DataGridView9.TabIndex = 13
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "positionID"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "positionID"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.Visible = False
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "EmployeeID"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "EmployeeID"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.Visible = False
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.DataPropertyName = "EmployeeName"
-        Me.DataGridViewTextBoxColumn10.HeaderText = "الإســـم"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        Me.DataGridViewTextBoxColumn10.Width = 200
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        Me.DataGridViewTextBoxColumn11.DataPropertyName = "FromJobID"
-        Me.DataGridViewTextBoxColumn11.HeaderText = "FromJobID"
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        Me.DataGridViewTextBoxColumn11.Visible = False
-        '
-        'DataGridViewTextBoxColumn12
-        '
-        Me.DataGridViewTextBoxColumn12.DataPropertyName = "JobName1"
-        Me.DataGridViewTextBoxColumn12.HeaderText = "من الفئة"
-        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
-        Me.DataGridViewTextBoxColumn12.Width = 200
-        '
-        'DataGridViewTextBoxColumn13
-        '
-        Me.DataGridViewTextBoxColumn13.DataPropertyName = "JobID"
-        Me.DataGridViewTextBoxColumn13.HeaderText = "JobID"
-        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
-        Me.DataGridViewTextBoxColumn13.Visible = False
-        '
-        'DataGridViewTextBoxColumn14
-        '
-        Me.DataGridViewTextBoxColumn14.DataPropertyName = "JobName2"
-        Me.DataGridViewTextBoxColumn14.HeaderText = "إلى الفئة"
-        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
-        Me.DataGridViewTextBoxColumn14.Width = 200
-        '
-        'DataGridViewTextBoxColumn15
-        '
-        Me.DataGridViewTextBoxColumn15.DataPropertyName = "FromClassID"
-        Me.DataGridViewTextBoxColumn15.HeaderText = "FromClassID"
-        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
-        Me.DataGridViewTextBoxColumn15.Visible = False
-        '
-        'DataGridViewTextBoxColumn16
-        '
-        Me.DataGridViewTextBoxColumn16.DataPropertyName = "className1"
-        Me.DataGridViewTextBoxColumn16.HeaderText = "من الوظيفة"
-        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
-        Me.DataGridViewTextBoxColumn16.Width = 200
-        '
-        'DataGridViewTextBoxColumn17
-        '
-        Me.DataGridViewTextBoxColumn17.DataPropertyName = "ClassID"
-        Me.DataGridViewTextBoxColumn17.HeaderText = "ClassID"
-        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
-        Me.DataGridViewTextBoxColumn17.Visible = False
-        '
-        'DataGridViewTextBoxColumn18
-        '
-        Me.DataGridViewTextBoxColumn18.DataPropertyName = "className2"
-        Me.DataGridViewTextBoxColumn18.HeaderText = "إلى الوظيفة"
-        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
-        Me.DataGridViewTextBoxColumn18.Width = 200
-        '
-        'DataGridViewTextBoxColumn19
-        '
-        Me.DataGridViewTextBoxColumn19.DataPropertyName = "PositionDate"
-        Me.DataGridViewTextBoxColumn19.HeaderText = "تاريخ الترفيع"
-        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
-        '
-        'DataGridViewTextBoxColumn20
-        '
-        Me.DataGridViewTextBoxColumn20.DataPropertyName = "Status"
-        Me.DataGridViewTextBoxColumn20.HeaderText = "الحالة"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
         '
         'DataGridViewButtonColumn8
         '
@@ -2035,6 +1949,85 @@ Partial Class Employees
         Me.DataGridViewButtonColumn8.Text = "..."
         Me.DataGridViewButtonColumn8.ToolTipText = "Edit"
         Me.DataGridViewButtonColumn8.Width = 80
+        '
+        'TrainingIDDataGridViewTextBoxColumn
+        '
+        Me.TrainingIDDataGridViewTextBoxColumn.DataPropertyName = "TrainingID"
+        Me.TrainingIDDataGridViewTextBoxColumn.HeaderText = "TrainingID"
+        Me.TrainingIDDataGridViewTextBoxColumn.Name = "TrainingIDDataGridViewTextBoxColumn"
+        Me.TrainingIDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.TrainingIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'EmployeeIDDataGridViewTextBoxColumn8
+        '
+        Me.EmployeeIDDataGridViewTextBoxColumn8.DataPropertyName = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn8.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn8.Name = "EmployeeIDDataGridViewTextBoxColumn8"
+        Me.EmployeeIDDataGridViewTextBoxColumn8.Visible = False
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "EmployeeName"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "الإســـــم"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.Width = 300
+        '
+        'TrainingNameDataGridViewTextBoxColumn
+        '
+        Me.TrainingNameDataGridViewTextBoxColumn.DataPropertyName = "TrainingName"
+        Me.TrainingNameDataGridViewTextBoxColumn.HeaderText = "اسم الدورة"
+        Me.TrainingNameDataGridViewTextBoxColumn.Name = "TrainingNameDataGridViewTextBoxColumn"
+        Me.TrainingNameDataGridViewTextBoxColumn.Width = 200
+        '
+        'BeginDateDataGridViewTextBoxColumn
+        '
+        Me.BeginDateDataGridViewTextBoxColumn.DataPropertyName = "BeginDate"
+        Me.BeginDateDataGridViewTextBoxColumn.HeaderText = "بداية الدورة"
+        Me.BeginDateDataGridViewTextBoxColumn.Name = "BeginDateDataGridViewTextBoxColumn"
+        Me.BeginDateDataGridViewTextBoxColumn.Width = 150
+        '
+        'EndDateDataGridViewTextBoxColumn
+        '
+        Me.EndDateDataGridViewTextBoxColumn.DataPropertyName = "EndDate"
+        Me.EndDateDataGridViewTextBoxColumn.HeaderText = "نهاية الدورة"
+        Me.EndDateDataGridViewTextBoxColumn.Name = "EndDateDataGridViewTextBoxColumn"
+        Me.EndDateDataGridViewTextBoxColumn.Width = 150
+        '
+        'TrainingPlaceDataGridViewTextBoxColumn
+        '
+        Me.TrainingPlaceDataGridViewTextBoxColumn.DataPropertyName = "TrainingPlace"
+        Me.TrainingPlaceDataGridViewTextBoxColumn.HeaderText = "مكان الدورة"
+        Me.TrainingPlaceDataGridViewTextBoxColumn.Name = "TrainingPlaceDataGridViewTextBoxColumn"
+        Me.TrainingPlaceDataGridViewTextBoxColumn.Width = 200
+        '
+        'DecisionNoDataGridViewTextBoxColumn
+        '
+        Me.DecisionNoDataGridViewTextBoxColumn.DataPropertyName = "DecisionNo"
+        Me.DecisionNoDataGridViewTextBoxColumn.HeaderText = "رقم القرار"
+        Me.DecisionNoDataGridViewTextBoxColumn.Name = "DecisionNoDataGridViewTextBoxColumn"
+        '
+        'DecisionDateDataGridViewTextBoxColumn1
+        '
+        Me.DecisionDateDataGridViewTextBoxColumn1.DataPropertyName = "DecisionDate"
+        Me.DecisionDateDataGridViewTextBoxColumn1.HeaderText = "تاريخ القرار"
+        Me.DecisionDateDataGridViewTextBoxColumn1.Name = "DecisionDateDataGridViewTextBoxColumn1"
+        '
+        'DecisionDocumentDataGridViewImageColumn
+        '
+        Me.DecisionDocumentDataGridViewImageColumn.DataPropertyName = "DecisionDocument"
+        Me.DecisionDocumentDataGridViewImageColumn.HeaderText = "DecisionDocument"
+        Me.DecisionDocumentDataGridViewImageColumn.Name = "DecisionDocumentDataGridViewImageColumn"
+        Me.DecisionDocumentDataGridViewImageColumn.Visible = False
+        '
+        'EmployeesTrainingsBindingSource
+        '
+        Me.EmployeesTrainingsBindingSource.DataMember = "EmployeesTrainings"
+        Me.EmployeesTrainingsBindingSource.DataSource = Me.HrDBDataSet2
+        '
+        'HrDBDataSet2
+        '
+        Me.HrDBDataSet2.DataSetName = "hrDBDataSet2"
+        Me.HrDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ToolStrip9
         '
@@ -2119,101 +2112,12 @@ Partial Class Employees
         DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.DataGridView10.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle21
         Me.DataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView10.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33, Me.DataGridViewButtonColumn9})
-        Me.DataGridView10.DataSource = Me.EmployeePositionsBindingSource1
+        Me.DataGridView10.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn9, Me.EmployeeQualificationIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn9, Me.EmployeeNameDataGridViewTextBoxColumn7, Me.QualIDDataGridViewTextBoxColumn, Me.QualificationName, Me.IssueDateDataGridViewTextBoxColumn, Me.CountryDataGridViewTextBoxColumn, Me.CityDataGridViewTextBoxColumn, Me.InstituteDataGridViewTextBoxColumn, Me.FacultyDataGridViewTextBoxColumn, Me.SpecializationDataGridViewTextBoxColumn1})
+        Me.DataGridView10.DataSource = Me.EmployeesQualificationsBindingSource
         Me.DataGridView10.Location = New System.Drawing.Point(3, 32)
         Me.DataGridView10.Name = "DataGridView10"
         Me.DataGridView10.Size = New System.Drawing.Size(1245, 411)
         Me.DataGridView10.TabIndex = 15
-        '
-        'DataGridViewTextBoxColumn21
-        '
-        Me.DataGridViewTextBoxColumn21.DataPropertyName = "positionID"
-        Me.DataGridViewTextBoxColumn21.HeaderText = "positionID"
-        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
-        Me.DataGridViewTextBoxColumn21.Visible = False
-        '
-        'DataGridViewTextBoxColumn22
-        '
-        Me.DataGridViewTextBoxColumn22.DataPropertyName = "EmployeeID"
-        Me.DataGridViewTextBoxColumn22.HeaderText = "EmployeeID"
-        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
-        Me.DataGridViewTextBoxColumn22.Visible = False
-        '
-        'DataGridViewTextBoxColumn23
-        '
-        Me.DataGridViewTextBoxColumn23.DataPropertyName = "EmployeeName"
-        Me.DataGridViewTextBoxColumn23.HeaderText = "الإســـم"
-        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
-        Me.DataGridViewTextBoxColumn23.Width = 200
-        '
-        'DataGridViewTextBoxColumn24
-        '
-        Me.DataGridViewTextBoxColumn24.DataPropertyName = "FromJobID"
-        Me.DataGridViewTextBoxColumn24.HeaderText = "FromJobID"
-        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
-        Me.DataGridViewTextBoxColumn24.Visible = False
-        '
-        'DataGridViewTextBoxColumn25
-        '
-        Me.DataGridViewTextBoxColumn25.DataPropertyName = "JobName1"
-        Me.DataGridViewTextBoxColumn25.HeaderText = "من الفئة"
-        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
-        Me.DataGridViewTextBoxColumn25.Width = 200
-        '
-        'DataGridViewTextBoxColumn26
-        '
-        Me.DataGridViewTextBoxColumn26.DataPropertyName = "JobID"
-        Me.DataGridViewTextBoxColumn26.HeaderText = "JobID"
-        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
-        Me.DataGridViewTextBoxColumn26.Visible = False
-        '
-        'DataGridViewTextBoxColumn27
-        '
-        Me.DataGridViewTextBoxColumn27.DataPropertyName = "JobName2"
-        Me.DataGridViewTextBoxColumn27.HeaderText = "إلى الفئة"
-        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
-        Me.DataGridViewTextBoxColumn27.Width = 200
-        '
-        'DataGridViewTextBoxColumn28
-        '
-        Me.DataGridViewTextBoxColumn28.DataPropertyName = "FromClassID"
-        Me.DataGridViewTextBoxColumn28.HeaderText = "FromClassID"
-        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
-        Me.DataGridViewTextBoxColumn28.Visible = False
-        '
-        'DataGridViewTextBoxColumn29
-        '
-        Me.DataGridViewTextBoxColumn29.DataPropertyName = "className1"
-        Me.DataGridViewTextBoxColumn29.HeaderText = "من الوظيفة"
-        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
-        Me.DataGridViewTextBoxColumn29.Width = 200
-        '
-        'DataGridViewTextBoxColumn30
-        '
-        Me.DataGridViewTextBoxColumn30.DataPropertyName = "ClassID"
-        Me.DataGridViewTextBoxColumn30.HeaderText = "ClassID"
-        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
-        Me.DataGridViewTextBoxColumn30.Visible = False
-        '
-        'DataGridViewTextBoxColumn31
-        '
-        Me.DataGridViewTextBoxColumn31.DataPropertyName = "className2"
-        Me.DataGridViewTextBoxColumn31.HeaderText = "إلى الوظيفة"
-        Me.DataGridViewTextBoxColumn31.Name = "DataGridViewTextBoxColumn31"
-        Me.DataGridViewTextBoxColumn31.Width = 200
-        '
-        'DataGridViewTextBoxColumn32
-        '
-        Me.DataGridViewTextBoxColumn32.DataPropertyName = "PositionDate"
-        Me.DataGridViewTextBoxColumn32.HeaderText = "تاريخ الترفيع"
-        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
-        '
-        'DataGridViewTextBoxColumn33
-        '
-        Me.DataGridViewTextBoxColumn33.DataPropertyName = "Status"
-        Me.DataGridViewTextBoxColumn33.HeaderText = "الحالة"
-        Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
         '
         'DataGridViewButtonColumn9
         '
@@ -2225,6 +2129,88 @@ Partial Class Employees
         Me.DataGridViewButtonColumn9.Text = "..."
         Me.DataGridViewButtonColumn9.ToolTipText = "Edit"
         Me.DataGridViewButtonColumn9.Width = 80
+        '
+        'EmployeeQualificationIDDataGridViewTextBoxColumn
+        '
+        Me.EmployeeQualificationIDDataGridViewTextBoxColumn.DataPropertyName = "EmployeeQualificationID"
+        Me.EmployeeQualificationIDDataGridViewTextBoxColumn.HeaderText = "EmployeeQualificationID"
+        Me.EmployeeQualificationIDDataGridViewTextBoxColumn.Name = "EmployeeQualificationIDDataGridViewTextBoxColumn"
+        Me.EmployeeQualificationIDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.EmployeeQualificationIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'EmployeeIDDataGridViewTextBoxColumn9
+        '
+        Me.EmployeeIDDataGridViewTextBoxColumn9.DataPropertyName = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn9.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn9.Name = "EmployeeIDDataGridViewTextBoxColumn9"
+        Me.EmployeeIDDataGridViewTextBoxColumn9.Visible = False
+        '
+        'EmployeeNameDataGridViewTextBoxColumn7
+        '
+        Me.EmployeeNameDataGridViewTextBoxColumn7.DataPropertyName = "EmployeeName"
+        Me.EmployeeNameDataGridViewTextBoxColumn7.HeaderText = "الإســــم"
+        Me.EmployeeNameDataGridViewTextBoxColumn7.Name = "EmployeeNameDataGridViewTextBoxColumn7"
+        Me.EmployeeNameDataGridViewTextBoxColumn7.Width = 200
+        '
+        'QualIDDataGridViewTextBoxColumn
+        '
+        Me.QualIDDataGridViewTextBoxColumn.DataPropertyName = "QualID"
+        Me.QualIDDataGridViewTextBoxColumn.HeaderText = "QualID"
+        Me.QualIDDataGridViewTextBoxColumn.Name = "QualIDDataGridViewTextBoxColumn"
+        Me.QualIDDataGridViewTextBoxColumn.Visible = False
+        '
+        'QualificationName
+        '
+        Me.QualificationName.DataPropertyName = "QualificationName"
+        Me.QualificationName.HeaderText = "المؤهل"
+        Me.QualificationName.Name = "QualificationName"
+        '
+        'IssueDateDataGridViewTextBoxColumn
+        '
+        Me.IssueDateDataGridViewTextBoxColumn.DataPropertyName = "IssueDate"
+        Me.IssueDateDataGridViewTextBoxColumn.HeaderText = "تاريخ الحصول"
+        Me.IssueDateDataGridViewTextBoxColumn.Name = "IssueDateDataGridViewTextBoxColumn"
+        Me.IssueDateDataGridViewTextBoxColumn.Width = 150
+        '
+        'CountryDataGridViewTextBoxColumn
+        '
+        Me.CountryDataGridViewTextBoxColumn.DataPropertyName = "Country"
+        Me.CountryDataGridViewTextBoxColumn.HeaderText = "الدولة"
+        Me.CountryDataGridViewTextBoxColumn.Name = "CountryDataGridViewTextBoxColumn"
+        Me.CountryDataGridViewTextBoxColumn.Width = 150
+        '
+        'CityDataGridViewTextBoxColumn
+        '
+        Me.CityDataGridViewTextBoxColumn.DataPropertyName = "City"
+        Me.CityDataGridViewTextBoxColumn.HeaderText = "المدينة"
+        Me.CityDataGridViewTextBoxColumn.Name = "CityDataGridViewTextBoxColumn"
+        Me.CityDataGridViewTextBoxColumn.Width = 150
+        '
+        'InstituteDataGridViewTextBoxColumn
+        '
+        Me.InstituteDataGridViewTextBoxColumn.DataPropertyName = "Institute"
+        Me.InstituteDataGridViewTextBoxColumn.HeaderText = "الجامعة/المعهد"
+        Me.InstituteDataGridViewTextBoxColumn.Name = "InstituteDataGridViewTextBoxColumn"
+        Me.InstituteDataGridViewTextBoxColumn.Width = 150
+        '
+        'FacultyDataGridViewTextBoxColumn
+        '
+        Me.FacultyDataGridViewTextBoxColumn.DataPropertyName = "Faculty"
+        Me.FacultyDataGridViewTextBoxColumn.HeaderText = "الكلية"
+        Me.FacultyDataGridViewTextBoxColumn.Name = "FacultyDataGridViewTextBoxColumn"
+        Me.FacultyDataGridViewTextBoxColumn.Width = 150
+        '
+        'SpecializationDataGridViewTextBoxColumn1
+        '
+        Me.SpecializationDataGridViewTextBoxColumn1.DataPropertyName = "Specialization"
+        Me.SpecializationDataGridViewTextBoxColumn1.HeaderText = "التخصص"
+        Me.SpecializationDataGridViewTextBoxColumn1.Name = "SpecializationDataGridViewTextBoxColumn1"
+        Me.SpecializationDataGridViewTextBoxColumn1.Width = 150
+        '
+        'EmployeesQualificationsBindingSource
+        '
+        Me.EmployeesQualificationsBindingSource.DataMember = "EmployeesQualifications"
+        Me.EmployeesQualificationsBindingSource.DataSource = Me.HrDBDataSet2
         '
         'ToolStrip10
         '
@@ -2312,6 +2298,14 @@ Partial Class Employees
         '
         Me.EmployeesDocumentsTableAdapter.ClearBeforeFill = True
         '
+        'EmployeesTrainingsTableAdapter
+        '
+        Me.EmployeesTrainingsTableAdapter.ClearBeforeFill = True
+        '
+        'EmployeesQualificationsTableAdapter
+        '
+        Me.EmployeesQualificationsTableAdapter.ClearBeforeFill = True
+        '
         'Employees
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2380,11 +2374,14 @@ Partial Class Employees
         Me.TabPage9.ResumeLayout(False)
         Me.TabPage9.PerformLayout()
         CType(Me.DataGridView9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmployeesTrainingsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HrDBDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip9.ResumeLayout(False)
         Me.ToolStrip9.PerformLayout()
         Me.TabPage10.ResumeLayout(False)
         Me.TabPage10.PerformLayout()
         CType(Me.DataGridView10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EmployeesQualificationsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip10.ResumeLayout(False)
         Me.ToolStrip10.PerformLayout()
         CType(Me.EmployeePositionsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2503,6 +2500,60 @@ Partial Class Employees
     Friend WithEvents EmployeePositionsBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents EmployeePositionsBindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents HrDBDataSet12 As SSDBankERPSystem.hrDBDataSet1
+    Friend WithEvents TabPage9 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage10 As System.Windows.Forms.TabPage
+    Friend WithEvents DataGridView9 As System.Windows.Forms.DataGridView
+    Friend WithEvents ToolStrip9 As System.Windows.Forms.ToolStrip
+    Friend WithEvents ToolStripButton10 As System.Windows.Forms.ToolStripButton
+    Friend WithEvents ToolStripSeparator35 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripSeparator36 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripLabel13 As System.Windows.Forms.ToolStripLabel
+    Friend WithEvents ToolStripTextBox9 As System.Windows.Forms.ToolStripTextBox
+    Friend WithEvents ToolStripSeparator37 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripSeparator38 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents DataGridView10 As System.Windows.Forms.DataGridView
+    Friend WithEvents ToolStrip10 As System.Windows.Forms.ToolStrip
+    Friend WithEvents ToolStripButton11 As System.Windows.Forms.ToolStripButton
+    Friend WithEvents ToolStripSeparator39 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripSeparator40 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripLabel14 As System.Windows.Forms.ToolStripLabel
+    Friend WithEvents ToolStripTextBox10 As System.Windows.Forms.ToolStripTextBox
+    Friend WithEvents ToolStripSeparator41 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripSeparator42 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents HrDBDataSet2 As SSDBankERPSystem.hrDBDataSet2
+    Friend WithEvents EmployeesTrainingsBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents EmployeesTrainingsTableAdapter As SSDBankERPSystem.hrDBDataSet2TableAdapters.EmployeesTrainingsTableAdapter
+    Friend WithEvents DataGridViewButtonColumn8 As System.Windows.Forms.DataGridViewButtonColumn
+    Friend WithEvents TrainingIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TrainingNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents BeginDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EndDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TrainingPlaceDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DecisionNoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DecisionDateDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DecisionDocumentDataGridViewImageColumn As System.Windows.Forms.DataGridViewImageColumn
+    Friend WithEvents EmployeesQualificationsBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents EmployeesQualificationsTableAdapter As SSDBankERPSystem.hrDBDataSet2TableAdapters.EmployeesQualificationsTableAdapter
+    Friend WithEvents Edit As System.Windows.Forms.DataGridViewButtonColumn
+    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents BranchIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DepartmentIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeCodeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents BirthDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents HireDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DegreeIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents RangeIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents QualificationIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents SpecializationDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents GenderDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ScocialStatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmailDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents PhoneNoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents JobIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ClassIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewButtonColumn1 As System.Windows.Forms.DataGridViewButtonColumn
     Friend WithEvents PromoteIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents EmployeeIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -2513,6 +2564,18 @@ Partial Class Employees
     Friend WithEvents PromoteTypeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents RemarksDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewButtonColumn2 As System.Windows.Forms.DataGridViewButtonColumn
+    Friend WithEvents MoveIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeNameDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents BranchName As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DepartmentName As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents MoveDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents RemarksDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents BranchID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DepartmentID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ClassID As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewButtonColumn3 As System.Windows.Forms.DataGridViewButtonColumn
     Friend WithEvents EmployeeDocumentIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents EmployeeIDDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -2566,82 +2629,16 @@ Partial Class Employees
     Friend WithEvents ClassName2DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents PositionDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewButtonColumn2 As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents MoveIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EmployeeNameDataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents BranchName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DepartmentName As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents MoveDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents RemarksDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents BranchID As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DepartmentID As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClassID As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Edit As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents BranchIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DepartmentIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EmployeeCodeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EmployeeNameDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents BirthDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents HireDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DegreeIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents RangeIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents QualificationIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents SpecializationDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GenderDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ScocialStatusDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EmailDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PhoneNoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents JobIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClassIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TabPage9 As System.Windows.Forms.TabPage
-    Friend WithEvents TabPage10 As System.Windows.Forms.TabPage
-    Friend WithEvents DataGridView9 As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn13 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn14 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn17 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn18 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn19 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn20 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewButtonColumn8 As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents ToolStrip9 As System.Windows.Forms.ToolStrip
-    Friend WithEvents ToolStripButton10 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripSeparator35 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator36 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripLabel13 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents ToolStripTextBox9 As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents ToolStripSeparator37 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator38 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents DataGridView10 As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn21 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn22 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn23 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn24 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn25 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn26 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn27 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn28 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn29 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn30 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn31 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn32 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn33 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewButtonColumn9 As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents ToolStrip10 As System.Windows.Forms.ToolStrip
-    Friend WithEvents ToolStripButton11 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripSeparator39 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator40 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripLabel14 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents ToolStripTextBox10 As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents ToolStripSeparator41 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator42 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents EmployeeQualificationIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeNameDataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents QualIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents QualificationName As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents IssueDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CountryDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents CityDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents InstituteDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents FacultyDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents SpecializationDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

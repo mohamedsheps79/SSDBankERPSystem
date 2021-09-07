@@ -93,7 +93,7 @@ fb:
         EditEmployees.TextBox12.Text = Nothing
         EditEmployees.TextBox13.Text = Nothing
         EditEmployees.ShowDialog()
-       
+
 
     End Sub
 
@@ -193,13 +193,14 @@ FB:
         EditEmployeesPromosions.ComboBox2.Items.Clear()
         EditEmployeesPromosions.DateTimePicker1.Value = Date.Today
         EditEmployeesPromosions.TextBox3.Text = Nothing
+        EditEmployeesPromosions.TextBox4.Text = Nothing
+        EditEmployeesPromosions.DateTimePicker2.Value = Date.Today
+        EditEmployeesPromosions.PictureBox1.Image = My.Resources.Document
         EditEmployeesPromosions.ShowDialog()
-
     End Sub
 
     Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
-        On Error Resume Next
-        
+        'On Error Resume Next
         n = 1
         r = DataGridView2.CurrentCell.RowIndex
         EmployeeID = DataGridView2(2, r).Value
@@ -222,6 +223,21 @@ FB:
         EditEmployeesPromosions.DateTimePicker1.Value = DataGridView2(6, r).Value
         EditEmployeesPromosions.ComboBox3.Text = Trim(DataGridView2(7, r).Value)
         EditEmployeesPromosions.TextBox3.Text = DataGridView2(8, r).Value
+        str = " Select DecisionNo,DecisionDate,PromoteDocument from EmployeesPromotions where EmployeeID = " & DataGridView2(2, r).Value & " and PromoteID= " & DataGridView2(1, r).Value
+        GetData(0)
+        If ds.Tables.Count > 0 Then
+            If ds.Tables(0).Rows.Count > 0 Then
+                EditEmployeesPromosions.TextBox4.Text = ds.Tables(0).Rows(0)(0)
+                Dim data As Byte() = DirectCast(ds.Tables(0).Rows(0)("PromoteDocument"), Byte())
+                Dim ms As New MemoryStream(data)
+                EditEmployeesPromosions.PictureBox1.Image = Image.FromStream(ms)
+                EditEmployeesPromosions.DateTimePicker2.Value = ds.Tables(0).Rows(0)("DecisionDate")
+            Else
+                EditEmployeesPromosions.TextBox4.Text = Nothing
+            End If
+        Else
+            EditEmployeesPromosions.TextBox4.Text = Nothing
+        End If
         EditEmployeesPromosions.ShowDialog()
     End Sub
 
@@ -242,15 +258,15 @@ FB:
             str = " Select EmployeeName,PromoteID,EmployeesPromotions.EmployeeID,EmployeesPromotions.DegreeID,EmployeesPromotions.RangeID,PromoteDate,PromoteType,Remarks,EmployeesPromotions.Status  " & _
                " from employees inner join EmployeesPromotions on (EmployeesPromotions.employeeid = employees.employeeid)"
             GetData(0)
-        If ds.Tables.Count > 0 Then
-            If ds.Tables(0).Rows.Count > 0 Then
-                DataGridView2.DataSource = ds.Tables(0)
+            If ds.Tables.Count > 0 Then
+                If ds.Tables(0).Rows.Count > 0 Then
+                    DataGridView2.DataSource = ds.Tables(0)
+                Else
+                    DataGridView2.DataSource = Nothing
+                End If
             Else
                 DataGridView2.DataSource = Nothing
             End If
-        Else
-            DataGridView2.DataSource = Nothing
-        End If
         ElseIf TabControl1.SelectedIndex = 2 Then
             str = " Select EmployeeName,MoveID,EmployeesMovements.EmployeeID,EmployeesMovements.BranchID,EmployeesMovements.DepartmentID, " & _
                       " MoveDate, Remarks, BranchName, DepartmentName,EmployeesMovements.ClassID,EmployeesMovements.Status from employees inner join EmployeesMovements  on " & _
@@ -295,10 +311,10 @@ FB:
                 DataGridView5.DataSource = Nothing
             End If
         ElseIf TabControl1.SelectedIndex = 5 Then
-           
-                str = " select Employees.EmployeeID , Employees.EmployeeName , EmployeeFinishingID,FinishingTypeName,EmployeeFinishings.FinishingTypeID,EmployeeFinishings.FinishingDate,Remarks " & _
-               ",EmployeeFinishings.Status from Employees,EmployeeFinishings,FinishingTypes where (EmployeeFinishings.EmployeeID = Employees.EmployeeID ) " & _
-               " and (EmployeeFinishings.FinishingTypeID = FinishingTypes.FinishingTypeID ) "
+
+            str = " select Employees.EmployeeID , Employees.EmployeeName , EmployeeFinishingID,FinishingTypeName,EmployeeFinishings.FinishingTypeID,EmployeeFinishings.FinishingDate,Remarks " & _
+           ",EmployeeFinishings.Status from Employees,EmployeeFinishings,FinishingTypes where (EmployeeFinishings.EmployeeID = Employees.EmployeeID ) " & _
+           " and (EmployeeFinishings.FinishingTypeID = FinishingTypes.FinishingTypeID ) "
             GetData(0)
             If ds.Tables.Count > 0 Then
                 If ds.Tables(0).Rows.Count > 0 Then
@@ -338,6 +354,33 @@ FB:
                 End If
             Else
                 DataGridView8.DataSource = Nothing
+            End If
+        ElseIf TabControl1.SelectedIndex = 8 Then
+            str = " Select EmployeesTrainings.TrainingID,EmployeesTrainings.EmployeeID,TrainingName,EmployeeName,BeginDate,EndDate,TrainingPlace,DecisionNo " & _
+                       " ,DecisionDate,DecisionDocument from EmployeesTrainings, employees where employees.EmployeeID = EmployeesTrainings.employeeID "
+            GetData(0)
+            If ds.Tables.Count > 0 Then
+                If ds.Tables(0).Rows.Count > 0 Then
+                    DataGridView9.DataSource = ds.Tables(0)
+                Else
+                    DataGridView9.DataSource = Nothing
+                End If
+            Else
+                DataGridView9.DataSource = Nothing
+            End If
+        ElseIf TabControl1.SelectedIndex = 9 Then
+            str = " Select EmployeesQualifications.EmployeeQualificationID,EmployeesQualifications.EmployeeID,EmployeesQualifications.QualID AS QualID,IssueDate," & _
+                " EmployeeName,Country, Country,City,Institute,Faculty,EmployeesQualifications.Specialization,QualificationName from EmployeesQualifications, employees,Qualifications " & _
+                " where Employees.EmployeeID = EmployeesQualifications.employeeID And Qualifications.QualificationID = EmployeesQualifications.QualID "
+            GetData(0)
+            If ds.Tables.Count > 0 Then
+                If ds.Tables(0).Rows.Count > 0 Then
+                    DataGridView10.DataSource = ds.Tables(0)
+                Else
+                    DataGridView10.DataSource = Nothing
+                End If
+            Else
+                DataGridView10.DataSource = Nothing
             End If
         End If
     End Sub
@@ -454,6 +497,24 @@ FB:
             End With
         End If
         EditEmployeesMovements.ComboBox3.SelectedValue = DataGridView3(10, r).Value
+
+        str = " Select DecisionNo,DecisionDate,MovementDocument from EmployeesMovements where EmployeeID = " & DataGridView3(2, r).Value & " and " & _
+            " MoveID = " & DataGridView3(1, r).Value & ""
+        GetData(0)
+        If ds.Tables.Count > 0 Then
+            If ds.Tables(0).Rows.Count > 0 Then
+                EditEmployeesMovements.TextBox4.Text = ds.Tables(0).Rows(0)(0)
+                Dim data As Byte() = DirectCast(ds.Tables(0).Rows(0)("MovementDocument"), Byte())
+                Dim ms As New MemoryStream(data)
+                EditEmployeesMovements.PictureBox1.Image = Image.FromStream(ms)
+                EditEmployeesMovements.DateTimePicker2.Value = ds.Tables(0).Rows(0)("DecisionDate")
+            Else
+                EditEmployeesPromosions.TextBox4.Text = Nothing
+            End If
+        Else
+            EditEmployeesPromosions.TextBox4.Text = Nothing
+        End If
+
         EditEmployeesMovements.ShowDialog()
     End Sub
 
@@ -469,6 +530,9 @@ FB:
         EditEmployeesMovements.ComboBox3.DataSource = Nothing
         EditEmployeesMovements.ComboBox3.Items.Clear()
         EditEmployeesMovements.DateTimePicker1.Value = Date.Today
+        EditEmployeesMovements.TextBox4.Text = Nothing
+        EditEmployeesMovements.DateTimePicker2.Value = Date.Today
+        EditEmployeesMovements.PictureBox1.Image = My.Resources.Document
         EditEmployeesMovements.ShowDialog()
 
     End Sub
@@ -699,12 +763,15 @@ FB:
         EditEmployeesFinishings.ComboBox1.Items.Clear()
         EditEmployeesFinishings.DateTimePicker1.Value = Date.Today
         EditEmployeesFinishings.TextBox3.Text = Nothing
+        EditEmployeesFinishings.TextBox4.Text = Nothing
+        EditEmployeesFinishings.DateTimePicker2.Value = Date.Today
+        EditEmployeesFinishings.PictureBox1.Image = My.Resources.Document
         EditEmployeesFinishings.ShowDialog()
 
     End Sub
 
     Private Sub DataGridView6_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView6.CellContentClick
-      
+
         n = 1
         r = DataGridView6.CurrentCell.RowIndex
         EmployeeID = DataGridView6(2, r).Value
@@ -724,6 +791,24 @@ FB:
         EditEmployeesFinishings.ComboBox1.SelectedValue = DataGridView6(4, r).Value
         EditEmployeesFinishings.DateTimePicker1.Value = DataGridView6(6, r).Value
         EditEmployeesFinishings.TextBox3.Text = DataGridView6(7, r).Value
+
+        str = " Select DecisionNo,DecisionDate,FinishingDocument from EmployeeFinishings where EmployeeID = " & DataGridView6(2, r).Value & " and " & _
+            " EmployeeFinishingID = " & DataGridView6(1, r).Value & ""
+        GetData(0)
+        If ds.Tables.Count > 0 Then
+            If ds.Tables(0).Rows.Count > 0 Then
+                EditEmployeesFinishings.TextBox4.Text = ds.Tables(0).Rows(0)(0)
+                Dim data As Byte() = DirectCast(ds.Tables(0).Rows(0)("FinishingDocument"), Byte())
+                Dim ms As New MemoryStream(data)
+                EditEmployeesFinishings.PictureBox1.Image = Image.FromStream(ms)
+                EditEmployeesFinishings.DateTimePicker2.Value = ds.Tables(0).Rows(0)("DecisionDate")
+            Else
+                EditEmployeesFinishings.TextBox4.Text = Nothing
+            End If
+        Else
+            EditEmployeesFinishings.TextBox4.Text = Nothing
+        End If
+
         EditEmployeesFinishings.ShowDialog()
     End Sub
 
@@ -771,22 +856,39 @@ FB:
         EditInvestigations.DateTimePicker2.Value = DataGridView7(8, r).Value
         EditInvestigations.TextBox4.Text = DataGridView7(9, r).Value
         EditInvestigations.ComboBox1.Text = DataGridView7(10, r).Value
+
+        str = " Select InvestigationDocument from Investigations where EmployeeID = " & DataGridView7(2, r).Value & " and " & _
+           " InvestigationID = " & DataGridView7(1, r).Value & ""
+        GetData(0)
+        If ds.Tables.Count > 0 Then
+            If ds.Tables(0).Rows.Count > 0 Then
+                Dim data As Byte() = DirectCast(ds.Tables(0).Rows(0)("InvestigationDocument"), Byte())
+                Dim ms As New MemoryStream(data)
+                EditInvestigations.PictureBox1.Image = Image.FromStream(ms)
+            Else
+                EditInvestigations.PictureBox1.Image = My.Resources.Document
+            End If
+        Else
+            EditInvestigations.PictureBox1.Image = My.Resources.Document
+        End If
+
         EditInvestigations.ShowDialog()
     End Sub
 
     Private Sub ToolStripButton8_Click(sender As Object, e As EventArgs) Handles ToolStripButton8.Click
-        If UserType = "E" Then
-            n = 0
-            EditInvestigations.TextBox1.Text = Nothing
-            EditInvestigations.TextBox2.Text = Nothing
-            EditInvestigations.DateTimePicker1.Value = Date.Today
-            EditInvestigations.DateTimePicker2.Value = Date.Today
-            EditInvestigations.TextBox3.Text = Nothing
-            EditInvestigations.TextBox4.Text = Nothing
-            EditInvestigations.TextBox5.Text = Nothing
-            EditInvestigations.ShowDialog()
-        End If
-      
+
+        n = 0
+        EditInvestigations.TextBox1.Text = Nothing
+        EditInvestigations.TextBox2.Text = Nothing
+        EditInvestigations.DateTimePicker1.Value = Date.Today
+        EditInvestigations.DateTimePicker2.Value = Date.Today
+        EditInvestigations.TextBox3.Text = Nothing
+        EditInvestigations.TextBox4.Text = Nothing
+        EditInvestigations.TextBox5.Text = Nothing
+        EditInvestigations.PictureBox1.Image = My.Resources.Document
+        EditInvestigations.ShowDialog()
+
+
     End Sub
 
     Private Sub ToolStripTextBox8_Click(sender As Object, e As EventArgs) Handles ToolStripTextBox8.Click
@@ -803,7 +905,7 @@ FB:
               " EmployeePositions.FromJobID = J1.JOBID AND EmployeePositions.JobID = J2.JobID AND EmployeePositions.FromClassID = C1.ClassID AND " & _
               " EmployeePositions.ClassID = C2.ClassID AND J1.JOBID = C1.JOBID AND J2.JOBID = C2.JOBID AND (EmployeeName like ('%" & ToolStripTextBox8.TextBox.Text.ToString & "%') or " & _
                 " EmployeeCode = '" & ToolStripTextBox8.TextBox.Text.ToString & "')"
-       
+
         GetData(0)
         If ds.Tables.Count > 0 Then
             If ds.Tables(0).Rows.Count > 0 Then
@@ -817,7 +919,7 @@ FB:
     End Sub
 
     Private Sub DataGridView8_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView8.CellContentClick
-       
+
         n = 1
         r = DataGridView8.CurrentCell.RowIndex
         EmployeeID = DataGridView8(2, r).Value
@@ -842,6 +944,24 @@ FB:
         GetClasses(EditEmployeePositions.ComboBox3, EditEmployeePositions.ComboBox4)
         EditEmployeePositions.ComboBox4.SelectedValue = DataGridView8(10, r).Value
         EditEmployeePositions.DateTimePicker1.Value = DataGridView8(12, r).Value
+
+        str = " Select DecisionNo,DecisionDate,PositionDocument from EmployeePositions where EmployeeID = " & DataGridView8(2, r).Value & " and " & _
+          " positionID = " & DataGridView8(1, r).Value & ""
+        GetData(0)
+        If ds.Tables.Count > 0 Then
+            If ds.Tables(0).Rows.Count > 0 Then
+                EditEmployeePositions.TextBox4.Text = ds.Tables(0).Rows(0)(0)
+                Dim data As Byte() = DirectCast(ds.Tables(0).Rows(0)(2), Byte())
+                Dim ms As New MemoryStream(data)
+                EditEmployeePositions.PictureBox1.Image = Image.FromStream(ms)
+                EditEmployeePositions.DateTimePicker2.Value = ds.Tables(0).Rows(0)(1)
+            Else
+                EditEmployeePositions.PictureBox1.Image = My.Resources.Document
+            End If
+        Else
+            EditEmployeePositions.PictureBox1.Image = My.Resources.Document
+        End If
+
         EditEmployeePositions.ShowDialog()
     End Sub
 
@@ -858,8 +978,141 @@ FB:
         EditEmployeePositions.ComboBox4.DataSource = Nothing
         EditEmployeePositions.ComboBox4.Items.Clear()
         EditEmployeePositions.DateTimePicker1.Value = Date.Today
+        EditEmployeePositions.TextBox4.Text = Nothing
+        EditEmployeePositions.DateTimePicker2.Value = Date.Today
+        EditEmployeePositions.PictureBox1.Image = My.Resources.Document
         EditEmployeePositions.ShowDialog()
+
+    End Sub
+
+    Private Sub DataGridView9_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView9.CellContentClick
+
+        n = 1
+        r = DataGridView9.CurrentCell.RowIndex
+        EmployeeID = DataGridView9(2, r).Value
+        str = " Select EmployeeCode from employees where EmployeeID = " & DataGridView9(2, r).Value
+        GetData(0)
+        If ds.Tables.Count > 0 Then
+            If ds.Tables(0).Rows.Count > 0 Then
+                EditEmployeesTrainings.TextBox1.Text = ds.Tables(0).Rows(0)(0)
+            Else
+                EditEmployeesTrainings.TextBox1.Text = Nothing
+            End If
+        Else
+            EditEmployeesTrainings.TextBox1.Text = Nothing
+        End If
+
+        EditEmployeesTrainings.TextBox2.Text = DataGridView9(3, r).Value
+        EditEmployeesTrainings.TextBox4.Text = DataGridView9(4, r).Value
+        EditEmployeesTrainings.DateTimePicker1.Value = DataGridView9(5, r).Value
+        EditEmployeesTrainings.DateTimePicker2.Value = DataGridView9(6, r).Value
+        EditEmployeesTrainings.TextBox5.Text = DataGridView9(7, r).Value
+        EditEmployeesTrainings.TextBox6.Text = DataGridView9(8, r).Value
+        EditEmployeesTrainings.DateTimePicker3.Value = DataGridView9(9, r).Value
+        Dim data As Byte() = DirectCast(DataGridView9(10, r).Value, Byte())
+        Dim ms As New MemoryStream(data)
+        EditEmployeesTrainings.PictureBox1.Image = Image.FromStream(ms)
+        EditEmployeesTrainings.ShowDialog()
+    End Sub
+
+    Private Sub ToolStripButton10_Click(sender As Object, e As EventArgs) Handles ToolStripButton10.Click
+        n = 0
+        EditEmployeesTrainings.TextBox1.Text = Nothing
+        EditEmployeesTrainings.TextBox2.Text = Nothing
+        EditEmployeesTrainings.TextBox4.Text = Nothing
+        EditEmployeesTrainings.TextBox5.Text = Nothing
+        EditEmployeesTrainings.TextBox6.Text = Nothing
+        EditEmployeesTrainings.DateTimePicker1.Value = Date.Today
+        EditEmployeesTrainings.DateTimePicker2.Value = Date.Today
+        EditEmployeesTrainings.DateTimePicker3.Value = Date.Today
+        EditEmployeesTrainings.PictureBox1.Image = My.Resources.Document
+        EditEmployeesTrainings.ShowDialog()
+    End Sub
+
+    Private Sub ToolStripTextBox9_Click(sender As Object, e As EventArgs) Handles ToolStripTextBox9.Click
        
     End Sub
 
+    Private Sub ToolStripTextBox10_Click(sender As Object, e As EventArgs) Handles ToolStripTextBox10.Click
+
+    End Sub
+
+    Private Sub ToolStripTextBox10_TextChanged(sender As Object, e As EventArgs) Handles ToolStripTextBox10.TextChanged
+        On Error Resume Next
+        str = " Select EmployeesQualifications.EmployeeQualificationID,EmployeesQualifications.EmployeeID,EmployeesQualifications.QualID AS QualID,IssueDate," & _
+                  " EmployeeName,Country, Country,City,Institute,Faculty,EmployeesQualifications.Specialization,QualificationName from EmployeesQualifications, employees,Qualifications " & _
+                  " where Employees.EmployeeID = EmployeesQualifications.employeeID And Qualifications.QualificationID = EmployeesQualifications.QualID " & _
+                   " and ( EmployeeName like ('%" & ToolStripTextBox10.Text.ToString & "%') or EmployeeCode like " & _
+                   " ('%" & ToolStripTextBox10.Text.ToString & "%') )"
+        GetData(0)
+        If ds.Tables.Count > 0 Then
+            If ds.Tables(0).Rows.Count > 0 Then
+                DataGridView10.DataSource = ds.Tables(0)
+            Else
+                DataGridView10.DataSource = Nothing
+            End If
+        Else
+            DataGridView10.DataSource = Nothing
+        End If
+    End Sub
+
+    Private Sub ToolStripTextBox9_TextChanged(sender As Object, e As EventArgs) Handles ToolStripTextBox9.TextChanged
+        On Error Resume Next
+        str = " Select EmployeesTrainings.TrainingID,EmployeesTrainings.EmployeeID,TrainingName,EmployeeName,BeginDate,EndDate,TrainingPlace,DecisionNo " & _
+                      " ,DecisionDate,DecisionDocument from EmployeesTrainings, employees where employees.EmployeeID = EmployeesTrainings.employeeID " & _
+                      " and ( EmployeeName like ('%" & ToolStripTextBox9.Text.ToString & "%') or EmployeeCode like " & _
+            " ('%" & ToolStripTextBox9.Text.ToString & "%') )"
+        GetData(0)
+        If ds.Tables.Count > 0 Then
+            If ds.Tables(0).Rows.Count > 0 Then
+                DataGridView9.DataSource = ds.Tables(0)
+            Else
+                DataGridView9.DataSource = Nothing
+            End If
+        Else
+            DataGridView9.DataSource = Nothing
+        End If
+    End Sub
+
+    Private Sub ToolStripButton11_Click(sender As Object, e As EventArgs) Handles ToolStripButton11.Click
+        n = 0
+        EditEmployeesQualifications.TextBox1.Text = Nothing
+        EditEmployeesQualifications.TextBox2.Text = Nothing
+        EditEmployeesQualifications.TextBox3.Text = Nothing
+        EditEmployeesQualifications.TextBox4.Text = Nothing
+        EditEmployeesQualifications.TextBox5.Text = Nothing
+        EditEmployeesQualifications.TextBox6.Text = Nothing
+        EditEmployeesQualifications.TextBox7.Text = Nothing
+        EditEmployeesQualifications.ComboBox1.DataSource = Nothing
+        EditEmployeesQualifications.ComboBox1.Items.Clear()
+        EditEmployeesQualifications.DateTimePicker1.Value = Date.Today
+        EditEmployeesQualifications.ShowDialog()
+    End Sub
+
+    Private Sub DataGridView10_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView10.CellContentClick
+        n = 1
+        r = DataGridView10.CurrentCell.RowIndex
+        EmployeeID = DataGridView10(2, r).Value
+        str = " Select EmployeeCode from employees where EmployeeID = " & DataGridView10(2, r).Value
+        GetData(0)
+        If ds.Tables.Count > 0 Then
+            If ds.Tables(0).Rows.Count > 0 Then
+                EditEmployeesQualifications.TextBox1.Text = ds.Tables(0).Rows(0)(0)
+            Else
+                EditEmployeesQualifications.TextBox1.Text = Nothing
+            End If
+        Else
+            EditEmployeesQualifications.TextBox1.Text = Nothing
+        End If
+        EditEmployeesQualifications.TextBox2.Text = DataGridView10(3, r).Value
+        GetQualifications(EditEmployeesQualifications.ComboBox1)
+        EditEmployeesQualifications.ComboBox1.SelectedValue = DataGridView10(4, r).Value
+        EditEmployeesQualifications.DateTimePicker1.Value = DataGridView10(6, r).Value
+        EditEmployeesQualifications.TextBox3.Text = DataGridView10(7, r).Value
+        EditEmployeesQualifications.TextBox4.Text = DataGridView10(8, r).Value
+        EditEmployeesQualifications.TextBox5.Text = DataGridView10(9, r).Value
+        EditEmployeesQualifications.TextBox6.Text = DataGridView10(10, r).Value
+        EditEmployeesQualifications.TextBox7.Text = DataGridView10(11, r).Value
+        EditEmployeesQualifications.ShowDialog()
+    End Sub
 End Class

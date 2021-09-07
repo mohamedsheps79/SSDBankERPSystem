@@ -72,9 +72,9 @@ Public Class EditEmployeesDocuments
 
     Private Sub EditEmployeesDocuments_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         On Error Resume Next
-        str = " select Employees.EmployeeID , Employees.EmployeeName , PendingEmployeesDocuments.DocumentID, DocumentName,EmployeeDocumentID," & _
-               " DocumentContent,Remarks,PendingEmployeesDocuments.Status from Employees inner join PendingEmployeesDocuments on (PendingEmployeesDocuments.EmployeeID = Employees.EmployeeID ) " & _
-               " inner join DocumentsTypes on (PendingEmployeesDocuments.DocumentID = DocumentsTypes.DocumentTypeID )
+        str = " select Employees.EmployeeID , Employees.EmployeeName , PendingEmployeesDocuments.DocumentID, DocumentName,EmployeeDocumentID," &
+               " DocumentContent,Remarks,PendingEmployeesDocuments.Status from Employees inner join PendingEmployeesDocuments on (PendingEmployeesDocuments.EmployeeID = Employees.EmployeeID ) " &
+               " inner join DocumentsTypes on (PendingEmployeesDocuments.DocumentID = DocumentsTypes.DocumentTypeID ) "
         GetData(0)
         If ds.Tables.Count > 0 Then
             If ds.Tables(0).Rows.Count > 0 Then

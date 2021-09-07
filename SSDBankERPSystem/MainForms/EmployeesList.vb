@@ -114,6 +114,12 @@
                 End With
             End If
 
+        ElseIf formID = 12 Then
+            EditEmployeesTrainings.TextBox1.Text = DataGridView1(1, r1).Value
+            EditEmployeesTrainings.TextBox2.Text = DataGridView1(2, r1).Value
+        ElseIf formID = 13 Then
+            EditEmployeesQualifications.TextBox1.Text = DataGridView1(1, r1).Value
+            EditEmployeesQualifications.TextBox2.Text = DataGridView1(2, r1).Value
         End If
         Me.Close()
     End Sub

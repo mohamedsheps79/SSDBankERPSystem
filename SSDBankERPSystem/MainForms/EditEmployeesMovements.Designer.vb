@@ -43,6 +43,14 @@ Partial Class EditEmployeesMovements
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button3
@@ -58,7 +66,7 @@ Partial Class EditEmployeesMovements
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(127, 279)
+        Me.TextBox3.Location = New System.Drawing.Point(127, 220)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(371, 55)
@@ -68,7 +76,7 @@ Partial Class EditEmployeesMovements
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 284)
+        Me.Label1.Location = New System.Drawing.Point(12, 225)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(55, 19)
         Me.Label1.TabIndex = 72
@@ -78,20 +86,20 @@ Partial Class EditEmployeesMovements
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(12, 240)
+        Me.Label5.Location = New System.Drawing.Point(12, 192)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(73, 19)
+        Me.Label5.Size = New System.Drawing.Size(65, 19)
         Me.Label5.TabIndex = 71
-        Me.Label5.Text = "تاريخ النقلية"
+        Me.Label5.Text = "إعتبارا من"
         '
         'DateTimePicker1
         '
         Me.DateTimePicker1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(127, 234)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(127, 186)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.RightToLeftLayout = True
-        Me.DateTimePicker1.Size = New System.Drawing.Size(175, 26)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(132, 26)
         Me.DateTimePicker1.TabIndex = 6
         Me.DateTimePicker1.Value = New Date(2021, 4, 12, 11, 21, 18, 0)
         '
@@ -100,7 +108,7 @@ Partial Class EditEmployeesMovements
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(127, 131)
+        Me.ComboBox1.Location = New System.Drawing.Point(127, 113)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(132, 27)
         Me.ComboBox1.TabIndex = 3
@@ -109,7 +117,7 @@ Partial Class EditEmployeesMovements
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(263, 134)
+        Me.Label7.Location = New System.Drawing.Point(263, 116)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(109, 19)
         Me.Label7.TabIndex = 69
@@ -120,7 +128,7 @@ Partial Class EditEmployeesMovements
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(375, 131)
+        Me.ComboBox2.Location = New System.Drawing.Point(375, 113)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(123, 27)
         Me.ComboBox2.TabIndex = 4
@@ -129,7 +137,7 @@ Partial Class EditEmployeesMovements
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(12, 136)
+        Me.Label8.Location = New System.Drawing.Point(12, 118)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(110, 19)
         Me.Label8.TabIndex = 68
@@ -158,7 +166,7 @@ Partial Class EditEmployeesMovements
         '
         Me.Button2.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button2.Font = New System.Drawing.Font("Imprint MT Shadow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(221, 349)
+        Me.Button2.Location = New System.Drawing.Point(221, 500)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(81, 30)
         Me.Button2.TabIndex = 9
@@ -168,7 +176,7 @@ Partial Class EditEmployeesMovements
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Imprint MT Shadow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(127, 349)
+        Me.Button1.Location = New System.Drawing.Point(127, 500)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(88, 30)
         Me.Button1.TabIndex = 8
@@ -181,7 +189,7 @@ Partial Class EditEmployeesMovements
         Me.TextBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource
         Me.TextBox2.Enabled = False
         Me.TextBox2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(127, 47)
+        Me.TextBox2.Location = New System.Drawing.Point(127, 44)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(371, 26)
         Me.TextBox2.TabIndex = 2
@@ -190,7 +198,7 @@ Partial Class EditEmployeesMovements
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 52)
+        Me.Label2.Location = New System.Drawing.Point(12, 49)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(37, 19)
         Me.Label2.TabIndex = 66
@@ -201,16 +209,16 @@ Partial Class EditEmployeesMovements
         Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(127, 180)
+        Me.ComboBox3.Location = New System.Drawing.Point(127, 149)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(175, 27)
+        Me.ComboBox3.Size = New System.Drawing.Size(132, 27)
         Me.ComboBox3.TabIndex = 5
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(12, 185)
+        Me.Label6.Location = New System.Drawing.Point(12, 154)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(48, 19)
         Me.Label6.TabIndex = 75
@@ -222,7 +230,7 @@ Partial Class EditEmployeesMovements
         Me.ComboBox4.Enabled = False
         Me.ComboBox4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(127, 91)
+        Me.ComboBox4.Location = New System.Drawing.Point(127, 77)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(132, 27)
         Me.ComboBox4.TabIndex = 76
@@ -232,7 +240,7 @@ Partial Class EditEmployeesMovements
         Me.Label4.AutoSize = True
         Me.Label4.Enabled = False
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 94)
+        Me.Label4.Location = New System.Drawing.Point(12, 80)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(81, 19)
         Me.Label4.TabIndex = 77
@@ -243,7 +251,7 @@ Partial Class EditEmployeesMovements
         Me.Label9.AutoSize = True
         Me.Label9.Enabled = False
         Me.Label9.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(268, 94)
+        Me.Label9.Location = New System.Drawing.Point(268, 80)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(75, 19)
         Me.Label9.TabIndex = 79
@@ -255,16 +263,86 @@ Partial Class EditEmployeesMovements
         Me.ComboBox5.Enabled = False
         Me.ComboBox5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(375, 91)
+        Me.ComboBox5.Location = New System.Drawing.Point(375, 77)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(123, 27)
         Me.ComboBox5.TabIndex = 78
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'Button4
+        '
+        Me.Button4.Font = New System.Drawing.Font("Imprint MT Shadow", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(127, 286)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(371, 28)
+        Me.Button4.TabIndex = 85
+        Me.Button4.Text = "إدراج صورة للمستند"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Image = Global.SSDBankERPSystem.My.Resources.Resources.Document
+        Me.PictureBox1.Location = New System.Drawing.Point(127, 320)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(371, 174)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 84
+        Me.PictureBox1.TabStop = False
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(268, 192)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(72, 19)
+        Me.Label10.TabIndex = 89
+        Me.Label10.Text = "تاريخ القرار"
+        '
+        'DateTimePicker2
+        '
+        Me.DateTimePicker2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker2.Location = New System.Drawing.Point(375, 186)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.RightToLeftLayout = True
+        Me.DateTimePicker2.Size = New System.Drawing.Size(123, 26)
+        Me.DateTimePicker2.TabIndex = 88
+        Me.DateTimePicker2.Value = New Date(2021, 4, 12, 11, 21, 18, 0)
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.Location = New System.Drawing.Point(375, 151)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(123, 26)
+        Me.TextBox4.TabIndex = 86
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(268, 154)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(62, 19)
+        Me.Label11.TabIndex = 87
+        Me.Label11.Text = "رقم القرار"
         '
         'EditEmployeesMovements
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(532, 384)
+        Me.ClientSize = New System.Drawing.Size(532, 536)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.DateTimePicker2)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.ComboBox5)
         Me.Controls.Add(Me.ComboBox4)
@@ -293,6 +371,7 @@ Partial Class EditEmployeesMovements
         Me.RightToLeftLayout = True
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EditEmployeesMovements"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -318,4 +397,11 @@ Partial Class EditEmployeesMovements
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 End Class
