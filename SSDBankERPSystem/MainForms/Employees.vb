@@ -818,8 +818,8 @@ FB:
 
     Private Sub ToolStripTextBox7_TextChanged(sender As Object, e As EventArgs) Handles ToolStripTextBox7.TextChanged
         On Error Resume Next
-        str = " Select Investigations.InvestigationID,Infraction,InfractionDate,Investigations.EmployeeID,EmployeeName,InvestigationDate,Investigations.Decision,DecisionDate,Adversary " & _
-            " ,AdversaryInterval,Investigations.Status from Investigations, employees where employees.EmployeeID = Investigations.employeeID AND ( EmployeeName like ('%" & ToolStripTextBox7.Text & "%' )" & _
+        str = " Select Investigations.InvestigationID,Infraction,InfractionDate,Investigations.EmployeeID,EmployeeName,InvestigationDate,Investigations.Decision,DecisionDate,Adversary " &
+            " ,AdversaryInterval,Investigations.Status from Investigations, employees where employees.EmployeeID = Investigations.employeeID AND ( EmployeeName like ('%" & ToolStripTextBox7.Text & "%' )" &
             " or EmployeeCode = '" & ToolStripTextBox5.Text.ToString & "' )"
         GetData(0)
         If ds.Tables.Count > 0 Then
@@ -857,7 +857,7 @@ FB:
         EditInvestigations.TextBox4.Text = DataGridView7(9, r).Value
         EditInvestigations.ComboBox1.Text = DataGridView7(10, r).Value
 
-        str = " Select InvestigationDocument from Investigations where EmployeeID = " & DataGridView7(2, r).Value & " and " & _
+        str = " Select InvestigationDocument from Investigations where EmployeeID = " & DataGridView7(2, r).Value & " and " &
            " InvestigationID = " & DataGridView7(1, r).Value & ""
         GetData(0)
         If ds.Tables.Count > 0 Then
@@ -898,12 +898,12 @@ FB:
     Private Sub ToolStripTextBox8_TextChanged(sender As Object, e As EventArgs) Handles ToolStripTextBox8.TextChanged
         On Error Resume Next
 
-        str = " Select EmployeePositions.positionID,EmployeePositions.EmployeeID,FromJobID,J1.JobName JobName1,EmployeePositions.JobID, J2.JobName as JobName2,FromClassID,C1.className as className1, " & _
-              " EmployeePositions.ClassID,C2.className as className2 ,PositionDate,EmployeeName,EmployeePositions.Status " & _
-              " from  EmployeePositions,Employees, Jobs j1, jobs j2,Classes C1,Classes C2 WHERE " & _
-              " Employees.EmployeeID = EmployeePositions.EmployeeID AND" & _
-              " EmployeePositions.FromJobID = J1.JOBID AND EmployeePositions.JobID = J2.JobID AND EmployeePositions.FromClassID = C1.ClassID AND " & _
-              " EmployeePositions.ClassID = C2.ClassID AND J1.JOBID = C1.JOBID AND J2.JOBID = C2.JOBID AND (EmployeeName like ('%" & ToolStripTextBox8.TextBox.Text.ToString & "%') or " & _
+        str = " Select EmployeePositions.positionID,EmployeePositions.EmployeeID,FromJobID,J1.JobName JobName1,EmployeePositions.JobID, J2.JobName as JobName2,FromClassID,C1.className as className1, " &
+              " EmployeePositions.ClassID,C2.className as className2 ,PositionDate,EmployeeName,EmployeePositions.Status " &
+              " from  EmployeePositions,Employees, Jobs j1, jobs j2,Classes C1,Classes C2 WHERE " &
+              " Employees.EmployeeID = EmployeePositions.EmployeeID AND" &
+              " EmployeePositions.FromJobID = J1.JOBID AND EmployeePositions.JobID = J2.JobID AND EmployeePositions.FromClassID = C1.ClassID AND " &
+              " EmployeePositions.ClassID = C2.ClassID AND J1.JOBID = C1.JOBID AND J2.JOBID = C2.JOBID AND (EmployeeName like ('%" & ToolStripTextBox8.TextBox.Text.ToString & "%') or " &
                 " EmployeeCode = '" & ToolStripTextBox8.TextBox.Text.ToString & "')"
 
         GetData(0)
@@ -945,7 +945,7 @@ FB:
         EditEmployeePositions.ComboBox4.SelectedValue = DataGridView8(10, r).Value
         EditEmployeePositions.DateTimePicker1.Value = DataGridView8(12, r).Value
 
-        str = " Select DecisionNo,DecisionDate,PositionDocument from EmployeePositions where EmployeeID = " & DataGridView8(2, r).Value & " and " & _
+        str = " Select DecisionNo,DecisionDate,PositionDocument from EmployeePositions where EmployeeID = " & DataGridView8(2, r).Value & " and " &
           " positionID = " & DataGridView8(1, r).Value & ""
         GetData(0)
         If ds.Tables.Count > 0 Then

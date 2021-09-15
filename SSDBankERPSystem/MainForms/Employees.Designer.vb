@@ -37,14 +37,14 @@ Partial Class Employees
         Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.ToolStrip5 = New System.Windows.Forms.ToolStrip()
@@ -193,55 +193,9 @@ Partial Class Employees
         Me.ToolStripSeparator26 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel10 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripComboBox4 = New System.Windows.Forms.ToolStripComboBox()
-        Me.TabPage7 = New System.Windows.Forms.TabPage()
-        Me.DataGridView7 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewButtonColumn6 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.InvestigationIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EmployeeIDDataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EmployeeNameDataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Infraction = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.InfractionDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.InvestigationDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DecisionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DecisionDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AdversaryDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AdversaryInterval = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.InvestigationsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ToolStrip7 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator27 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator28 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel11 = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripTextBox7 = New System.Windows.Forms.ToolStripTextBox()
-        Me.ToolStripSeparator29 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator30 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TabPage8 = New System.Windows.Forms.TabPage()
-        Me.DataGridView8 = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewButtonColumn7 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.PositionIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EmployeeIDDataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EmployeeNameDataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FromJobIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JobName1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JobIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JobName2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FromClassIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClassName1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClassIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClassName2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PositionDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.EmployeePositionsBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.HrDBDataSet12 = New SSDBankERPSystem.hrDBDataSet1()
-        Me.ToolStrip8 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton9 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator31 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator32 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel12 = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripTextBox8 = New System.Windows.Forms.ToolStripTextBox()
-        Me.ToolStripSeparator33 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator34 = New System.Windows.Forms.ToolStripSeparator()
         Me.TabPage9 = New System.Windows.Forms.TabPage()
         Me.DataGridView9 = New System.Windows.Forms.DataGridView()
         Me.DataGridViewButtonColumn8 = New System.Windows.Forms.DataGridViewButtonColumn()
@@ -298,6 +252,79 @@ Partial Class Employees
         Me.EmployeesDocumentsTableAdapter = New SSDBankERPSystem.hrDBDataSetTableAdapters.EmployeesDocumentsTableAdapter()
         Me.EmployeesTrainingsTableAdapter = New SSDBankERPSystem.hrDBDataSet2TableAdapters.EmployeesTrainingsTableAdapter()
         Me.EmployeesQualificationsTableAdapter = New SSDBankERPSystem.hrDBDataSet2TableAdapters.EmployeesQualificationsTableAdapter()
+        Me.ToolStrip8 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton9 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator31 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator32 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripLabel12 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripTextBox8 = New System.Windows.Forms.ToolStripTextBox()
+        Me.ToolStripSeparator33 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator34 = New System.Windows.Forms.ToolStripSeparator()
+        Me.DataGridView8 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PositionDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassName2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassName1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FromClassIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JobName2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JobIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JobName1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FromJobIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeeNameDataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeeIDDataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PositionIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewButtonColumn7 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.TabPage8 = New System.Windows.Forms.TabPage()
+        Me.PositionIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeeIDDataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeeNameDataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FromJobIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JobIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FromClassIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassIDDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PositionDateDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JobName1DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JobName2DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassName1DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassName2DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EnteredByDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AuthorizedByDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ToolStrip7 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator27 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator28 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripLabel11 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripTextBox7 = New System.Windows.Forms.ToolStripTextBox()
+        Me.ToolStripSeparator29 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator30 = New System.Windows.Forms.ToolStripSeparator()
+        Me.DataGridView7 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AdversaryInterval = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AdversaryDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DecisionDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DecisionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.InvestigationDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.InfractionDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Infraction = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.InvestigationIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewButtonColumn6 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.InvestigationIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeeIDDataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.InvestigationDateDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DecisionDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DecisionDateDataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AdversaryDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EmployeeNameDataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.InfractionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.InfractionDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AdversaryIntervalDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AnouncementStatusDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EnteredByDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AuthorizedByDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StatusDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.ToolStrip5.SuspendLayout()
@@ -326,15 +353,9 @@ Partial Class Employees
         CType(Me.DataGridView6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmployeeFinishingsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip6.SuspendLayout()
-        Me.TabPage7.SuspendLayout()
-        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.InvestigationsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStrip7.SuspendLayout()
-        Me.TabPage8.SuspendLayout()
-        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmployeePositionsBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HrDBDataSet12, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStrip8.SuspendLayout()
         Me.TabPage9.SuspendLayout()
         CType(Me.DataGridView9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EmployeesTrainingsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -345,6 +366,10 @@ Partial Class Employees
         CType(Me.EmployeesQualificationsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip10.SuspendLayout()
         CType(Me.EmployeePositionsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage8.SuspendLayout()
+        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage7.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -362,23 +387,22 @@ Partial Class Employees
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.TabControl1.RightToLeftLayout = True
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(1679, 588)
         Me.TabControl1.TabIndex = 1
-        Me.TabControl1.Visible = False
         '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.ToolStrip5)
         Me.TabPage1.Controls.Add(Me.DataGridView1)
         Me.TabPage1.Location = New System.Drawing.Point(4, 32)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "بيانات الموظفين"
@@ -507,7 +531,7 @@ Partial Class Employees
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Edit, Me.EmployeeIDDataGridViewTextBoxColumn, Me.BranchIDDataGridViewTextBoxColumn, Me.DepartmentIDDataGridViewTextBoxColumn, Me.EmployeeCodeDataGridViewTextBoxColumn, Me.EmployeeNameDataGridViewTextBoxColumn, Me.BirthDateDataGridViewTextBoxColumn, Me.HireDateDataGridViewTextBoxColumn, Me.DegreeIDDataGridViewTextBoxColumn, Me.RangeIDDataGridViewTextBoxColumn, Me.QualificationIDDataGridViewTextBoxColumn, Me.SpecializationDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.ScocialStatusDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.PhoneNoDataGridViewTextBoxColumn, Me.JobIDDataGridViewTextBoxColumn, Me.ClassIDDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.EmployeesBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(8, 41)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.Size = New System.Drawing.Size(1660, 505)
@@ -685,9 +709,9 @@ Partial Class Employees
         Me.TabPage2.Controls.Add(Me.DataGridView2)
         Me.TabPage2.Controls.Add(Me.ToolStrip2)
         Me.TabPage2.Location = New System.Drawing.Point(4, 32)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "الترقيات"
@@ -714,7 +738,7 @@ Partial Class Employees
         Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn1, Me.PromoteIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn1, Me.EmployeeNameDataGridViewTextBoxColumn1, Me.DegreeIDDataGridViewTextBoxColumn1, Me.RangeIDDataGridViewTextBoxColumn1, Me.PromoteDateDataGridViewTextBoxColumn, Me.PromoteTypeDataGridViewTextBoxColumn, Me.RemarksDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn1})
         Me.DataGridView2.DataSource = Me.EmployeesPromotionsBindingSource
         Me.DataGridView2.Location = New System.Drawing.Point(4, 39)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersWidth = 51
         Me.DataGridView2.Size = New System.Drawing.Size(1660, 506)
@@ -876,9 +900,9 @@ Partial Class Employees
         Me.TabPage3.Controls.Add(Me.DataGridView3)
         Me.TabPage3.Controls.Add(Me.ToolStrip3)
         Me.TabPage3.Location = New System.Drawing.Point(4, 32)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage3.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "التنقلات/التعيينات"
@@ -905,7 +929,7 @@ Partial Class Employees
         Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn2, Me.MoveIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn2, Me.EmployeeNameDataGridViewTextBoxColumn2, Me.BranchName, Me.DepartmentName, Me.MoveDateDataGridViewTextBoxColumn, Me.RemarksDataGridViewTextBoxColumn1, Me.BranchID, Me.DepartmentID, Me.ClassID, Me.DataGridViewTextBoxColumn2})
         Me.DataGridView3.DataSource = Me.EmployeesMovementsBindingSource
         Me.DataGridView3.Location = New System.Drawing.Point(4, 39)
-        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.RowHeadersWidth = 51
         Me.DataGridView3.Size = New System.Drawing.Size(1660, 506)
@@ -1081,9 +1105,9 @@ Partial Class Employees
         Me.TabPage4.Controls.Add(Me.DataGridView4)
         Me.TabPage4.Controls.Add(Me.ToolStrip4)
         Me.TabPage4.Location = New System.Drawing.Point(4, 32)
-        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage4.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "المستندات"
@@ -1110,7 +1134,7 @@ Partial Class Employees
         Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn3, Me.EmployeeDocumentIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn3, Me.EmployeeNameDataGridViewTextBoxColumn3, Me.DocumentIDDataGridViewTextBoxColumn, Me.DocumentName, Me.DocumentContentDataGridViewImageColumn, Me.RemarksDataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.DataGridView4.DataSource = Me.EmployeesDocumentsBindingSource
         Me.DataGridView4.Location = New System.Drawing.Point(4, 39)
-        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView4.Name = "DataGridView4"
         Me.DataGridView4.RowHeadersWidth = 51
         Me.DataGridView4.RowTemplate.Height = 100
@@ -1265,9 +1289,9 @@ Partial Class Employees
         Me.TabPage5.Controls.Add(Me.DataGridView5)
         Me.TabPage5.Controls.Add(Me.ToolStrip1)
         Me.TabPage5.Location = New System.Drawing.Point(4, 32)
-        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage5.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "الإجازات"
@@ -1294,7 +1318,7 @@ Partial Class Employees
         Me.DataGridView5.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn4, Me.EmployeeHolidayIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn4, Me.EmployeeName, Me.HolidayTypeIDDataGridViewTextBoxColumn, Me.HolidayName, Me.HolidayBeginDateDataGridViewTextBoxColumn, Me.HolidayEndDateDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn4})
         Me.DataGridView5.DataSource = Me.EmployeesHolidaysBindingSource
         Me.DataGridView5.Location = New System.Drawing.Point(4, 41)
-        Me.DataGridView5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView5.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView5.Name = "DataGridView5"
         Me.DataGridView5.RowHeadersWidth = 51
         Me.DataGridView5.Size = New System.Drawing.Size(1660, 505)
@@ -1463,9 +1487,9 @@ Partial Class Employees
         Me.TabPage6.Controls.Add(Me.DataGridView6)
         Me.TabPage6.Controls.Add(Me.ToolStrip6)
         Me.TabPage6.Location = New System.Drawing.Point(4, 32)
-        Me.TabPage6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage6.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage6.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "إنهاء الخدمة"
@@ -1492,7 +1516,7 @@ Partial Class Employees
         Me.DataGridView6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn5, Me.EmployeeFinishingIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn5, Me.EmployeeNameDataGridViewTextBoxColumn4, Me.FinishingTypeIDDataGridViewTextBoxColumn, Me.FinishingTypeNameDataGridViewTextBoxColumn, Me.FinishingDateDataGridViewTextBoxColumn, Me.RemarksDataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn5})
         Me.DataGridView6.DataSource = Me.EmployeeFinishingsBindingSource
         Me.DataGridView6.Location = New System.Drawing.Point(4, 41)
-        Me.DataGridView6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView6.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView6.Name = "DataGridView6"
         Me.DataGridView6.RowHeadersWidth = 51
         Me.DataGridView6.Size = New System.Drawing.Size(1660, 505)
@@ -1651,369 +1675,10 @@ Partial Class Employees
         Me.ToolStripComboBox4.Name = "ToolStripComboBox4"
         Me.ToolStripComboBox4.Size = New System.Drawing.Size(265, 31)
         '
-        'TabPage7
-        '
-        Me.TabPage7.Controls.Add(Me.DataGridView7)
-        Me.TabPage7.Controls.Add(Me.ToolStrip7)
-        Me.TabPage7.Location = New System.Drawing.Point(4, 32)
-        Me.TabPage7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage7.Size = New System.Drawing.Size(1671, 552)
-        Me.TabPage7.TabIndex = 6
-        Me.TabPage7.Text = "التحقيقات و مجالس المحاسبة"
-        Me.TabPage7.UseVisualStyleBackColor = True
-        '
-        'DataGridView7
-        '
-        Me.DataGridView7.AllowUserToAddRows = False
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.Silver
-        Me.DataGridView7.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle14
-        Me.DataGridView7.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView7.AutoGenerateColumns = False
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView7.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle15
-        Me.DataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView7.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn6, Me.InvestigationIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn6, Me.EmployeeNameDataGridViewTextBoxColumn5, Me.Infraction, Me.InfractionDate, Me.InvestigationDateDataGridViewTextBoxColumn, Me.DecisionDataGridViewTextBoxColumn, Me.DecisionDateDataGridViewTextBoxColumn, Me.AdversaryDataGridViewTextBoxColumn, Me.AdversaryInterval, Me.DataGridViewTextBoxColumn6})
-        Me.DataGridView7.DataSource = Me.InvestigationsBindingSource
-        Me.DataGridView7.Location = New System.Drawing.Point(4, 39)
-        Me.DataGridView7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.DataGridView7.Name = "DataGridView7"
-        Me.DataGridView7.RowHeadersWidth = 51
-        Me.DataGridView7.Size = New System.Drawing.Size(1660, 506)
-        Me.DataGridView7.TabIndex = 9
-        '
-        'DataGridViewButtonColumn6
-        '
-        Me.DataGridViewButtonColumn6.HeaderText = "Edit"
-        Me.DataGridViewButtonColumn6.MinimumWidth = 6
-        Me.DataGridViewButtonColumn6.Name = "DataGridViewButtonColumn6"
-        Me.DataGridViewButtonColumn6.ReadOnly = True
-        Me.DataGridViewButtonColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewButtonColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewButtonColumn6.Text = "..."
-        Me.DataGridViewButtonColumn6.ToolTipText = "Edit"
-        Me.DataGridViewButtonColumn6.Width = 80
-        '
-        'InvestigationIDDataGridViewTextBoxColumn
-        '
-        Me.InvestigationIDDataGridViewTextBoxColumn.DataPropertyName = "InvestigationID"
-        Me.InvestigationIDDataGridViewTextBoxColumn.HeaderText = "InvestigationID"
-        Me.InvestigationIDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.InvestigationIDDataGridViewTextBoxColumn.Name = "InvestigationIDDataGridViewTextBoxColumn"
-        Me.InvestigationIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.InvestigationIDDataGridViewTextBoxColumn.Visible = False
-        Me.InvestigationIDDataGridViewTextBoxColumn.Width = 125
-        '
-        'EmployeeIDDataGridViewTextBoxColumn6
-        '
-        Me.EmployeeIDDataGridViewTextBoxColumn6.DataPropertyName = "EmployeeID"
-        Me.EmployeeIDDataGridViewTextBoxColumn6.HeaderText = "EmployeeID"
-        Me.EmployeeIDDataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.EmployeeIDDataGridViewTextBoxColumn6.Name = "EmployeeIDDataGridViewTextBoxColumn6"
-        Me.EmployeeIDDataGridViewTextBoxColumn6.Visible = False
-        Me.EmployeeIDDataGridViewTextBoxColumn6.Width = 125
-        '
-        'EmployeeNameDataGridViewTextBoxColumn5
-        '
-        Me.EmployeeNameDataGridViewTextBoxColumn5.DataPropertyName = "EmployeeName"
-        Me.EmployeeNameDataGridViewTextBoxColumn5.HeaderText = "الإسم"
-        Me.EmployeeNameDataGridViewTextBoxColumn5.MinimumWidth = 6
-        Me.EmployeeNameDataGridViewTextBoxColumn5.Name = "EmployeeNameDataGridViewTextBoxColumn5"
-        Me.EmployeeNameDataGridViewTextBoxColumn5.Width = 200
-        '
-        'Infraction
-        '
-        Me.Infraction.DataPropertyName = "Infraction"
-        Me.Infraction.HeaderText = "المخالفة"
-        Me.Infraction.MinimumWidth = 6
-        Me.Infraction.Name = "Infraction"
-        Me.Infraction.Width = 125
-        '
-        'InfractionDate
-        '
-        Me.InfractionDate.DataPropertyName = "InfractionDate"
-        Me.InfractionDate.HeaderText = "تاريخ المخالفة"
-        Me.InfractionDate.MinimumWidth = 6
-        Me.InfractionDate.Name = "InfractionDate"
-        Me.InfractionDate.Width = 150
-        '
-        'InvestigationDateDataGridViewTextBoxColumn
-        '
-        Me.InvestigationDateDataGridViewTextBoxColumn.DataPropertyName = "InvestigationDate"
-        Me.InvestigationDateDataGridViewTextBoxColumn.HeaderText = "تاريخ التحقيق"
-        Me.InvestigationDateDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.InvestigationDateDataGridViewTextBoxColumn.Name = "InvestigationDateDataGridViewTextBoxColumn"
-        Me.InvestigationDateDataGridViewTextBoxColumn.Width = 150
-        '
-        'DecisionDataGridViewTextBoxColumn
-        '
-        Me.DecisionDataGridViewTextBoxColumn.DataPropertyName = "Decision"
-        Me.DecisionDataGridViewTextBoxColumn.HeaderText = "القرار"
-        Me.DecisionDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.DecisionDataGridViewTextBoxColumn.Name = "DecisionDataGridViewTextBoxColumn"
-        Me.DecisionDataGridViewTextBoxColumn.Width = 125
-        '
-        'DecisionDateDataGridViewTextBoxColumn
-        '
-        Me.DecisionDateDataGridViewTextBoxColumn.DataPropertyName = "DecisionDate"
-        Me.DecisionDateDataGridViewTextBoxColumn.HeaderText = "تاريخ القرار"
-        Me.DecisionDateDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.DecisionDateDataGridViewTextBoxColumn.Name = "DecisionDateDataGridViewTextBoxColumn"
-        Me.DecisionDateDataGridViewTextBoxColumn.Width = 150
-        '
-        'AdversaryDataGridViewTextBoxColumn
-        '
-        Me.AdversaryDataGridViewTextBoxColumn.DataPropertyName = "Adversary"
-        Me.AdversaryDataGridViewTextBoxColumn.HeaderText = "العقوبة"
-        Me.AdversaryDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.AdversaryDataGridViewTextBoxColumn.Name = "AdversaryDataGridViewTextBoxColumn"
-        Me.AdversaryDataGridViewTextBoxColumn.Width = 125
-        '
-        'AdversaryInterval
-        '
-        Me.AdversaryInterval.DataPropertyName = "AdversaryInterval"
-        Me.AdversaryInterval.HeaderText = "مدة العقوبة"
-        Me.AdversaryInterval.MinimumWidth = 6
-        Me.AdversaryInterval.Name = "AdversaryInterval"
-        Me.AdversaryInterval.Width = 150
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Status"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "الحالة"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Width = 125
-        '
         'InvestigationsBindingSource
         '
         Me.InvestigationsBindingSource.DataMember = "Investigations"
         Me.InvestigationsBindingSource.DataSource = Me.HrDBDataSet11
-        '
-        'ToolStrip7
-        '
-        Me.ToolStrip7.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStrip7.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton8, Me.ToolStripSeparator27, Me.ToolStripSeparator28, Me.ToolStripLabel11, Me.ToolStripTextBox7, Me.ToolStripSeparator29, Me.ToolStripSeparator30})
-        Me.ToolStrip7.Location = New System.Drawing.Point(4, 4)
-        Me.ToolStrip7.Name = "ToolStrip7"
-        Me.ToolStrip7.Size = New System.Drawing.Size(1663, 30)
-        Me.ToolStrip7.TabIndex = 8
-        Me.ToolStrip7.Text = "ToolStrip7"
-        '
-        'ToolStripButton8
-        '
-        Me.ToolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ToolStripButton8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripButton8.Image = CType(resources.GetObject("ToolStripButton8.Image"), System.Drawing.Image)
-        Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton8.Name = "ToolStripButton8"
-        Me.ToolStripButton8.Size = New System.Drawing.Size(218, 27)
-        Me.ToolStripButton8.Text = "إضافة تحقيق/مجلس محاسبة"
-        '
-        'ToolStripSeparator27
-        '
-        Me.ToolStripSeparator27.Name = "ToolStripSeparator27"
-        Me.ToolStripSeparator27.Size = New System.Drawing.Size(6, 30)
-        '
-        'ToolStripSeparator28
-        '
-        Me.ToolStripSeparator28.Name = "ToolStripSeparator28"
-        Me.ToolStripSeparator28.Size = New System.Drawing.Size(6, 30)
-        '
-        'ToolStripLabel11
-        '
-        Me.ToolStripLabel11.Name = "ToolStripLabel11"
-        Me.ToolStripLabel11.Size = New System.Drawing.Size(46, 27)
-        Me.ToolStripLabel11.Text = "بحث"
-        '
-        'ToolStripTextBox7
-        '
-        Me.ToolStripTextBox7.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.ToolStripTextBox7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripTextBox7.Name = "ToolStripTextBox7"
-        Me.ToolStripTextBox7.Size = New System.Drawing.Size(265, 30)
-        '
-        'ToolStripSeparator29
-        '
-        Me.ToolStripSeparator29.Name = "ToolStripSeparator29"
-        Me.ToolStripSeparator29.Size = New System.Drawing.Size(6, 30)
-        '
-        'ToolStripSeparator30
-        '
-        Me.ToolStripSeparator30.Name = "ToolStripSeparator30"
-        Me.ToolStripSeparator30.Size = New System.Drawing.Size(6, 30)
-        '
-        'TabPage8
-        '
-        Me.TabPage8.Controls.Add(Me.DataGridView8)
-        Me.TabPage8.Controls.Add(Me.ToolStrip8)
-        Me.TabPage8.Location = New System.Drawing.Point(4, 32)
-        Me.TabPage8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage8.Name = "TabPage8"
-        Me.TabPage8.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.TabPage8.Size = New System.Drawing.Size(1671, 552)
-        Me.TabPage8.TabIndex = 7
-        Me.TabPage8.Text = "الترفيعات"
-        Me.TabPage8.UseVisualStyleBackColor = True
-        '
-        'DataGridView8
-        '
-        Me.DataGridView8.AllowUserToAddRows = False
-        DataGridViewCellStyle16.BackColor = System.Drawing.Color.Silver
-        Me.DataGridView8.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle16
-        Me.DataGridView8.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView8.AutoGenerateColumns = False
-        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle17.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView8.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
-        Me.DataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView8.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn7, Me.PositionIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn7, Me.EmployeeNameDataGridViewTextBoxColumn6, Me.FromJobIDDataGridViewTextBoxColumn, Me.JobName1DataGridViewTextBoxColumn, Me.JobIDDataGridViewTextBoxColumn1, Me.JobName2DataGridViewTextBoxColumn, Me.FromClassIDDataGridViewTextBoxColumn, Me.ClassName1DataGridViewTextBoxColumn, Me.ClassIDDataGridViewTextBoxColumn1, Me.ClassName2DataGridViewTextBoxColumn, Me.PositionDateDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn7})
-        Me.DataGridView8.DataSource = Me.EmployeePositionsBindingSource1
-        Me.DataGridView8.Location = New System.Drawing.Point(4, 39)
-        Me.DataGridView8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.DataGridView8.Name = "DataGridView8"
-        Me.DataGridView8.RowHeadersWidth = 51
-        Me.DataGridView8.Size = New System.Drawing.Size(1660, 506)
-        Me.DataGridView8.TabIndex = 11
-        '
-        'DataGridViewButtonColumn7
-        '
-        Me.DataGridViewButtonColumn7.HeaderText = "Edit"
-        Me.DataGridViewButtonColumn7.MinimumWidth = 6
-        Me.DataGridViewButtonColumn7.Name = "DataGridViewButtonColumn7"
-        Me.DataGridViewButtonColumn7.ReadOnly = True
-        Me.DataGridViewButtonColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewButtonColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewButtonColumn7.Text = "..."
-        Me.DataGridViewButtonColumn7.ToolTipText = "Edit"
-        Me.DataGridViewButtonColumn7.Width = 80
-        '
-        'PositionIDDataGridViewTextBoxColumn
-        '
-        Me.PositionIDDataGridViewTextBoxColumn.DataPropertyName = "positionID"
-        Me.PositionIDDataGridViewTextBoxColumn.HeaderText = "positionID"
-        Me.PositionIDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PositionIDDataGridViewTextBoxColumn.Name = "PositionIDDataGridViewTextBoxColumn"
-        Me.PositionIDDataGridViewTextBoxColumn.Visible = False
-        Me.PositionIDDataGridViewTextBoxColumn.Width = 125
-        '
-        'EmployeeIDDataGridViewTextBoxColumn7
-        '
-        Me.EmployeeIDDataGridViewTextBoxColumn7.DataPropertyName = "EmployeeID"
-        Me.EmployeeIDDataGridViewTextBoxColumn7.HeaderText = "EmployeeID"
-        Me.EmployeeIDDataGridViewTextBoxColumn7.MinimumWidth = 6
-        Me.EmployeeIDDataGridViewTextBoxColumn7.Name = "EmployeeIDDataGridViewTextBoxColumn7"
-        Me.EmployeeIDDataGridViewTextBoxColumn7.Visible = False
-        Me.EmployeeIDDataGridViewTextBoxColumn7.Width = 125
-        '
-        'EmployeeNameDataGridViewTextBoxColumn6
-        '
-        Me.EmployeeNameDataGridViewTextBoxColumn6.DataPropertyName = "EmployeeName"
-        Me.EmployeeNameDataGridViewTextBoxColumn6.HeaderText = "الإســـم"
-        Me.EmployeeNameDataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.EmployeeNameDataGridViewTextBoxColumn6.Name = "EmployeeNameDataGridViewTextBoxColumn6"
-        Me.EmployeeNameDataGridViewTextBoxColumn6.Width = 200
-        '
-        'FromJobIDDataGridViewTextBoxColumn
-        '
-        Me.FromJobIDDataGridViewTextBoxColumn.DataPropertyName = "FromJobID"
-        Me.FromJobIDDataGridViewTextBoxColumn.HeaderText = "FromJobID"
-        Me.FromJobIDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.FromJobIDDataGridViewTextBoxColumn.Name = "FromJobIDDataGridViewTextBoxColumn"
-        Me.FromJobIDDataGridViewTextBoxColumn.Visible = False
-        Me.FromJobIDDataGridViewTextBoxColumn.Width = 125
-        '
-        'JobName1DataGridViewTextBoxColumn
-        '
-        Me.JobName1DataGridViewTextBoxColumn.DataPropertyName = "JobName1"
-        Me.JobName1DataGridViewTextBoxColumn.HeaderText = "من الفئة"
-        Me.JobName1DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.JobName1DataGridViewTextBoxColumn.Name = "JobName1DataGridViewTextBoxColumn"
-        Me.JobName1DataGridViewTextBoxColumn.Width = 200
-        '
-        'JobIDDataGridViewTextBoxColumn1
-        '
-        Me.JobIDDataGridViewTextBoxColumn1.DataPropertyName = "JobID"
-        Me.JobIDDataGridViewTextBoxColumn1.HeaderText = "JobID"
-        Me.JobIDDataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.JobIDDataGridViewTextBoxColumn1.Name = "JobIDDataGridViewTextBoxColumn1"
-        Me.JobIDDataGridViewTextBoxColumn1.Visible = False
-        Me.JobIDDataGridViewTextBoxColumn1.Width = 125
-        '
-        'JobName2DataGridViewTextBoxColumn
-        '
-        Me.JobName2DataGridViewTextBoxColumn.DataPropertyName = "JobName2"
-        Me.JobName2DataGridViewTextBoxColumn.HeaderText = "إلى الفئة"
-        Me.JobName2DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.JobName2DataGridViewTextBoxColumn.Name = "JobName2DataGridViewTextBoxColumn"
-        Me.JobName2DataGridViewTextBoxColumn.Width = 200
-        '
-        'FromClassIDDataGridViewTextBoxColumn
-        '
-        Me.FromClassIDDataGridViewTextBoxColumn.DataPropertyName = "FromClassID"
-        Me.FromClassIDDataGridViewTextBoxColumn.HeaderText = "FromClassID"
-        Me.FromClassIDDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.FromClassIDDataGridViewTextBoxColumn.Name = "FromClassIDDataGridViewTextBoxColumn"
-        Me.FromClassIDDataGridViewTextBoxColumn.Visible = False
-        Me.FromClassIDDataGridViewTextBoxColumn.Width = 125
-        '
-        'ClassName1DataGridViewTextBoxColumn
-        '
-        Me.ClassName1DataGridViewTextBoxColumn.DataPropertyName = "className1"
-        Me.ClassName1DataGridViewTextBoxColumn.HeaderText = "من الوظيفة"
-        Me.ClassName1DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.ClassName1DataGridViewTextBoxColumn.Name = "ClassName1DataGridViewTextBoxColumn"
-        Me.ClassName1DataGridViewTextBoxColumn.Width = 200
-        '
-        'ClassIDDataGridViewTextBoxColumn1
-        '
-        Me.ClassIDDataGridViewTextBoxColumn1.DataPropertyName = "ClassID"
-        Me.ClassIDDataGridViewTextBoxColumn1.HeaderText = "ClassID"
-        Me.ClassIDDataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.ClassIDDataGridViewTextBoxColumn1.Name = "ClassIDDataGridViewTextBoxColumn1"
-        Me.ClassIDDataGridViewTextBoxColumn1.Visible = False
-        Me.ClassIDDataGridViewTextBoxColumn1.Width = 125
-        '
-        'ClassName2DataGridViewTextBoxColumn
-        '
-        Me.ClassName2DataGridViewTextBoxColumn.DataPropertyName = "className2"
-        Me.ClassName2DataGridViewTextBoxColumn.HeaderText = "إلى الوظيفة"
-        Me.ClassName2DataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.ClassName2DataGridViewTextBoxColumn.Name = "ClassName2DataGridViewTextBoxColumn"
-        Me.ClassName2DataGridViewTextBoxColumn.Width = 200
-        '
-        'PositionDateDataGridViewTextBoxColumn
-        '
-        Me.PositionDateDataGridViewTextBoxColumn.DataPropertyName = "PositionDate"
-        Me.PositionDateDataGridViewTextBoxColumn.HeaderText = "تاريخ الترفيع"
-        Me.PositionDateDataGridViewTextBoxColumn.MinimumWidth = 6
-        Me.PositionDateDataGridViewTextBoxColumn.Name = "PositionDateDataGridViewTextBoxColumn"
-        Me.PositionDateDataGridViewTextBoxColumn.Width = 125
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Status"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "الحالة"
-        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Width = 125
         '
         'EmployeePositionsBindingSource1
         '
@@ -2025,68 +1690,14 @@ Partial Class Employees
         Me.HrDBDataSet12.DataSetName = "hrDBDataSet1"
         Me.HrDBDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'ToolStrip8
-        '
-        Me.ToolStrip8.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStrip8.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip8.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton9, Me.ToolStripSeparator31, Me.ToolStripSeparator32, Me.ToolStripLabel12, Me.ToolStripTextBox8, Me.ToolStripSeparator33, Me.ToolStripSeparator34})
-        Me.ToolStrip8.Location = New System.Drawing.Point(4, 4)
-        Me.ToolStrip8.Name = "ToolStrip8"
-        Me.ToolStrip8.Size = New System.Drawing.Size(1663, 30)
-        Me.ToolStrip8.TabIndex = 10
-        Me.ToolStrip8.Text = "ToolStrip8"
-        '
-        'ToolStripButton9
-        '
-        Me.ToolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.ToolStripButton9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripButton9.Image = CType(resources.GetObject("ToolStripButton9.Image"), System.Drawing.Image)
-        Me.ToolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton9.Name = "ToolStripButton9"
-        Me.ToolStripButton9.Size = New System.Drawing.Size(106, 27)
-        Me.ToolStripButton9.Text = "ترفيع موظف"
-        '
-        'ToolStripSeparator31
-        '
-        Me.ToolStripSeparator31.Name = "ToolStripSeparator31"
-        Me.ToolStripSeparator31.Size = New System.Drawing.Size(6, 30)
-        '
-        'ToolStripSeparator32
-        '
-        Me.ToolStripSeparator32.Name = "ToolStripSeparator32"
-        Me.ToolStripSeparator32.Size = New System.Drawing.Size(6, 30)
-        '
-        'ToolStripLabel12
-        '
-        Me.ToolStripLabel12.Name = "ToolStripLabel12"
-        Me.ToolStripLabel12.Size = New System.Drawing.Size(46, 27)
-        Me.ToolStripLabel12.Text = "بحث"
-        '
-        'ToolStripTextBox8
-        '
-        Me.ToolStripTextBox8.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.ToolStripTextBox8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripTextBox8.Name = "ToolStripTextBox8"
-        Me.ToolStripTextBox8.Size = New System.Drawing.Size(265, 30)
-        '
-        'ToolStripSeparator33
-        '
-        Me.ToolStripSeparator33.Name = "ToolStripSeparator33"
-        Me.ToolStripSeparator33.Size = New System.Drawing.Size(6, 30)
-        '
-        'ToolStripSeparator34
-        '
-        Me.ToolStripSeparator34.Name = "ToolStripSeparator34"
-        Me.ToolStripSeparator34.Size = New System.Drawing.Size(6, 30)
-        '
         'TabPage9
         '
         Me.TabPage9.Controls.Add(Me.DataGridView9)
         Me.TabPage9.Controls.Add(Me.ToolStrip9)
         Me.TabPage9.Location = New System.Drawing.Point(4, 32)
-        Me.TabPage9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage9.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage9.Name = "TabPage9"
-        Me.TabPage9.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage9.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage9.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage9.TabIndex = 8
         Me.TabPage9.Text = "الدورات التدريبية"
@@ -2113,7 +1724,7 @@ Partial Class Employees
         Me.DataGridView9.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn8, Me.TrainingIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn8, Me.TrainingNameDataGridViewTextBoxColumn, Me.BeginDateDataGridViewTextBoxColumn, Me.EndDateDataGridViewTextBoxColumn, Me.TrainingPlaceDataGridViewTextBoxColumn, Me.DecisionNoDataGridViewTextBoxColumn, Me.DecisionDateDataGridViewTextBoxColumn1, Me.DecisionDocumentDataGridViewImageColumn})
         Me.DataGridView9.DataSource = Me.EmployeesTrainingsBindingSource
         Me.DataGridView9.Location = New System.Drawing.Point(4, 39)
-        Me.DataGridView9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView9.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView9.Name = "DataGridView9"
         Me.DataGridView9.RowHeadersWidth = 51
         Me.DataGridView9.Size = New System.Drawing.Size(1660, 506)
@@ -2284,9 +1895,9 @@ Partial Class Employees
         Me.TabPage10.Controls.Add(Me.DataGridView10)
         Me.TabPage10.Controls.Add(Me.ToolStrip10)
         Me.TabPage10.Location = New System.Drawing.Point(4, 32)
-        Me.TabPage10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage10.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage10.Name = "TabPage10"
-        Me.TabPage10.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage10.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage10.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage10.TabIndex = 9
         Me.TabPage10.Text = "المؤهلات العلمية"
@@ -2313,7 +1924,7 @@ Partial Class Employees
         Me.DataGridView10.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn9, Me.EmployeeQualificationIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn9, Me.EmployeeNameDataGridViewTextBoxColumn7, Me.QualIDDataGridViewTextBoxColumn, Me.QualificationName, Me.IssueDateDataGridViewTextBoxColumn, Me.CountryDataGridViewTextBoxColumn, Me.CityDataGridViewTextBoxColumn, Me.InstituteDataGridViewTextBoxColumn, Me.FacultyDataGridViewTextBoxColumn, Me.SpecializationDataGridViewTextBoxColumn1})
         Me.DataGridView10.DataSource = Me.EmployeesQualificationsBindingSource
         Me.DataGridView10.Location = New System.Drawing.Point(4, 39)
-        Me.DataGridView10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView10.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView10.Name = "DataGridView10"
         Me.DataGridView10.RowHeadersWidth = 51
         Me.DataGridView10.Size = New System.Drawing.Size(1660, 506)
@@ -2523,13 +2134,637 @@ Partial Class Employees
         '
         Me.EmployeesQualificationsTableAdapter.ClearBeforeFill = True
         '
+        'ToolStrip8
+        '
+        Me.ToolStrip8.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStrip8.Location = New System.Drawing.Point(4, 4)
+        Me.ToolStrip8.Name = "ToolStrip8"
+        Me.ToolStrip8.Size = New System.Drawing.Size(1663, 30)
+        Me.ToolStrip8.TabIndex = 10
+        Me.ToolStrip8.Visible = False
+        '
+        'ToolStripButton9
+        '
+        Me.ToolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripButton9.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButton9.Image = CType(resources.GetObject("ToolStripButton9.Image"), System.Drawing.Image)
+        Me.ToolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton9.Name = "ToolStripButton9"
+        Me.ToolStripButton9.Size = New System.Drawing.Size(106, 27)
+        Me.ToolStripButton9.Text = "ترفيع موظف"
+        '
+        'ToolStripSeparator31
+        '
+        Me.ToolStripSeparator31.Name = "ToolStripSeparator31"
+        Me.ToolStripSeparator31.Size = New System.Drawing.Size(6, 30)
+        '
+        'ToolStripSeparator32
+        '
+        Me.ToolStripSeparator32.Name = "ToolStripSeparator32"
+        Me.ToolStripSeparator32.Size = New System.Drawing.Size(6, 30)
+        '
+        'ToolStripLabel12
+        '
+        Me.ToolStripLabel12.Name = "ToolStripLabel12"
+        Me.ToolStripLabel12.Size = New System.Drawing.Size(46, 27)
+        Me.ToolStripLabel12.Text = "بحث"
+        '
+        'ToolStripTextBox8
+        '
+        Me.ToolStripTextBox8.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.ToolStripTextBox8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripTextBox8.Name = "ToolStripTextBox8"
+        Me.ToolStripTextBox8.Size = New System.Drawing.Size(265, 30)
+        '
+        'ToolStripSeparator33
+        '
+        Me.ToolStripSeparator33.Name = "ToolStripSeparator33"
+        Me.ToolStripSeparator33.Size = New System.Drawing.Size(6, 30)
+        '
+        'ToolStripSeparator34
+        '
+        Me.ToolStripSeparator34.Name = "ToolStripSeparator34"
+        Me.ToolStripSeparator34.Size = New System.Drawing.Size(6, 30)
+        '
+        'DataGridView8
+        '
+        Me.DataGridView8.AllowUserToAddRows = False
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.Silver
+        Me.DataGridView8.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle16
+        Me.DataGridView8.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridView8.AutoGenerateColumns = False
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView8.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
+        Me.DataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView8.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.PositionIDDataGridViewTextBoxColumn1, Me.EmployeeIDDataGridViewTextBoxColumn6, Me.EmployeeNameDataGridViewTextBoxColumn5, Me.FromJobIDDataGridViewTextBoxColumn1, Me.JobIDDataGridViewTextBoxColumn2, Me.FromClassIDDataGridViewTextBoxColumn1, Me.ClassIDDataGridViewTextBoxColumn2, Me.PositionDateDataGridViewTextBoxColumn1, Me.JobName1DataGridViewTextBoxColumn1, Me.JobName2DataGridViewTextBoxColumn1, Me.ClassName1DataGridViewTextBoxColumn1, Me.ClassName2DataGridViewTextBoxColumn1, Me.EnteredByDataGridViewTextBoxColumn, Me.AuthorizedByDataGridViewTextBoxColumn, Me.StatusDataGridViewTextBoxColumn})
+        Me.DataGridView8.DataSource = Me.EmployeePositionsBindingSource1
+        Me.DataGridView8.Location = New System.Drawing.Point(4, 39)
+        Me.DataGridView8.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView8.Name = "DataGridView8"
+        Me.DataGridView8.RowHeadersWidth = 51
+        Me.DataGridView8.Size = New System.Drawing.Size(1660, 506)
+        Me.DataGridView8.TabIndex = 11
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Status"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "الحالة"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.Width = 125
+        '
+        'PositionDateDataGridViewTextBoxColumn
+        '
+        Me.PositionDateDataGridViewTextBoxColumn.DataPropertyName = "PositionDate"
+        Me.PositionDateDataGridViewTextBoxColumn.HeaderText = "تاريخ الترفيع"
+        Me.PositionDateDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.PositionDateDataGridViewTextBoxColumn.Name = "PositionDateDataGridViewTextBoxColumn"
+        Me.PositionDateDataGridViewTextBoxColumn.Width = 125
+        '
+        'ClassName2DataGridViewTextBoxColumn
+        '
+        Me.ClassName2DataGridViewTextBoxColumn.DataPropertyName = "className2"
+        Me.ClassName2DataGridViewTextBoxColumn.HeaderText = "إلى الوظيفة"
+        Me.ClassName2DataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.ClassName2DataGridViewTextBoxColumn.Name = "ClassName2DataGridViewTextBoxColumn"
+        Me.ClassName2DataGridViewTextBoxColumn.Width = 200
+        '
+        'ClassIDDataGridViewTextBoxColumn1
+        '
+        Me.ClassIDDataGridViewTextBoxColumn1.DataPropertyName = "ClassID"
+        Me.ClassIDDataGridViewTextBoxColumn1.HeaderText = "ClassID"
+        Me.ClassIDDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.ClassIDDataGridViewTextBoxColumn1.Name = "ClassIDDataGridViewTextBoxColumn1"
+        Me.ClassIDDataGridViewTextBoxColumn1.Visible = False
+        Me.ClassIDDataGridViewTextBoxColumn1.Width = 125
+        '
+        'ClassName1DataGridViewTextBoxColumn
+        '
+        Me.ClassName1DataGridViewTextBoxColumn.DataPropertyName = "className1"
+        Me.ClassName1DataGridViewTextBoxColumn.HeaderText = "من الوظيفة"
+        Me.ClassName1DataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.ClassName1DataGridViewTextBoxColumn.Name = "ClassName1DataGridViewTextBoxColumn"
+        Me.ClassName1DataGridViewTextBoxColumn.Width = 200
+        '
+        'FromClassIDDataGridViewTextBoxColumn
+        '
+        Me.FromClassIDDataGridViewTextBoxColumn.DataPropertyName = "FromClassID"
+        Me.FromClassIDDataGridViewTextBoxColumn.HeaderText = "FromClassID"
+        Me.FromClassIDDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.FromClassIDDataGridViewTextBoxColumn.Name = "FromClassIDDataGridViewTextBoxColumn"
+        Me.FromClassIDDataGridViewTextBoxColumn.Visible = False
+        Me.FromClassIDDataGridViewTextBoxColumn.Width = 125
+        '
+        'JobName2DataGridViewTextBoxColumn
+        '
+        Me.JobName2DataGridViewTextBoxColumn.DataPropertyName = "JobName2"
+        Me.JobName2DataGridViewTextBoxColumn.HeaderText = "إلى الفئة"
+        Me.JobName2DataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.JobName2DataGridViewTextBoxColumn.Name = "JobName2DataGridViewTextBoxColumn"
+        Me.JobName2DataGridViewTextBoxColumn.Width = 200
+        '
+        'JobIDDataGridViewTextBoxColumn1
+        '
+        Me.JobIDDataGridViewTextBoxColumn1.DataPropertyName = "JobID"
+        Me.JobIDDataGridViewTextBoxColumn1.HeaderText = "JobID"
+        Me.JobIDDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.JobIDDataGridViewTextBoxColumn1.Name = "JobIDDataGridViewTextBoxColumn1"
+        Me.JobIDDataGridViewTextBoxColumn1.Visible = False
+        Me.JobIDDataGridViewTextBoxColumn1.Width = 125
+        '
+        'JobName1DataGridViewTextBoxColumn
+        '
+        Me.JobName1DataGridViewTextBoxColumn.DataPropertyName = "JobName1"
+        Me.JobName1DataGridViewTextBoxColumn.HeaderText = "من الفئة"
+        Me.JobName1DataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.JobName1DataGridViewTextBoxColumn.Name = "JobName1DataGridViewTextBoxColumn"
+        Me.JobName1DataGridViewTextBoxColumn.Width = 200
+        '
+        'FromJobIDDataGridViewTextBoxColumn
+        '
+        Me.FromJobIDDataGridViewTextBoxColumn.DataPropertyName = "FromJobID"
+        Me.FromJobIDDataGridViewTextBoxColumn.HeaderText = "FromJobID"
+        Me.FromJobIDDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.FromJobIDDataGridViewTextBoxColumn.Name = "FromJobIDDataGridViewTextBoxColumn"
+        Me.FromJobIDDataGridViewTextBoxColumn.Visible = False
+        Me.FromJobIDDataGridViewTextBoxColumn.Width = 125
+        '
+        'EmployeeNameDataGridViewTextBoxColumn6
+        '
+        Me.EmployeeNameDataGridViewTextBoxColumn6.DataPropertyName = "EmployeeName"
+        Me.EmployeeNameDataGridViewTextBoxColumn6.HeaderText = "الإســـم"
+        Me.EmployeeNameDataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.EmployeeNameDataGridViewTextBoxColumn6.Name = "EmployeeNameDataGridViewTextBoxColumn6"
+        Me.EmployeeNameDataGridViewTextBoxColumn6.Width = 200
+        '
+        'EmployeeIDDataGridViewTextBoxColumn7
+        '
+        Me.EmployeeIDDataGridViewTextBoxColumn7.DataPropertyName = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn7.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn7.MinimumWidth = 6
+        Me.EmployeeIDDataGridViewTextBoxColumn7.Name = "EmployeeIDDataGridViewTextBoxColumn7"
+        Me.EmployeeIDDataGridViewTextBoxColumn7.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn7.Width = 125
+        '
+        'PositionIDDataGridViewTextBoxColumn
+        '
+        Me.PositionIDDataGridViewTextBoxColumn.DataPropertyName = "positionID"
+        Me.PositionIDDataGridViewTextBoxColumn.HeaderText = "positionID"
+        Me.PositionIDDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.PositionIDDataGridViewTextBoxColumn.Name = "PositionIDDataGridViewTextBoxColumn"
+        Me.PositionIDDataGridViewTextBoxColumn.Visible = False
+        Me.PositionIDDataGridViewTextBoxColumn.Width = 125
+        '
+        'DataGridViewButtonColumn7
+        '
+        Me.DataGridViewButtonColumn7.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn7.MinimumWidth = 6
+        Me.DataGridViewButtonColumn7.Name = "DataGridViewButtonColumn7"
+        Me.DataGridViewButtonColumn7.ReadOnly = True
+        Me.DataGridViewButtonColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewButtonColumn7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewButtonColumn7.Text = "..."
+        Me.DataGridViewButtonColumn7.ToolTipText = "Edit"
+        Me.DataGridViewButtonColumn7.Width = 80
+        '
+        'TabPage8
+        '
+        Me.TabPage8.Controls.Add(Me.DataGridView8)
+        Me.TabPage8.Controls.Add(Me.ToolStrip8)
+        Me.TabPage8.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage8.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage8.Name = "TabPage8"
+        Me.TabPage8.Padding = New System.Windows.Forms.Padding(4)
+        Me.TabPage8.Size = New System.Drawing.Size(1671, 552)
+        Me.TabPage8.TabIndex = 7
+        Me.TabPage8.UseVisualStyleBackColor = True
+        '
+        'PositionIDDataGridViewTextBoxColumn1
+        '
+        Me.PositionIDDataGridViewTextBoxColumn1.DataPropertyName = "positionID"
+        Me.PositionIDDataGridViewTextBoxColumn1.HeaderText = "positionID"
+        Me.PositionIDDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.PositionIDDataGridViewTextBoxColumn1.Name = "PositionIDDataGridViewTextBoxColumn1"
+        Me.PositionIDDataGridViewTextBoxColumn1.Width = 125
+        '
+        'EmployeeIDDataGridViewTextBoxColumn6
+        '
+        Me.EmployeeIDDataGridViewTextBoxColumn6.DataPropertyName = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn6.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.EmployeeIDDataGridViewTextBoxColumn6.Name = "EmployeeIDDataGridViewTextBoxColumn6"
+        Me.EmployeeIDDataGridViewTextBoxColumn6.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn6.Width = 125
+        '
+        'EmployeeNameDataGridViewTextBoxColumn5
+        '
+        Me.EmployeeNameDataGridViewTextBoxColumn5.DataPropertyName = "EmployeeName"
+        Me.EmployeeNameDataGridViewTextBoxColumn5.HeaderText = "الإسم"
+        Me.EmployeeNameDataGridViewTextBoxColumn5.MinimumWidth = 6
+        Me.EmployeeNameDataGridViewTextBoxColumn5.Name = "EmployeeNameDataGridViewTextBoxColumn5"
+        Me.EmployeeNameDataGridViewTextBoxColumn5.Width = 200
+        '
+        'FromJobIDDataGridViewTextBoxColumn1
+        '
+        Me.FromJobIDDataGridViewTextBoxColumn1.DataPropertyName = "FromJobID"
+        Me.FromJobIDDataGridViewTextBoxColumn1.HeaderText = "FromJobID"
+        Me.FromJobIDDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.FromJobIDDataGridViewTextBoxColumn1.Name = "FromJobIDDataGridViewTextBoxColumn1"
+        Me.FromJobIDDataGridViewTextBoxColumn1.Width = 125
+        '
+        'JobIDDataGridViewTextBoxColumn2
+        '
+        Me.JobIDDataGridViewTextBoxColumn2.DataPropertyName = "JobID"
+        Me.JobIDDataGridViewTextBoxColumn2.HeaderText = "JobID"
+        Me.JobIDDataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.JobIDDataGridViewTextBoxColumn2.Name = "JobIDDataGridViewTextBoxColumn2"
+        Me.JobIDDataGridViewTextBoxColumn2.Width = 125
+        '
+        'FromClassIDDataGridViewTextBoxColumn1
+        '
+        Me.FromClassIDDataGridViewTextBoxColumn1.DataPropertyName = "FromClassID"
+        Me.FromClassIDDataGridViewTextBoxColumn1.HeaderText = "FromClassID"
+        Me.FromClassIDDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.FromClassIDDataGridViewTextBoxColumn1.Name = "FromClassIDDataGridViewTextBoxColumn1"
+        Me.FromClassIDDataGridViewTextBoxColumn1.Width = 125
+        '
+        'ClassIDDataGridViewTextBoxColumn2
+        '
+        Me.ClassIDDataGridViewTextBoxColumn2.DataPropertyName = "ClassID"
+        Me.ClassIDDataGridViewTextBoxColumn2.HeaderText = "ClassID"
+        Me.ClassIDDataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.ClassIDDataGridViewTextBoxColumn2.Name = "ClassIDDataGridViewTextBoxColumn2"
+        Me.ClassIDDataGridViewTextBoxColumn2.Width = 125
+        '
+        'PositionDateDataGridViewTextBoxColumn1
+        '
+        Me.PositionDateDataGridViewTextBoxColumn1.DataPropertyName = "PositionDate"
+        Me.PositionDateDataGridViewTextBoxColumn1.HeaderText = "PositionDate"
+        Me.PositionDateDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.PositionDateDataGridViewTextBoxColumn1.Name = "PositionDateDataGridViewTextBoxColumn1"
+        Me.PositionDateDataGridViewTextBoxColumn1.Width = 125
+        '
+        'JobName1DataGridViewTextBoxColumn1
+        '
+        Me.JobName1DataGridViewTextBoxColumn1.DataPropertyName = "JobName1"
+        Me.JobName1DataGridViewTextBoxColumn1.HeaderText = "JobName1"
+        Me.JobName1DataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.JobName1DataGridViewTextBoxColumn1.Name = "JobName1DataGridViewTextBoxColumn1"
+        Me.JobName1DataGridViewTextBoxColumn1.Width = 125
+        '
+        'JobName2DataGridViewTextBoxColumn1
+        '
+        Me.JobName2DataGridViewTextBoxColumn1.DataPropertyName = "JobName2"
+        Me.JobName2DataGridViewTextBoxColumn1.HeaderText = "JobName2"
+        Me.JobName2DataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.JobName2DataGridViewTextBoxColumn1.Name = "JobName2DataGridViewTextBoxColumn1"
+        Me.JobName2DataGridViewTextBoxColumn1.Width = 125
+        '
+        'ClassName1DataGridViewTextBoxColumn1
+        '
+        Me.ClassName1DataGridViewTextBoxColumn1.DataPropertyName = "className1"
+        Me.ClassName1DataGridViewTextBoxColumn1.HeaderText = "className1"
+        Me.ClassName1DataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.ClassName1DataGridViewTextBoxColumn1.Name = "ClassName1DataGridViewTextBoxColumn1"
+        Me.ClassName1DataGridViewTextBoxColumn1.Width = 125
+        '
+        'ClassName2DataGridViewTextBoxColumn1
+        '
+        Me.ClassName2DataGridViewTextBoxColumn1.DataPropertyName = "className2"
+        Me.ClassName2DataGridViewTextBoxColumn1.HeaderText = "className2"
+        Me.ClassName2DataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.ClassName2DataGridViewTextBoxColumn1.Name = "ClassName2DataGridViewTextBoxColumn1"
+        Me.ClassName2DataGridViewTextBoxColumn1.Width = 125
+        '
+        'EnteredByDataGridViewTextBoxColumn
+        '
+        Me.EnteredByDataGridViewTextBoxColumn.DataPropertyName = "EnteredBy"
+        Me.EnteredByDataGridViewTextBoxColumn.HeaderText = "EnteredBy"
+        Me.EnteredByDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.EnteredByDataGridViewTextBoxColumn.Name = "EnteredByDataGridViewTextBoxColumn"
+        Me.EnteredByDataGridViewTextBoxColumn.Width = 125
+        '
+        'AuthorizedByDataGridViewTextBoxColumn
+        '
+        Me.AuthorizedByDataGridViewTextBoxColumn.DataPropertyName = "AuthorizedBy"
+        Me.AuthorizedByDataGridViewTextBoxColumn.HeaderText = "AuthorizedBy"
+        Me.AuthorizedByDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.AuthorizedByDataGridViewTextBoxColumn.Name = "AuthorizedByDataGridViewTextBoxColumn"
+        Me.AuthorizedByDataGridViewTextBoxColumn.Width = 125
+        '
+        'StatusDataGridViewTextBoxColumn
+        '
+        Me.StatusDataGridViewTextBoxColumn.DataPropertyName = "Status"
+        Me.StatusDataGridViewTextBoxColumn.HeaderText = "Status"
+        Me.StatusDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.StatusDataGridViewTextBoxColumn.Name = "StatusDataGridViewTextBoxColumn"
+        Me.StatusDataGridViewTextBoxColumn.Width = 125
+        '
+        'ToolStrip7
+        '
+        Me.ToolStrip7.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStrip7.Location = New System.Drawing.Point(4, 4)
+        Me.ToolStrip7.Name = "ToolStrip7"
+        Me.ToolStrip7.Size = New System.Drawing.Size(1663, 30)
+        Me.ToolStrip7.TabIndex = 8
+        Me.ToolStrip7.Visible = False
+        '
+        'ToolStripButton8
+        '
+        Me.ToolStripButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.ToolStripButton8.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripButton8.Image = CType(resources.GetObject("ToolStripButton8.Image"), System.Drawing.Image)
+        Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton8.Name = "ToolStripButton8"
+        Me.ToolStripButton8.Size = New System.Drawing.Size(218, 27)
+        Me.ToolStripButton8.Text = "إضافة تحقيق/مجلس محاسبة"
+        '
+        'ToolStripSeparator27
+        '
+        Me.ToolStripSeparator27.Name = "ToolStripSeparator27"
+        Me.ToolStripSeparator27.Size = New System.Drawing.Size(6, 30)
+        '
+        'ToolStripSeparator28
+        '
+        Me.ToolStripSeparator28.Name = "ToolStripSeparator28"
+        Me.ToolStripSeparator28.Size = New System.Drawing.Size(6, 30)
+        '
+        'ToolStripLabel11
+        '
+        Me.ToolStripLabel11.Name = "ToolStripLabel11"
+        Me.ToolStripLabel11.Size = New System.Drawing.Size(46, 27)
+        Me.ToolStripLabel11.Text = "بحث"
+        '
+        'ToolStripTextBox7
+        '
+        Me.ToolStripTextBox7.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.ToolStripTextBox7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripTextBox7.Name = "ToolStripTextBox7"
+        Me.ToolStripTextBox7.Size = New System.Drawing.Size(265, 30)
+        '
+        'ToolStripSeparator29
+        '
+        Me.ToolStripSeparator29.Name = "ToolStripSeparator29"
+        Me.ToolStripSeparator29.Size = New System.Drawing.Size(6, 30)
+        '
+        'ToolStripSeparator30
+        '
+        Me.ToolStripSeparator30.Name = "ToolStripSeparator30"
+        Me.ToolStripSeparator30.Size = New System.Drawing.Size(6, 30)
+        '
+        'DataGridView7
+        '
+        Me.DataGridView7.AllowUserToAddRows = False
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.Silver
+        Me.DataGridView7.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle14
+        Me.DataGridView7.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DataGridView7.AutoGenerateColumns = False
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView7.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle15
+        Me.DataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView7.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.InvestigationIDDataGridViewTextBoxColumn1, Me.EmployeeIDDataGridViewTextBoxColumn10, Me.InvestigationDateDataGridViewTextBoxColumn1, Me.DecisionDataGridViewTextBoxColumn1, Me.DecisionDateDataGridViewTextBoxColumn2, Me.AdversaryDataGridViewTextBoxColumn1, Me.EmployeeNameDataGridViewTextBoxColumn8, Me.InfractionDataGridViewTextBoxColumn, Me.InfractionDateDataGridViewTextBoxColumn, Me.AdversaryIntervalDataGridViewTextBoxColumn, Me.AnouncementStatusDataGridViewTextBoxColumn, Me.EnteredByDataGridViewTextBoxColumn1, Me.AuthorizedByDataGridViewTextBoxColumn1, Me.StatusDataGridViewTextBoxColumn1})
+        Me.DataGridView7.DataSource = Me.InvestigationsBindingSource
+        Me.DataGridView7.Location = New System.Drawing.Point(4, 39)
+        Me.DataGridView7.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView7.Name = "DataGridView7"
+        Me.DataGridView7.RowHeadersWidth = 51
+        Me.DataGridView7.Size = New System.Drawing.Size(1660, 506)
+        Me.DataGridView7.TabIndex = 9
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Status"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "الحالة"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Width = 125
+        '
+        'AdversaryInterval
+        '
+        Me.AdversaryInterval.DataPropertyName = "AdversaryInterval"
+        Me.AdversaryInterval.HeaderText = "مدة العقوبة"
+        Me.AdversaryInterval.MinimumWidth = 6
+        Me.AdversaryInterval.Name = "AdversaryInterval"
+        Me.AdversaryInterval.Width = 150
+        '
+        'AdversaryDataGridViewTextBoxColumn
+        '
+        Me.AdversaryDataGridViewTextBoxColumn.DataPropertyName = "Adversary"
+        Me.AdversaryDataGridViewTextBoxColumn.HeaderText = "العقوبة"
+        Me.AdversaryDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.AdversaryDataGridViewTextBoxColumn.Name = "AdversaryDataGridViewTextBoxColumn"
+        Me.AdversaryDataGridViewTextBoxColumn.Width = 125
+        '
+        'DecisionDateDataGridViewTextBoxColumn
+        '
+        Me.DecisionDateDataGridViewTextBoxColumn.DataPropertyName = "DecisionDate"
+        Me.DecisionDateDataGridViewTextBoxColumn.HeaderText = "تاريخ القرار"
+        Me.DecisionDateDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.DecisionDateDataGridViewTextBoxColumn.Name = "DecisionDateDataGridViewTextBoxColumn"
+        Me.DecisionDateDataGridViewTextBoxColumn.Width = 150
+        '
+        'DecisionDataGridViewTextBoxColumn
+        '
+        Me.DecisionDataGridViewTextBoxColumn.DataPropertyName = "Decision"
+        Me.DecisionDataGridViewTextBoxColumn.HeaderText = "القرار"
+        Me.DecisionDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.DecisionDataGridViewTextBoxColumn.Name = "DecisionDataGridViewTextBoxColumn"
+        Me.DecisionDataGridViewTextBoxColumn.Width = 125
+        '
+        'InvestigationDateDataGridViewTextBoxColumn
+        '
+        Me.InvestigationDateDataGridViewTextBoxColumn.DataPropertyName = "InvestigationDate"
+        Me.InvestigationDateDataGridViewTextBoxColumn.HeaderText = "تاريخ التحقيق"
+        Me.InvestigationDateDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.InvestigationDateDataGridViewTextBoxColumn.Name = "InvestigationDateDataGridViewTextBoxColumn"
+        Me.InvestigationDateDataGridViewTextBoxColumn.Width = 150
+        '
+        'InfractionDate
+        '
+        Me.InfractionDate.DataPropertyName = "InfractionDate"
+        Me.InfractionDate.HeaderText = "تاريخ المخالفة"
+        Me.InfractionDate.MinimumWidth = 6
+        Me.InfractionDate.Name = "InfractionDate"
+        Me.InfractionDate.Width = 150
+        '
+        'Infraction
+        '
+        Me.Infraction.DataPropertyName = "Infraction"
+        Me.Infraction.HeaderText = "المخالفة"
+        Me.Infraction.MinimumWidth = 6
+        Me.Infraction.Name = "Infraction"
+        Me.Infraction.Width = 125
+        '
+        'InvestigationIDDataGridViewTextBoxColumn
+        '
+        Me.InvestigationIDDataGridViewTextBoxColumn.DataPropertyName = "InvestigationID"
+        Me.InvestigationIDDataGridViewTextBoxColumn.HeaderText = "InvestigationID"
+        Me.InvestigationIDDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.InvestigationIDDataGridViewTextBoxColumn.Name = "InvestigationIDDataGridViewTextBoxColumn"
+        Me.InvestigationIDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.InvestigationIDDataGridViewTextBoxColumn.Visible = False
+        Me.InvestigationIDDataGridViewTextBoxColumn.Width = 125
+        '
+        'DataGridViewButtonColumn6
+        '
+        Me.DataGridViewButtonColumn6.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn6.MinimumWidth = 6
+        Me.DataGridViewButtonColumn6.Name = "DataGridViewButtonColumn6"
+        Me.DataGridViewButtonColumn6.ReadOnly = True
+        Me.DataGridViewButtonColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewButtonColumn6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewButtonColumn6.Text = "..."
+        Me.DataGridViewButtonColumn6.ToolTipText = "Edit"
+        Me.DataGridViewButtonColumn6.Width = 80
+        '
+        'TabPage7
+        '
+        Me.TabPage7.Controls.Add(Me.DataGridView7)
+        Me.TabPage7.Controls.Add(Me.ToolStrip7)
+        Me.TabPage7.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage7.Margin = New System.Windows.Forms.Padding(4)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Padding = New System.Windows.Forms.Padding(4)
+        Me.TabPage7.Size = New System.Drawing.Size(1671, 552)
+        Me.TabPage7.TabIndex = 6
+        Me.TabPage7.UseVisualStyleBackColor = True
+        '
+        'InvestigationIDDataGridViewTextBoxColumn1
+        '
+        Me.InvestigationIDDataGridViewTextBoxColumn1.DataPropertyName = "InvestigationID"
+        Me.InvestigationIDDataGridViewTextBoxColumn1.HeaderText = "InvestigationID"
+        Me.InvestigationIDDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.InvestigationIDDataGridViewTextBoxColumn1.Name = "InvestigationIDDataGridViewTextBoxColumn1"
+        Me.InvestigationIDDataGridViewTextBoxColumn1.ReadOnly = True
+        Me.InvestigationIDDataGridViewTextBoxColumn1.Width = 125
+        '
+        'EmployeeIDDataGridViewTextBoxColumn10
+        '
+        Me.EmployeeIDDataGridViewTextBoxColumn10.DataPropertyName = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn10.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn10.MinimumWidth = 6
+        Me.EmployeeIDDataGridViewTextBoxColumn10.Name = "EmployeeIDDataGridViewTextBoxColumn10"
+        Me.EmployeeIDDataGridViewTextBoxColumn10.Width = 125
+        '
+        'InvestigationDateDataGridViewTextBoxColumn1
+        '
+        Me.InvestigationDateDataGridViewTextBoxColumn1.DataPropertyName = "InvestigationDate"
+        Me.InvestigationDateDataGridViewTextBoxColumn1.HeaderText = "InvestigationDate"
+        Me.InvestigationDateDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.InvestigationDateDataGridViewTextBoxColumn1.Name = "InvestigationDateDataGridViewTextBoxColumn1"
+        Me.InvestigationDateDataGridViewTextBoxColumn1.Width = 125
+        '
+        'DecisionDataGridViewTextBoxColumn1
+        '
+        Me.DecisionDataGridViewTextBoxColumn1.DataPropertyName = "Decision"
+        Me.DecisionDataGridViewTextBoxColumn1.HeaderText = "Decision"
+        Me.DecisionDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.DecisionDataGridViewTextBoxColumn1.Name = "DecisionDataGridViewTextBoxColumn1"
+        Me.DecisionDataGridViewTextBoxColumn1.Width = 125
+        '
+        'DecisionDateDataGridViewTextBoxColumn2
+        '
+        Me.DecisionDateDataGridViewTextBoxColumn2.DataPropertyName = "DecisionDate"
+        Me.DecisionDateDataGridViewTextBoxColumn2.HeaderText = "DecisionDate"
+        Me.DecisionDateDataGridViewTextBoxColumn2.MinimumWidth = 6
+        Me.DecisionDateDataGridViewTextBoxColumn2.Name = "DecisionDateDataGridViewTextBoxColumn2"
+        Me.DecisionDateDataGridViewTextBoxColumn2.Width = 125
+        '
+        'AdversaryDataGridViewTextBoxColumn1
+        '
+        Me.AdversaryDataGridViewTextBoxColumn1.DataPropertyName = "Adversary"
+        Me.AdversaryDataGridViewTextBoxColumn1.HeaderText = "Adversary"
+        Me.AdversaryDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.AdversaryDataGridViewTextBoxColumn1.Name = "AdversaryDataGridViewTextBoxColumn1"
+        Me.AdversaryDataGridViewTextBoxColumn1.Width = 125
+        '
+        'EmployeeNameDataGridViewTextBoxColumn8
+        '
+        Me.EmployeeNameDataGridViewTextBoxColumn8.DataPropertyName = "EmployeeName"
+        Me.EmployeeNameDataGridViewTextBoxColumn8.HeaderText = "EmployeeName"
+        Me.EmployeeNameDataGridViewTextBoxColumn8.MinimumWidth = 6
+        Me.EmployeeNameDataGridViewTextBoxColumn8.Name = "EmployeeNameDataGridViewTextBoxColumn8"
+        Me.EmployeeNameDataGridViewTextBoxColumn8.Width = 125
+        '
+        'InfractionDataGridViewTextBoxColumn
+        '
+        Me.InfractionDataGridViewTextBoxColumn.DataPropertyName = "Infraction"
+        Me.InfractionDataGridViewTextBoxColumn.HeaderText = "Infraction"
+        Me.InfractionDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.InfractionDataGridViewTextBoxColumn.Name = "InfractionDataGridViewTextBoxColumn"
+        Me.InfractionDataGridViewTextBoxColumn.Width = 125
+        '
+        'InfractionDateDataGridViewTextBoxColumn
+        '
+        Me.InfractionDateDataGridViewTextBoxColumn.DataPropertyName = "InfractionDate"
+        Me.InfractionDateDataGridViewTextBoxColumn.HeaderText = "InfractionDate"
+        Me.InfractionDateDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.InfractionDateDataGridViewTextBoxColumn.Name = "InfractionDateDataGridViewTextBoxColumn"
+        Me.InfractionDateDataGridViewTextBoxColumn.Width = 125
+        '
+        'AdversaryIntervalDataGridViewTextBoxColumn
+        '
+        Me.AdversaryIntervalDataGridViewTextBoxColumn.DataPropertyName = "AdversaryInterval"
+        Me.AdversaryIntervalDataGridViewTextBoxColumn.HeaderText = "AdversaryInterval"
+        Me.AdversaryIntervalDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.AdversaryIntervalDataGridViewTextBoxColumn.Name = "AdversaryIntervalDataGridViewTextBoxColumn"
+        Me.AdversaryIntervalDataGridViewTextBoxColumn.Width = 125
+        '
+        'AnouncementStatusDataGridViewTextBoxColumn
+        '
+        Me.AnouncementStatusDataGridViewTextBoxColumn.DataPropertyName = "AnouncementStatus"
+        Me.AnouncementStatusDataGridViewTextBoxColumn.HeaderText = "AnouncementStatus"
+        Me.AnouncementStatusDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.AnouncementStatusDataGridViewTextBoxColumn.Name = "AnouncementStatusDataGridViewTextBoxColumn"
+        Me.AnouncementStatusDataGridViewTextBoxColumn.Width = 125
+        '
+        'EnteredByDataGridViewTextBoxColumn1
+        '
+        Me.EnteredByDataGridViewTextBoxColumn1.DataPropertyName = "EnteredBy"
+        Me.EnteredByDataGridViewTextBoxColumn1.HeaderText = "EnteredBy"
+        Me.EnteredByDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.EnteredByDataGridViewTextBoxColumn1.Name = "EnteredByDataGridViewTextBoxColumn1"
+        Me.EnteredByDataGridViewTextBoxColumn1.Width = 125
+        '
+        'AuthorizedByDataGridViewTextBoxColumn1
+        '
+        Me.AuthorizedByDataGridViewTextBoxColumn1.DataPropertyName = "AuthorizedBy"
+        Me.AuthorizedByDataGridViewTextBoxColumn1.HeaderText = "AuthorizedBy"
+        Me.AuthorizedByDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.AuthorizedByDataGridViewTextBoxColumn1.Name = "AuthorizedByDataGridViewTextBoxColumn1"
+        Me.AuthorizedByDataGridViewTextBoxColumn1.Width = 125
+        '
+        'StatusDataGridViewTextBoxColumn1
+        '
+        Me.StatusDataGridViewTextBoxColumn1.DataPropertyName = "Status"
+        Me.StatusDataGridViewTextBoxColumn1.HeaderText = "Status"
+        Me.StatusDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.StatusDataGridViewTextBoxColumn1.Name = "StatusDataGridViewTextBoxColumn1"
+        Me.StatusDataGridViewTextBoxColumn1.Width = 125
+        '
         'Employees
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1679, 588)
         Me.Controls.Add(Me.TabControl1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Employees"
@@ -2576,19 +2811,9 @@ Partial Class Employees
         CType(Me.EmployeeFinishingsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip6.ResumeLayout(False)
         Me.ToolStrip6.PerformLayout()
-        Me.TabPage7.ResumeLayout(False)
-        Me.TabPage7.PerformLayout()
-        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.InvestigationsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ToolStrip7.ResumeLayout(False)
-        Me.ToolStrip7.PerformLayout()
-        Me.TabPage8.ResumeLayout(False)
-        Me.TabPage8.PerformLayout()
-        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EmployeePositionsBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HrDBDataSet12, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ToolStrip8.ResumeLayout(False)
-        Me.ToolStrip8.PerformLayout()
         Me.TabPage9.ResumeLayout(False)
         Me.TabPage9.PerformLayout()
         CType(Me.DataGridView9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2603,6 +2828,12 @@ Partial Class Employees
         Me.ToolStrip10.ResumeLayout(False)
         Me.ToolStrip10.PerformLayout()
         CType(Me.EmployeePositionsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage8.ResumeLayout(False)
+        Me.TabPage8.PerformLayout()
+        CType(Me.DataGridView7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage7.ResumeLayout(False)
+        Me.TabPage7.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -2666,7 +2897,6 @@ Partial Class Employees
     Friend WithEvents EmployeesDocumentsTableAdapter As SSDBankERPSystem.hrDBDataSetTableAdapters.EmployeesDocumentsTableAdapter
     Friend WithEvents TabPage5 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage6 As System.Windows.Forms.TabPage
-    Friend WithEvents TabPage7 As System.Windows.Forms.TabPage
     Friend WithEvents DataGridView5 As System.Windows.Forms.DataGridView
     Friend WithEvents ToolStrip1 As System.Windows.Forms.ToolStrip
     Friend WithEvents ToolStripButton6 As System.Windows.Forms.ToolStripButton
@@ -2694,27 +2924,8 @@ Partial Class Employees
     Friend WithEvents ToolStripComboBox4 As System.Windows.Forms.ToolStripComboBox
     Friend WithEvents EmployeeFinishingsBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents EmployeeFinishingsTableAdapter As SSDBankERPSystem.hrDBDataSet1TableAdapters.EmployeeFinishingsTableAdapter
-    Friend WithEvents DataGridView7 As System.Windows.Forms.DataGridView
-    Friend WithEvents ToolStrip7 As System.Windows.Forms.ToolStrip
-    Friend WithEvents ToolStripButton8 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripSeparator27 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator28 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripLabel11 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents ToolStripTextBox7 As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents ToolStripSeparator29 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator30 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents InvestigationsBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents InvestigationsTableAdapter As SSDBankERPSystem.hrDBDataSet1TableAdapters.InvestigationsTableAdapter
-    Friend WithEvents TabPage8 As System.Windows.Forms.TabPage
-    Friend WithEvents DataGridView8 As System.Windows.Forms.DataGridView
-    Friend WithEvents ToolStrip8 As System.Windows.Forms.ToolStrip
-    Friend WithEvents ToolStripButton9 As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripSeparator31 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator32 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripLabel12 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents ToolStripTextBox8 As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents ToolStripSeparator33 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripSeparator34 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents EmployeePositionsBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents EmployeePositionsBindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents HrDBDataSet12 As SSDBankERPSystem.hrDBDataSet1
@@ -2821,32 +3032,6 @@ Partial Class Employees
     Friend WithEvents FinishingDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents RemarksDataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewButtonColumn6 As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents InvestigationIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EmployeeNameDataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Infraction As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents InfractionDate As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents InvestigationDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DecisionDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DecisionDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AdversaryDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AdversaryInterval As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewButtonColumn7 As System.Windows.Forms.DataGridViewButtonColumn
-    Friend WithEvents PositionIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents EmployeeNameDataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FromJobIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents JobName1DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents JobIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents JobName2DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FromClassIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClassName1DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClassIDDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ClassName2DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents PositionDateDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewButtonColumn9 As System.Windows.Forms.DataGridViewButtonColumn
     Friend WithEvents EmployeeQualificationIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents EmployeeIDDataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -2859,4 +3044,77 @@ Partial Class Employees
     Friend WithEvents InstituteDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents FacultyDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents SpecializationDataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents TabPage7 As TabPage
+    Friend WithEvents DataGridView7 As DataGridView
+    Friend WithEvents InvestigationIDDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
+    Friend WithEvents InvestigationDateDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DecisionDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DecisionDateDataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents AdversaryDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeNameDataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
+    Friend WithEvents InfractionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents InfractionDateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents AdversaryIntervalDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents AnouncementStatusDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents EnteredByDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents AuthorizedByDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents StatusDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents ToolStrip7 As ToolStrip
+    Friend WithEvents TabPage8 As TabPage
+    Friend WithEvents DataGridView8 As DataGridView
+    Friend WithEvents PositionIDDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeNameDataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents FromJobIDDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents JobIDDataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents FromClassIDDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents ClassIDDataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents PositionDateDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents JobName1DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents JobName2DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents ClassName1DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents ClassName2DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents EnteredByDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents AuthorizedByDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents StatusDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ToolStrip8 As ToolStrip
+    Friend WithEvents ToolStripButton9 As ToolStripButton
+    Friend WithEvents ToolStripSeparator31 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator32 As ToolStripSeparator
+    Friend WithEvents ToolStripLabel12 As ToolStripLabel
+    Friend WithEvents ToolStripTextBox8 As ToolStripTextBox
+    Friend WithEvents ToolStripSeparator33 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator34 As ToolStripSeparator
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents PositionDateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ClassName2DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents ClassIDDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents ClassName1DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents FromClassIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents JobName2DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents JobIDDataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents JobName1DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents FromJobIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeNameDataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents EmployeeIDDataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents PositionIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewButtonColumn7 As DataGridViewButtonColumn
+    Friend WithEvents ToolStripButton8 As ToolStripButton
+    Friend WithEvents ToolStripSeparator27 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator28 As ToolStripSeparator
+    Friend WithEvents ToolStripLabel11 As ToolStripLabel
+    Friend WithEvents ToolStripTextBox7 As ToolStripTextBox
+    Friend WithEvents ToolStripSeparator29 As ToolStripSeparator
+    Friend WithEvents ToolStripSeparator30 As ToolStripSeparator
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents AdversaryInterval As DataGridViewTextBoxColumn
+    Friend WithEvents AdversaryDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DecisionDateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DecisionDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents InvestigationDateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents InfractionDate As DataGridViewTextBoxColumn
+    Friend WithEvents Infraction As DataGridViewTextBoxColumn
+    Friend WithEvents InvestigationIDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewButtonColumn6 As DataGridViewButtonColumn
 End Class
