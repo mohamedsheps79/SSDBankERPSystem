@@ -362,21 +362,24 @@ Partial Class Employees
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.TabControl1.RightToLeftLayout = True
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1259, 478)
+        Me.TabControl1.Size = New System.Drawing.Size(1679, 588)
         Me.TabControl1.TabIndex = 1
+        Me.TabControl1.Visible = False
         '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.ToolStrip5)
         Me.TabPage1.Controls.Add(Me.DataGridView1)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "بيانات الموظفين"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -384,10 +387,11 @@ Partial Class Employees
         'ToolStrip5
         '
         Me.ToolStrip5.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip5.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip5.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton5, Me.ToolStripSeparator17, Me.ToolStripSeparator18, Me.ToolStripLabel7, Me.ToolStripTextBox5, Me.ToolStripSeparator19, Me.ToolStripSeparator20, Me.ToolStripLabel8, Me.ToolStripComboBox3, Me.ToolStripSeparator1, Me.ToolStripSeparator2, Me.ToolStripLabel1, Me.ToolStripComboBox1, Me.ToolStripButton1})
-        Me.ToolStrip5.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip5.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip5.Name = "ToolStrip5"
-        Me.ToolStrip5.Size = New System.Drawing.Size(1245, 27)
+        Me.ToolStrip5.Size = New System.Drawing.Size(1663, 32)
         Me.ToolStrip5.TabIndex = 5
         Me.ToolStrip5.Text = "نقل موظف"
         '
@@ -398,23 +402,23 @@ Partial Class Employees
         Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
         Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(88, 24)
+        Me.ToolStripButton5.Size = New System.Drawing.Size(112, 29)
         Me.ToolStripButton5.Text = "إضافة موظف"
         '
         'ToolStripSeparator17
         '
         Me.ToolStripSeparator17.Name = "ToolStripSeparator17"
-        Me.ToolStripSeparator17.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator17.Size = New System.Drawing.Size(6, 32)
         '
         'ToolStripSeparator18
         '
         Me.ToolStripSeparator18.Name = "ToolStripSeparator18"
-        Me.ToolStripSeparator18.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator18.Size = New System.Drawing.Size(6, 32)
         '
         'ToolStripLabel7
         '
         Me.ToolStripLabel7.Name = "ToolStripLabel7"
-        Me.ToolStripLabel7.Size = New System.Drawing.Size(37, 24)
+        Me.ToolStripLabel7.Size = New System.Drawing.Size(46, 29)
         Me.ToolStripLabel7.Text = "بحث"
         '
         'ToolStripTextBox5
@@ -422,22 +426,22 @@ Partial Class Employees
         Me.ToolStripTextBox5.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox5.Name = "ToolStripTextBox5"
-        Me.ToolStripTextBox5.Size = New System.Drawing.Size(200, 27)
+        Me.ToolStripTextBox5.Size = New System.Drawing.Size(265, 32)
         '
         'ToolStripSeparator19
         '
         Me.ToolStripSeparator19.Name = "ToolStripSeparator19"
-        Me.ToolStripSeparator19.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator19.Size = New System.Drawing.Size(6, 32)
         '
         'ToolStripSeparator20
         '
         Me.ToolStripSeparator20.Name = "ToolStripSeparator20"
-        Me.ToolStripSeparator20.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator20.Size = New System.Drawing.Size(6, 32)
         '
         'ToolStripLabel8
         '
         Me.ToolStripLabel8.Name = "ToolStripLabel8"
-        Me.ToolStripLabel8.Size = New System.Drawing.Size(47, 24)
+        Me.ToolStripLabel8.Size = New System.Drawing.Size(59, 29)
         Me.ToolStripLabel8.Text = "الإدارة"
         '
         'ToolStripComboBox3
@@ -446,22 +450,22 @@ Partial Class Employees
         Me.ToolStripComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.ToolStripComboBox3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ToolStripComboBox3.Name = "ToolStripComboBox3"
-        Me.ToolStripComboBox3.Size = New System.Drawing.Size(250, 27)
+        Me.ToolStripComboBox3.Size = New System.Drawing.Size(332, 32)
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 32)
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 32)
         '
         'ToolStripLabel1
         '
         Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(48, 24)
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(60, 29)
         Me.ToolStripLabel1.Text = "القسم"
         '
         'ToolStripComboBox1
@@ -470,7 +474,7 @@ Partial Class Employees
         Me.ToolStripComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.ToolStripComboBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ToolStripComboBox1.Name = "ToolStripComboBox1"
-        Me.ToolStripComboBox1.Size = New System.Drawing.Size(250, 27)
+        Me.ToolStripComboBox1.Size = New System.Drawing.Size(332, 32)
         '
         'ToolStripButton1
         '
@@ -479,7 +483,7 @@ Partial Class Employees
         Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(62, 24)
+        Me.ToolStripButton1.Size = New System.Drawing.Size(79, 29)
         Me.ToolStripButton1.Text = "Import"
         '
         'DataGridView1
@@ -502,14 +506,17 @@ Partial Class Employees
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Edit, Me.EmployeeIDDataGridViewTextBoxColumn, Me.BranchIDDataGridViewTextBoxColumn, Me.DepartmentIDDataGridViewTextBoxColumn, Me.EmployeeCodeDataGridViewTextBoxColumn, Me.EmployeeNameDataGridViewTextBoxColumn, Me.BirthDateDataGridViewTextBoxColumn, Me.HireDateDataGridViewTextBoxColumn, Me.DegreeIDDataGridViewTextBoxColumn, Me.RangeIDDataGridViewTextBoxColumn, Me.QualificationIDDataGridViewTextBoxColumn, Me.SpecializationDataGridViewTextBoxColumn, Me.GenderDataGridViewTextBoxColumn, Me.ScocialStatusDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.PhoneNoDataGridViewTextBoxColumn, Me.JobIDDataGridViewTextBoxColumn, Me.ClassIDDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.EmployeesBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(6, 33)
+        Me.DataGridView1.Location = New System.Drawing.Point(8, 41)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1245, 410)
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.Size = New System.Drawing.Size(1660, 505)
         Me.DataGridView1.TabIndex = 1
         '
         'Edit
         '
         Me.Edit.HeaderText = "Edit"
+        Me.Edit.MinimumWidth = 6
         Me.Edit.Name = "Edit"
         Me.Edit.ReadOnly = True
         Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -522,34 +529,43 @@ Partial Class Employees
         '
         Me.EmployeeIDDataGridViewTextBoxColumn.DataPropertyName = "EmployeeID"
         Me.EmployeeIDDataGridViewTextBoxColumn.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.EmployeeIDDataGridViewTextBoxColumn.Name = "EmployeeIDDataGridViewTextBoxColumn"
         Me.EmployeeIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.EmployeeIDDataGridViewTextBoxColumn.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn.Width = 125
         '
         'BranchIDDataGridViewTextBoxColumn
         '
         Me.BranchIDDataGridViewTextBoxColumn.DataPropertyName = "BranchID"
         Me.BranchIDDataGridViewTextBoxColumn.HeaderText = "BranchID"
+        Me.BranchIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.BranchIDDataGridViewTextBoxColumn.Name = "BranchIDDataGridViewTextBoxColumn"
         Me.BranchIDDataGridViewTextBoxColumn.Visible = False
+        Me.BranchIDDataGridViewTextBoxColumn.Width = 125
         '
         'DepartmentIDDataGridViewTextBoxColumn
         '
         Me.DepartmentIDDataGridViewTextBoxColumn.DataPropertyName = "DepartmentID"
         Me.DepartmentIDDataGridViewTextBoxColumn.HeaderText = "DepartmentID"
+        Me.DepartmentIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.DepartmentIDDataGridViewTextBoxColumn.Name = "DepartmentIDDataGridViewTextBoxColumn"
         Me.DepartmentIDDataGridViewTextBoxColumn.Visible = False
+        Me.DepartmentIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeCodeDataGridViewTextBoxColumn
         '
         Me.EmployeeCodeDataGridViewTextBoxColumn.DataPropertyName = "EmployeeCode"
         Me.EmployeeCodeDataGridViewTextBoxColumn.HeaderText = "رمز الموظف"
+        Me.EmployeeCodeDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.EmployeeCodeDataGridViewTextBoxColumn.Name = "EmployeeCodeDataGridViewTextBoxColumn"
+        Me.EmployeeCodeDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeNameDataGridViewTextBoxColumn
         '
         Me.EmployeeNameDataGridViewTextBoxColumn.DataPropertyName = "EmployeeName"
         Me.EmployeeNameDataGridViewTextBoxColumn.HeaderText = "الإسم"
+        Me.EmployeeNameDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.EmployeeNameDataGridViewTextBoxColumn.Name = "EmployeeNameDataGridViewTextBoxColumn"
         Me.EmployeeNameDataGridViewTextBoxColumn.Width = 300
         '
@@ -557,37 +573,48 @@ Partial Class Employees
         '
         Me.BirthDateDataGridViewTextBoxColumn.DataPropertyName = "BirthDate"
         Me.BirthDateDataGridViewTextBoxColumn.HeaderText = "تاريخ الميلاد"
+        Me.BirthDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.BirthDateDataGridViewTextBoxColumn.Name = "BirthDateDataGridViewTextBoxColumn"
+        Me.BirthDateDataGridViewTextBoxColumn.Width = 125
         '
         'HireDateDataGridViewTextBoxColumn
         '
         Me.HireDateDataGridViewTextBoxColumn.DataPropertyName = "HireDate"
         Me.HireDateDataGridViewTextBoxColumn.HeaderText = "تاريخ التعيين"
+        Me.HireDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.HireDateDataGridViewTextBoxColumn.Name = "HireDateDataGridViewTextBoxColumn"
+        Me.HireDateDataGridViewTextBoxColumn.Width = 125
         '
         'DegreeIDDataGridViewTextBoxColumn
         '
         Me.DegreeIDDataGridViewTextBoxColumn.DataPropertyName = "DegreeID"
         Me.DegreeIDDataGridViewTextBoxColumn.HeaderText = "الدرجة/الرتبة"
+        Me.DegreeIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.DegreeIDDataGridViewTextBoxColumn.Name = "DegreeIDDataGridViewTextBoxColumn"
+        Me.DegreeIDDataGridViewTextBoxColumn.Width = 125
         '
         'RangeIDDataGridViewTextBoxColumn
         '
         Me.RangeIDDataGridViewTextBoxColumn.DataPropertyName = "RangeID"
         Me.RangeIDDataGridViewTextBoxColumn.HeaderText = "المدى"
+        Me.RangeIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.RangeIDDataGridViewTextBoxColumn.Name = "RangeIDDataGridViewTextBoxColumn"
+        Me.RangeIDDataGridViewTextBoxColumn.Width = 125
         '
         'QualificationIDDataGridViewTextBoxColumn
         '
         Me.QualificationIDDataGridViewTextBoxColumn.DataPropertyName = "QualificationID"
         Me.QualificationIDDataGridViewTextBoxColumn.HeaderText = "QualificationID"
+        Me.QualificationIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.QualificationIDDataGridViewTextBoxColumn.Name = "QualificationIDDataGridViewTextBoxColumn"
         Me.QualificationIDDataGridViewTextBoxColumn.Visible = False
+        Me.QualificationIDDataGridViewTextBoxColumn.Width = 125
         '
         'SpecializationDataGridViewTextBoxColumn
         '
         Me.SpecializationDataGridViewTextBoxColumn.DataPropertyName = "Specialization"
         Me.SpecializationDataGridViewTextBoxColumn.HeaderText = "التخصص"
+        Me.SpecializationDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.SpecializationDataGridViewTextBoxColumn.Name = "SpecializationDataGridViewTextBoxColumn"
         Me.SpecializationDataGridViewTextBoxColumn.Width = 200
         '
@@ -595,18 +622,23 @@ Partial Class Employees
         '
         Me.GenderDataGridViewTextBoxColumn.DataPropertyName = "Gender"
         Me.GenderDataGridViewTextBoxColumn.HeaderText = "النوع"
+        Me.GenderDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.GenderDataGridViewTextBoxColumn.Name = "GenderDataGridViewTextBoxColumn"
+        Me.GenderDataGridViewTextBoxColumn.Width = 125
         '
         'ScocialStatusDataGridViewTextBoxColumn
         '
         Me.ScocialStatusDataGridViewTextBoxColumn.DataPropertyName = "ScocialStatus"
         Me.ScocialStatusDataGridViewTextBoxColumn.HeaderText = "الحالة الإجتماعية"
+        Me.ScocialStatusDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.ScocialStatusDataGridViewTextBoxColumn.Name = "ScocialStatusDataGridViewTextBoxColumn"
+        Me.ScocialStatusDataGridViewTextBoxColumn.Width = 125
         '
         'EmailDataGridViewTextBoxColumn
         '
         Me.EmailDataGridViewTextBoxColumn.DataPropertyName = "email"
         Me.EmailDataGridViewTextBoxColumn.HeaderText = "البريد الإلكتروني"
+        Me.EmailDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.EmailDataGridViewTextBoxColumn.Name = "EmailDataGridViewTextBoxColumn"
         Me.EmailDataGridViewTextBoxColumn.Visible = False
         Me.EmailDataGridViewTextBoxColumn.Width = 200
@@ -615,22 +647,28 @@ Partial Class Employees
         '
         Me.PhoneNoDataGridViewTextBoxColumn.DataPropertyName = "PhoneNo"
         Me.PhoneNoDataGridViewTextBoxColumn.HeaderText = "PhoneNo"
+        Me.PhoneNoDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.PhoneNoDataGridViewTextBoxColumn.Name = "PhoneNoDataGridViewTextBoxColumn"
         Me.PhoneNoDataGridViewTextBoxColumn.Visible = False
+        Me.PhoneNoDataGridViewTextBoxColumn.Width = 125
         '
         'JobIDDataGridViewTextBoxColumn
         '
         Me.JobIDDataGridViewTextBoxColumn.DataPropertyName = "JobID"
         Me.JobIDDataGridViewTextBoxColumn.HeaderText = "JobID"
+        Me.JobIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.JobIDDataGridViewTextBoxColumn.Name = "JobIDDataGridViewTextBoxColumn"
         Me.JobIDDataGridViewTextBoxColumn.Visible = False
+        Me.JobIDDataGridViewTextBoxColumn.Width = 125
         '
         'ClassIDDataGridViewTextBoxColumn
         '
         Me.ClassIDDataGridViewTextBoxColumn.DataPropertyName = "ClassID"
         Me.ClassIDDataGridViewTextBoxColumn.HeaderText = "ClassID"
+        Me.ClassIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.ClassIDDataGridViewTextBoxColumn.Name = "ClassIDDataGridViewTextBoxColumn"
         Me.ClassIDDataGridViewTextBoxColumn.Visible = False
+        Me.ClassIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeesBindingSource
         '
@@ -646,10 +684,11 @@ Partial Class Employees
         '
         Me.TabPage2.Controls.Add(Me.DataGridView2)
         Me.TabPage2.Controls.Add(Me.ToolStrip2)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "الترقيات"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -674,14 +713,17 @@ Partial Class Employees
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn1, Me.PromoteIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn1, Me.EmployeeNameDataGridViewTextBoxColumn1, Me.DegreeIDDataGridViewTextBoxColumn1, Me.RangeIDDataGridViewTextBoxColumn1, Me.PromoteDateDataGridViewTextBoxColumn, Me.PromoteTypeDataGridViewTextBoxColumn, Me.RemarksDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn1})
         Me.DataGridView2.DataSource = Me.EmployeesPromotionsBindingSource
-        Me.DataGridView2.Location = New System.Drawing.Point(3, 32)
+        Me.DataGridView2.Location = New System.Drawing.Point(4, 39)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(1245, 411)
+        Me.DataGridView2.RowHeadersWidth = 51
+        Me.DataGridView2.Size = New System.Drawing.Size(1660, 506)
         Me.DataGridView2.TabIndex = 3
         '
         'DataGridViewButtonColumn1
         '
         Me.DataGridViewButtonColumn1.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn1.MinimumWidth = 6
         Me.DataGridViewButtonColumn1.Name = "DataGridViewButtonColumn1"
         Me.DataGridViewButtonColumn1.ReadOnly = True
         Me.DataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -694,21 +736,26 @@ Partial Class Employees
         '
         Me.PromoteIDDataGridViewTextBoxColumn.DataPropertyName = "PromoteID"
         Me.PromoteIDDataGridViewTextBoxColumn.HeaderText = "PromoteID"
+        Me.PromoteIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.PromoteIDDataGridViewTextBoxColumn.Name = "PromoteIDDataGridViewTextBoxColumn"
         Me.PromoteIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.PromoteIDDataGridViewTextBoxColumn.Visible = False
+        Me.PromoteIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeIDDataGridViewTextBoxColumn1
         '
         Me.EmployeeIDDataGridViewTextBoxColumn1.DataPropertyName = "EmployeeID"
         Me.EmployeeIDDataGridViewTextBoxColumn1.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.EmployeeIDDataGridViewTextBoxColumn1.Name = "EmployeeIDDataGridViewTextBoxColumn1"
         Me.EmployeeIDDataGridViewTextBoxColumn1.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn1.Width = 125
         '
         'EmployeeNameDataGridViewTextBoxColumn1
         '
         Me.EmployeeNameDataGridViewTextBoxColumn1.DataPropertyName = "EmployeeName"
         Me.EmployeeNameDataGridViewTextBoxColumn1.HeaderText = "الإسم"
+        Me.EmployeeNameDataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.EmployeeNameDataGridViewTextBoxColumn1.Name = "EmployeeNameDataGridViewTextBoxColumn1"
         Me.EmployeeNameDataGridViewTextBoxColumn1.Width = 200
         '
@@ -716,6 +763,7 @@ Partial Class Employees
         '
         Me.DegreeIDDataGridViewTextBoxColumn1.DataPropertyName = "DegreeID"
         Me.DegreeIDDataGridViewTextBoxColumn1.HeaderText = "الدرجة"
+        Me.DegreeIDDataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DegreeIDDataGridViewTextBoxColumn1.Name = "DegreeIDDataGridViewTextBoxColumn1"
         Me.DegreeIDDataGridViewTextBoxColumn1.Width = 150
         '
@@ -723,6 +771,7 @@ Partial Class Employees
         '
         Me.RangeIDDataGridViewTextBoxColumn1.DataPropertyName = "RangeID"
         Me.RangeIDDataGridViewTextBoxColumn1.HeaderText = "المدى"
+        Me.RangeIDDataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.RangeIDDataGridViewTextBoxColumn1.Name = "RangeIDDataGridViewTextBoxColumn1"
         Me.RangeIDDataGridViewTextBoxColumn1.Width = 150
         '
@@ -730,6 +779,7 @@ Partial Class Employees
         '
         Me.PromoteDateDataGridViewTextBoxColumn.DataPropertyName = "PromoteDate"
         Me.PromoteDateDataGridViewTextBoxColumn.HeaderText = "تاريخ الترقية"
+        Me.PromoteDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.PromoteDateDataGridViewTextBoxColumn.Name = "PromoteDateDataGridViewTextBoxColumn"
         Me.PromoteDateDataGridViewTextBoxColumn.Width = 200
         '
@@ -737,6 +787,7 @@ Partial Class Employees
         '
         Me.PromoteTypeDataGridViewTextBoxColumn.DataPropertyName = "PromoteType"
         Me.PromoteTypeDataGridViewTextBoxColumn.HeaderText = "نوع الترقية"
+        Me.PromoteTypeDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.PromoteTypeDataGridViewTextBoxColumn.Name = "PromoteTypeDataGridViewTextBoxColumn"
         Me.PromoteTypeDataGridViewTextBoxColumn.Width = 200
         '
@@ -744,6 +795,7 @@ Partial Class Employees
         '
         Me.RemarksDataGridViewTextBoxColumn.DataPropertyName = "Remarks"
         Me.RemarksDataGridViewTextBoxColumn.HeaderText = "تعليق"
+        Me.RemarksDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.RemarksDataGridViewTextBoxColumn.Name = "RemarksDataGridViewTextBoxColumn"
         Me.RemarksDataGridViewTextBoxColumn.Width = 200
         '
@@ -751,7 +803,9 @@ Partial Class Employees
         '
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "Status"
         Me.DataGridViewTextBoxColumn1.HeaderText = "الحالة"
+        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.Width = 125
         '
         'EmployeesPromotionsBindingSource
         '
@@ -766,10 +820,11 @@ Partial Class Employees
         'ToolStrip2
         '
         Me.ToolStrip2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip2.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton2, Me.ToolStripSeparator3, Me.ToolStripSeparator4, Me.ToolStripLabel2, Me.ToolStripTextBox2, Me.ToolStripSeparator5, Me.ToolStripSeparator6})
-        Me.ToolStrip2.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip2.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip2.Name = "ToolStrip2"
-        Me.ToolStrip2.Size = New System.Drawing.Size(1245, 26)
+        Me.ToolStrip2.Size = New System.Drawing.Size(1663, 30)
         Me.ToolStrip2.TabIndex = 2
         Me.ToolStrip2.Text = "ToolStrip2"
         '
@@ -780,23 +835,23 @@ Partial Class Employees
         Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(81, 23)
+        Me.ToolStripButton2.Size = New System.Drawing.Size(105, 27)
         Me.ToolStripButton2.Text = "ترقية موظف"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripLabel2
         '
         Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(37, 23)
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(46, 27)
         Me.ToolStripLabel2.Text = "بحث"
         '
         'ToolStripTextBox2
@@ -804,26 +859,27 @@ Partial Class Employees
         Me.ToolStripTextBox2.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox2.Name = "ToolStripTextBox2"
-        Me.ToolStripTextBox2.Size = New System.Drawing.Size(200, 26)
+        Me.ToolStripTextBox2.Size = New System.Drawing.Size(265, 30)
         '
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator6
         '
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 30)
         '
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.DataGridView3)
         Me.TabPage3.Controls.Add(Me.ToolStrip3)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "التنقلات/التعيينات"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -848,14 +904,17 @@ Partial Class Employees
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn2, Me.MoveIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn2, Me.EmployeeNameDataGridViewTextBoxColumn2, Me.BranchName, Me.DepartmentName, Me.MoveDateDataGridViewTextBoxColumn, Me.RemarksDataGridViewTextBoxColumn1, Me.BranchID, Me.DepartmentID, Me.ClassID, Me.DataGridViewTextBoxColumn2})
         Me.DataGridView3.DataSource = Me.EmployeesMovementsBindingSource
-        Me.DataGridView3.Location = New System.Drawing.Point(3, 32)
+        Me.DataGridView3.Location = New System.Drawing.Point(4, 39)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.Size = New System.Drawing.Size(1245, 411)
+        Me.DataGridView3.RowHeadersWidth = 51
+        Me.DataGridView3.Size = New System.Drawing.Size(1660, 506)
         Me.DataGridView3.TabIndex = 5
         '
         'DataGridViewButtonColumn2
         '
         Me.DataGridViewButtonColumn2.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn2.MinimumWidth = 6
         Me.DataGridViewButtonColumn2.Name = "DataGridViewButtonColumn2"
         Me.DataGridViewButtonColumn2.ReadOnly = True
         Me.DataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -868,21 +927,26 @@ Partial Class Employees
         '
         Me.MoveIDDataGridViewTextBoxColumn.DataPropertyName = "MoveID"
         Me.MoveIDDataGridViewTextBoxColumn.HeaderText = "MoveID"
+        Me.MoveIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.MoveIDDataGridViewTextBoxColumn.Name = "MoveIDDataGridViewTextBoxColumn"
         Me.MoveIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.MoveIDDataGridViewTextBoxColumn.Visible = False
+        Me.MoveIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeIDDataGridViewTextBoxColumn2
         '
         Me.EmployeeIDDataGridViewTextBoxColumn2.DataPropertyName = "EmployeeID"
         Me.EmployeeIDDataGridViewTextBoxColumn2.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.EmployeeIDDataGridViewTextBoxColumn2.Name = "EmployeeIDDataGridViewTextBoxColumn2"
         Me.EmployeeIDDataGridViewTextBoxColumn2.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn2.Width = 125
         '
         'EmployeeNameDataGridViewTextBoxColumn2
         '
         Me.EmployeeNameDataGridViewTextBoxColumn2.DataPropertyName = "EmployeeName"
         Me.EmployeeNameDataGridViewTextBoxColumn2.HeaderText = "الإســـم"
+        Me.EmployeeNameDataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.EmployeeNameDataGridViewTextBoxColumn2.Name = "EmployeeNameDataGridViewTextBoxColumn2"
         Me.EmployeeNameDataGridViewTextBoxColumn2.Width = 300
         '
@@ -890,6 +954,7 @@ Partial Class Employees
         '
         Me.BranchName.DataPropertyName = "BranchName"
         Me.BranchName.HeaderText = "الإدارة"
+        Me.BranchName.MinimumWidth = 6
         Me.BranchName.Name = "BranchName"
         Me.BranchName.Width = 250
         '
@@ -897,6 +962,7 @@ Partial Class Employees
         '
         Me.DepartmentName.DataPropertyName = "DepartmentName"
         Me.DepartmentName.HeaderText = "القسم"
+        Me.DepartmentName.MinimumWidth = 6
         Me.DepartmentName.Name = "DepartmentName"
         Me.DepartmentName.Width = 250
         '
@@ -904,6 +970,7 @@ Partial Class Employees
         '
         Me.MoveDateDataGridViewTextBoxColumn.DataPropertyName = "MoveDate"
         Me.MoveDateDataGridViewTextBoxColumn.HeaderText = "تاريخ النقلية"
+        Me.MoveDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.MoveDateDataGridViewTextBoxColumn.Name = "MoveDateDataGridViewTextBoxColumn"
         Me.MoveDateDataGridViewTextBoxColumn.Width = 200
         '
@@ -911,34 +978,44 @@ Partial Class Employees
         '
         Me.RemarksDataGridViewTextBoxColumn1.DataPropertyName = "Remarks"
         Me.RemarksDataGridViewTextBoxColumn1.HeaderText = "ملاحظات"
+        Me.RemarksDataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.RemarksDataGridViewTextBoxColumn1.Name = "RemarksDataGridViewTextBoxColumn1"
+        Me.RemarksDataGridViewTextBoxColumn1.Width = 125
         '
         'BranchID
         '
         Me.BranchID.DataPropertyName = "BranchID"
         Me.BranchID.HeaderText = "BranchID"
+        Me.BranchID.MinimumWidth = 6
         Me.BranchID.Name = "BranchID"
         Me.BranchID.Visible = False
+        Me.BranchID.Width = 125
         '
         'DepartmentID
         '
         Me.DepartmentID.DataPropertyName = "DepartmentID"
         Me.DepartmentID.HeaderText = "DepartmentID"
+        Me.DepartmentID.MinimumWidth = 6
         Me.DepartmentID.Name = "DepartmentID"
         Me.DepartmentID.Visible = False
+        Me.DepartmentID.Width = 125
         '
         'ClassID
         '
         Me.ClassID.DataPropertyName = "ClassID"
         Me.ClassID.HeaderText = "ClassID"
+        Me.ClassID.MinimumWidth = 6
         Me.ClassID.Name = "ClassID"
         Me.ClassID.Visible = False
+        Me.ClassID.Width = 125
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "Status"
         Me.DataGridViewTextBoxColumn2.HeaderText = "الحالة"
+        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.Width = 125
         '
         'EmployeesMovementsBindingSource
         '
@@ -948,10 +1025,11 @@ Partial Class Employees
         'ToolStrip3
         '
         Me.ToolStrip3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip3.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton3, Me.ToolStripSeparator7, Me.ToolStripSeparator8, Me.ToolStripLabel4, Me.ToolStripTextBox3, Me.ToolStripSeparator9, Me.ToolStripSeparator10})
-        Me.ToolStrip3.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip3.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip3.Name = "ToolStrip3"
-        Me.ToolStrip3.Size = New System.Drawing.Size(1245, 26)
+        Me.ToolStrip3.Size = New System.Drawing.Size(1663, 30)
         Me.ToolStrip3.TabIndex = 4
         Me.ToolStrip3.Text = "نقل موظف"
         '
@@ -962,23 +1040,23 @@ Partial Class Employees
         Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(75, 23)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(95, 27)
         Me.ToolStripButton3.Text = "نقل موظف"
         '
         'ToolStripSeparator7
         '
         Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator8
         '
         Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
-        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripLabel4
         '
         Me.ToolStripLabel4.Name = "ToolStripLabel4"
-        Me.ToolStripLabel4.Size = New System.Drawing.Size(37, 23)
+        Me.ToolStripLabel4.Size = New System.Drawing.Size(46, 27)
         Me.ToolStripLabel4.Text = "بحث"
         '
         'ToolStripTextBox3
@@ -986,26 +1064,27 @@ Partial Class Employees
         Me.ToolStripTextBox3.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox3.Name = "ToolStripTextBox3"
-        Me.ToolStripTextBox3.Size = New System.Drawing.Size(200, 26)
+        Me.ToolStripTextBox3.Size = New System.Drawing.Size(265, 30)
         '
         'ToolStripSeparator9
         '
         Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
-        Me.ToolStripSeparator9.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator10
         '
         Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
-        Me.ToolStripSeparator10.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator10.Size = New System.Drawing.Size(6, 30)
         '
         'TabPage4
         '
         Me.TabPage4.Controls.Add(Me.DataGridView4)
         Me.TabPage4.Controls.Add(Me.ToolStrip4)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "المستندات"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -1030,15 +1109,18 @@ Partial Class Employees
         Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn3, Me.EmployeeDocumentIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn3, Me.EmployeeNameDataGridViewTextBoxColumn3, Me.DocumentIDDataGridViewTextBoxColumn, Me.DocumentName, Me.DocumentContentDataGridViewImageColumn, Me.RemarksDataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.DataGridView4.DataSource = Me.EmployeesDocumentsBindingSource
-        Me.DataGridView4.Location = New System.Drawing.Point(3, 32)
+        Me.DataGridView4.Location = New System.Drawing.Point(4, 39)
+        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView4.Name = "DataGridView4"
+        Me.DataGridView4.RowHeadersWidth = 51
         Me.DataGridView4.RowTemplate.Height = 100
-        Me.DataGridView4.Size = New System.Drawing.Size(1245, 411)
+        Me.DataGridView4.Size = New System.Drawing.Size(1660, 506)
         Me.DataGridView4.TabIndex = 7
         '
         'DataGridViewButtonColumn3
         '
         Me.DataGridViewButtonColumn3.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn3.MinimumWidth = 6
         Me.DataGridViewButtonColumn3.Name = "DataGridViewButtonColumn3"
         Me.DataGridViewButtonColumn3.ReadOnly = True
         Me.DataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -1051,21 +1133,26 @@ Partial Class Employees
         '
         Me.EmployeeDocumentIDDataGridViewTextBoxColumn.DataPropertyName = "EmployeeDocumentID"
         Me.EmployeeDocumentIDDataGridViewTextBoxColumn.HeaderText = "EmployeeDocumentID"
+        Me.EmployeeDocumentIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.EmployeeDocumentIDDataGridViewTextBoxColumn.Name = "EmployeeDocumentIDDataGridViewTextBoxColumn"
         Me.EmployeeDocumentIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.EmployeeDocumentIDDataGridViewTextBoxColumn.Visible = False
+        Me.EmployeeDocumentIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeIDDataGridViewTextBoxColumn3
         '
         Me.EmployeeIDDataGridViewTextBoxColumn3.DataPropertyName = "EmployeeID"
         Me.EmployeeIDDataGridViewTextBoxColumn3.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.EmployeeIDDataGridViewTextBoxColumn3.Name = "EmployeeIDDataGridViewTextBoxColumn3"
         Me.EmployeeIDDataGridViewTextBoxColumn3.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn3.Width = 125
         '
         'EmployeeNameDataGridViewTextBoxColumn3
         '
         Me.EmployeeNameDataGridViewTextBoxColumn3.DataPropertyName = "EmployeeName"
         Me.EmployeeNameDataGridViewTextBoxColumn3.HeaderText = "الإســـم"
+        Me.EmployeeNameDataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.EmployeeNameDataGridViewTextBoxColumn3.Name = "EmployeeNameDataGridViewTextBoxColumn3"
         Me.EmployeeNameDataGridViewTextBoxColumn3.Width = 300
         '
@@ -1073,13 +1160,16 @@ Partial Class Employees
         '
         Me.DocumentIDDataGridViewTextBoxColumn.DataPropertyName = "DocumentID"
         Me.DocumentIDDataGridViewTextBoxColumn.HeaderText = "DocumentID"
+        Me.DocumentIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.DocumentIDDataGridViewTextBoxColumn.Name = "DocumentIDDataGridViewTextBoxColumn"
         Me.DocumentIDDataGridViewTextBoxColumn.Visible = False
+        Me.DocumentIDDataGridViewTextBoxColumn.Width = 125
         '
         'DocumentName
         '
         Me.DocumentName.DataPropertyName = "DocumentName"
         Me.DocumentName.HeaderText = "نوع المستند"
+        Me.DocumentName.MinimumWidth = 6
         Me.DocumentName.Name = "DocumentName"
         Me.DocumentName.Width = 300
         '
@@ -1091,6 +1181,7 @@ Partial Class Employees
         Me.DocumentContentDataGridViewImageColumn.DefaultCellStyle = DataGridViewCellStyle9
         Me.DocumentContentDataGridViewImageColumn.HeaderText = "صورة"
         Me.DocumentContentDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch
+        Me.DocumentContentDataGridViewImageColumn.MinimumWidth = 6
         Me.DocumentContentDataGridViewImageColumn.Name = "DocumentContentDataGridViewImageColumn"
         Me.DocumentContentDataGridViewImageColumn.Width = 300
         '
@@ -1098,6 +1189,7 @@ Partial Class Employees
         '
         Me.RemarksDataGridViewTextBoxColumn2.DataPropertyName = "Remarks"
         Me.RemarksDataGridViewTextBoxColumn2.HeaderText = "ملاحظات"
+        Me.RemarksDataGridViewTextBoxColumn2.MinimumWidth = 6
         Me.RemarksDataGridViewTextBoxColumn2.Name = "RemarksDataGridViewTextBoxColumn2"
         Me.RemarksDataGridViewTextBoxColumn2.Width = 200
         '
@@ -1105,7 +1197,9 @@ Partial Class Employees
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "Status"
         Me.DataGridViewTextBoxColumn3.HeaderText = "الحالة"
+        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.Width = 125
         '
         'EmployeesDocumentsBindingSource
         '
@@ -1115,10 +1209,11 @@ Partial Class Employees
         'ToolStrip4
         '
         Me.ToolStrip4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip4.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton4, Me.ToolStripSeparator11, Me.ToolStripSeparator12, Me.ToolStripLabel6, Me.ToolStripTextBox4, Me.ToolStripSeparator13, Me.ToolStripSeparator14})
-        Me.ToolStrip4.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip4.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip4.Name = "ToolStrip4"
-        Me.ToolStrip4.Size = New System.Drawing.Size(1245, 26)
+        Me.ToolStrip4.Size = New System.Drawing.Size(1663, 30)
         Me.ToolStrip4.TabIndex = 6
         Me.ToolStrip4.Text = "ToolStrip4"
         '
@@ -1129,23 +1224,23 @@ Partial Class Employees
         Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(83, 23)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(107, 27)
         Me.ToolStripButton4.Text = "إضافة مستند"
         '
         'ToolStripSeparator11
         '
         Me.ToolStripSeparator11.Name = "ToolStripSeparator11"
-        Me.ToolStripSeparator11.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator11.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator12
         '
         Me.ToolStripSeparator12.Name = "ToolStripSeparator12"
-        Me.ToolStripSeparator12.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator12.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripLabel6
         '
         Me.ToolStripLabel6.Name = "ToolStripLabel6"
-        Me.ToolStripLabel6.Size = New System.Drawing.Size(37, 23)
+        Me.ToolStripLabel6.Size = New System.Drawing.Size(46, 27)
         Me.ToolStripLabel6.Text = "بحث"
         '
         'ToolStripTextBox4
@@ -1153,26 +1248,27 @@ Partial Class Employees
         Me.ToolStripTextBox4.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox4.Name = "ToolStripTextBox4"
-        Me.ToolStripTextBox4.Size = New System.Drawing.Size(200, 26)
+        Me.ToolStripTextBox4.Size = New System.Drawing.Size(265, 30)
         '
         'ToolStripSeparator13
         '
         Me.ToolStripSeparator13.Name = "ToolStripSeparator13"
-        Me.ToolStripSeparator13.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator13.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator14
         '
         Me.ToolStripSeparator14.Name = "ToolStripSeparator14"
-        Me.ToolStripSeparator14.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator14.Size = New System.Drawing.Size(6, 30)
         '
         'TabPage5
         '
         Me.TabPage5.Controls.Add(Me.DataGridView5)
         Me.TabPage5.Controls.Add(Me.ToolStrip1)
-        Me.TabPage5.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage5.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "الإجازات"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -1197,14 +1293,17 @@ Partial Class Employees
         Me.DataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView5.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn4, Me.EmployeeHolidayIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn4, Me.EmployeeName, Me.HolidayTypeIDDataGridViewTextBoxColumn, Me.HolidayName, Me.HolidayBeginDateDataGridViewTextBoxColumn, Me.HolidayEndDateDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn4})
         Me.DataGridView5.DataSource = Me.EmployeesHolidaysBindingSource
-        Me.DataGridView5.Location = New System.Drawing.Point(3, 33)
+        Me.DataGridView5.Location = New System.Drawing.Point(4, 41)
+        Me.DataGridView5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView5.Name = "DataGridView5"
-        Me.DataGridView5.Size = New System.Drawing.Size(1245, 410)
+        Me.DataGridView5.RowHeadersWidth = 51
+        Me.DataGridView5.Size = New System.Drawing.Size(1660, 505)
         Me.DataGridView5.TabIndex = 5
         '
         'DataGridViewButtonColumn4
         '
         Me.DataGridViewButtonColumn4.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn4.MinimumWidth = 6
         Me.DataGridViewButtonColumn4.Name = "DataGridViewButtonColumn4"
         Me.DataGridViewButtonColumn4.ReadOnly = True
         Me.DataGridViewButtonColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -1217,21 +1316,26 @@ Partial Class Employees
         '
         Me.EmployeeHolidayIDDataGridViewTextBoxColumn.DataPropertyName = "EmployeeHolidayID"
         Me.EmployeeHolidayIDDataGridViewTextBoxColumn.HeaderText = "EmployeeHolidayID"
+        Me.EmployeeHolidayIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.EmployeeHolidayIDDataGridViewTextBoxColumn.Name = "EmployeeHolidayIDDataGridViewTextBoxColumn"
         Me.EmployeeHolidayIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.EmployeeHolidayIDDataGridViewTextBoxColumn.Visible = False
+        Me.EmployeeHolidayIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeIDDataGridViewTextBoxColumn4
         '
         Me.EmployeeIDDataGridViewTextBoxColumn4.DataPropertyName = "EmployeeID"
         Me.EmployeeIDDataGridViewTextBoxColumn4.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn4.MinimumWidth = 6
         Me.EmployeeIDDataGridViewTextBoxColumn4.Name = "EmployeeIDDataGridViewTextBoxColumn4"
         Me.EmployeeIDDataGridViewTextBoxColumn4.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn4.Width = 125
         '
         'EmployeeName
         '
         Me.EmployeeName.DataPropertyName = "EmployeeName"
         Me.EmployeeName.HeaderText = "الإســــم"
+        Me.EmployeeName.MinimumWidth = 6
         Me.EmployeeName.Name = "EmployeeName"
         Me.EmployeeName.Width = 300
         '
@@ -1239,13 +1343,16 @@ Partial Class Employees
         '
         Me.HolidayTypeIDDataGridViewTextBoxColumn.DataPropertyName = "HolidayTypeID"
         Me.HolidayTypeIDDataGridViewTextBoxColumn.HeaderText = "HolidayTypeID"
+        Me.HolidayTypeIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.HolidayTypeIDDataGridViewTextBoxColumn.Name = "HolidayTypeIDDataGridViewTextBoxColumn"
         Me.HolidayTypeIDDataGridViewTextBoxColumn.Visible = False
+        Me.HolidayTypeIDDataGridViewTextBoxColumn.Width = 125
         '
         'HolidayName
         '
         Me.HolidayName.DataPropertyName = "HolidayName"
         Me.HolidayName.HeaderText = "نوع الإجازة"
+        Me.HolidayName.MinimumWidth = 6
         Me.HolidayName.Name = "HolidayName"
         Me.HolidayName.Width = 400
         '
@@ -1253,6 +1360,7 @@ Partial Class Employees
         '
         Me.HolidayBeginDateDataGridViewTextBoxColumn.DataPropertyName = "HolidayBeginDate"
         Me.HolidayBeginDateDataGridViewTextBoxColumn.HeaderText = "تاريخ بداية الإجازة"
+        Me.HolidayBeginDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.HolidayBeginDateDataGridViewTextBoxColumn.Name = "HolidayBeginDateDataGridViewTextBoxColumn"
         Me.HolidayBeginDateDataGridViewTextBoxColumn.Width = 200
         '
@@ -1260,6 +1368,7 @@ Partial Class Employees
         '
         Me.HolidayEndDateDataGridViewTextBoxColumn.DataPropertyName = "HolidayEndDate"
         Me.HolidayEndDateDataGridViewTextBoxColumn.HeaderText = "تاريخ نهاية الإجازة"
+        Me.HolidayEndDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.HolidayEndDateDataGridViewTextBoxColumn.Name = "HolidayEndDateDataGridViewTextBoxColumn"
         Me.HolidayEndDateDataGridViewTextBoxColumn.Width = 200
         '
@@ -1267,7 +1376,9 @@ Partial Class Employees
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "Status"
         Me.DataGridViewTextBoxColumn4.HeaderText = "الحالة"
+        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.Width = 125
         '
         'EmployeesHolidaysBindingSource
         '
@@ -1282,10 +1393,11 @@ Partial Class Employees
         'ToolStrip1
         '
         Me.ToolStrip1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton6, Me.ToolStripSeparator15, Me.ToolStripSeparator16, Me.ToolStripLabel3, Me.ToolStripTextBox1, Me.ToolStripSeparator21, Me.ToolStripSeparator22, Me.ToolStripLabel5, Me.ToolStripComboBox2})
-        Me.ToolStrip1.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip1.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1245, 27)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1663, 31)
         Me.ToolStrip1.TabIndex = 4
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -1296,23 +1408,23 @@ Partial Class Employees
         Me.ToolStripButton6.Image = CType(resources.GetObject("ToolStripButton6.Image"), System.Drawing.Image)
         Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton6.Name = "ToolStripButton6"
-        Me.ToolStripButton6.Size = New System.Drawing.Size(74, 24)
+        Me.ToolStripButton6.Size = New System.Drawing.Size(95, 28)
         Me.ToolStripButton6.Text = "إضافة إجازة"
         '
         'ToolStripSeparator15
         '
         Me.ToolStripSeparator15.Name = "ToolStripSeparator15"
-        Me.ToolStripSeparator15.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator15.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator16
         '
         Me.ToolStripSeparator16.Name = "ToolStripSeparator16"
-        Me.ToolStripSeparator16.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator16.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripLabel3
         '
         Me.ToolStripLabel3.Name = "ToolStripLabel3"
-        Me.ToolStripLabel3.Size = New System.Drawing.Size(37, 24)
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(46, 28)
         Me.ToolStripLabel3.Text = "بحث"
         '
         'ToolStripTextBox1
@@ -1320,22 +1432,22 @@ Partial Class Employees
         Me.ToolStripTextBox1.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
-        Me.ToolStripTextBox1.Size = New System.Drawing.Size(200, 27)
+        Me.ToolStripTextBox1.Size = New System.Drawing.Size(265, 31)
         '
         'ToolStripSeparator21
         '
         Me.ToolStripSeparator21.Name = "ToolStripSeparator21"
-        Me.ToolStripSeparator21.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator21.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator22
         '
         Me.ToolStripSeparator22.Name = "ToolStripSeparator22"
-        Me.ToolStripSeparator22.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator22.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripLabel5
         '
         Me.ToolStripLabel5.Name = "ToolStripLabel5"
-        Me.ToolStripLabel5.Size = New System.Drawing.Size(74, 24)
+        Me.ToolStripLabel5.Size = New System.Drawing.Size(93, 28)
         Me.ToolStripLabel5.Text = "نوع الإجازة"
         '
         'ToolStripComboBox2
@@ -1344,16 +1456,17 @@ Partial Class Employees
         Me.ToolStripComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.ToolStripComboBox2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ToolStripComboBox2.Name = "ToolStripComboBox2"
-        Me.ToolStripComboBox2.Size = New System.Drawing.Size(200, 27)
+        Me.ToolStripComboBox2.Size = New System.Drawing.Size(265, 31)
         '
         'TabPage6
         '
         Me.TabPage6.Controls.Add(Me.DataGridView6)
         Me.TabPage6.Controls.Add(Me.ToolStrip6)
-        Me.TabPage6.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage6.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "إنهاء الخدمة"
         Me.TabPage6.UseVisualStyleBackColor = True
@@ -1378,14 +1491,17 @@ Partial Class Employees
         Me.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn5, Me.EmployeeFinishingIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn5, Me.EmployeeNameDataGridViewTextBoxColumn4, Me.FinishingTypeIDDataGridViewTextBoxColumn, Me.FinishingTypeNameDataGridViewTextBoxColumn, Me.FinishingDateDataGridViewTextBoxColumn, Me.RemarksDataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn5})
         Me.DataGridView6.DataSource = Me.EmployeeFinishingsBindingSource
-        Me.DataGridView6.Location = New System.Drawing.Point(3, 33)
+        Me.DataGridView6.Location = New System.Drawing.Point(4, 41)
+        Me.DataGridView6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView6.Name = "DataGridView6"
-        Me.DataGridView6.Size = New System.Drawing.Size(1245, 410)
+        Me.DataGridView6.RowHeadersWidth = 51
+        Me.DataGridView6.Size = New System.Drawing.Size(1660, 505)
         Me.DataGridView6.TabIndex = 7
         '
         'DataGridViewButtonColumn5
         '
         Me.DataGridViewButtonColumn5.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn5.MinimumWidth = 6
         Me.DataGridViewButtonColumn5.Name = "DataGridViewButtonColumn5"
         Me.DataGridViewButtonColumn5.ReadOnly = True
         Me.DataGridViewButtonColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -1398,21 +1514,26 @@ Partial Class Employees
         '
         Me.EmployeeFinishingIDDataGridViewTextBoxColumn.DataPropertyName = "EmployeeFinishingID"
         Me.EmployeeFinishingIDDataGridViewTextBoxColumn.HeaderText = "EmployeeFinishingID"
+        Me.EmployeeFinishingIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.EmployeeFinishingIDDataGridViewTextBoxColumn.Name = "EmployeeFinishingIDDataGridViewTextBoxColumn"
         Me.EmployeeFinishingIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.EmployeeFinishingIDDataGridViewTextBoxColumn.Visible = False
+        Me.EmployeeFinishingIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeIDDataGridViewTextBoxColumn5
         '
         Me.EmployeeIDDataGridViewTextBoxColumn5.DataPropertyName = "EmployeeID"
         Me.EmployeeIDDataGridViewTextBoxColumn5.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.EmployeeIDDataGridViewTextBoxColumn5.Name = "EmployeeIDDataGridViewTextBoxColumn5"
         Me.EmployeeIDDataGridViewTextBoxColumn5.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn5.Width = 125
         '
         'EmployeeNameDataGridViewTextBoxColumn4
         '
         Me.EmployeeNameDataGridViewTextBoxColumn4.DataPropertyName = "EmployeeName"
         Me.EmployeeNameDataGridViewTextBoxColumn4.HeaderText = "الإســــم"
+        Me.EmployeeNameDataGridViewTextBoxColumn4.MinimumWidth = 6
         Me.EmployeeNameDataGridViewTextBoxColumn4.Name = "EmployeeNameDataGridViewTextBoxColumn4"
         Me.EmployeeNameDataGridViewTextBoxColumn4.Width = 300
         '
@@ -1420,13 +1541,16 @@ Partial Class Employees
         '
         Me.FinishingTypeIDDataGridViewTextBoxColumn.DataPropertyName = "FinishingTypeID"
         Me.FinishingTypeIDDataGridViewTextBoxColumn.HeaderText = "FinishingTypeID"
+        Me.FinishingTypeIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.FinishingTypeIDDataGridViewTextBoxColumn.Name = "FinishingTypeIDDataGridViewTextBoxColumn"
         Me.FinishingTypeIDDataGridViewTextBoxColumn.Visible = False
+        Me.FinishingTypeIDDataGridViewTextBoxColumn.Width = 125
         '
         'FinishingTypeNameDataGridViewTextBoxColumn
         '
         Me.FinishingTypeNameDataGridViewTextBoxColumn.DataPropertyName = "FinishingTypeName"
         Me.FinishingTypeNameDataGridViewTextBoxColumn.HeaderText = "سبب الإنهاء"
+        Me.FinishingTypeNameDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.FinishingTypeNameDataGridViewTextBoxColumn.Name = "FinishingTypeNameDataGridViewTextBoxColumn"
         Me.FinishingTypeNameDataGridViewTextBoxColumn.Width = 400
         '
@@ -1434,6 +1558,7 @@ Partial Class Employees
         '
         Me.FinishingDateDataGridViewTextBoxColumn.DataPropertyName = "FinishingDate"
         Me.FinishingDateDataGridViewTextBoxColumn.HeaderText = "تاريخ إنهاء الخدمة"
+        Me.FinishingDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.FinishingDateDataGridViewTextBoxColumn.Name = "FinishingDateDataGridViewTextBoxColumn"
         Me.FinishingDateDataGridViewTextBoxColumn.Width = 200
         '
@@ -1441,6 +1566,7 @@ Partial Class Employees
         '
         Me.RemarksDataGridViewTextBoxColumn3.DataPropertyName = "Remarks"
         Me.RemarksDataGridViewTextBoxColumn3.HeaderText = "ملاحظات"
+        Me.RemarksDataGridViewTextBoxColumn3.MinimumWidth = 6
         Me.RemarksDataGridViewTextBoxColumn3.Name = "RemarksDataGridViewTextBoxColumn3"
         Me.RemarksDataGridViewTextBoxColumn3.Width = 200
         '
@@ -1448,7 +1574,9 @@ Partial Class Employees
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "Status"
         Me.DataGridViewTextBoxColumn5.HeaderText = "الحالة"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Width = 125
         '
         'EmployeeFinishingsBindingSource
         '
@@ -1458,10 +1586,11 @@ Partial Class Employees
         'ToolStrip6
         '
         Me.ToolStrip6.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip6.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip6.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton7, Me.ToolStripSeparator23, Me.ToolStripSeparator24, Me.ToolStripLabel9, Me.ToolStripTextBox6, Me.ToolStripSeparator25, Me.ToolStripSeparator26, Me.ToolStripLabel10, Me.ToolStripComboBox4})
-        Me.ToolStrip6.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip6.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip6.Name = "ToolStrip6"
-        Me.ToolStrip6.Size = New System.Drawing.Size(1245, 27)
+        Me.ToolStrip6.Size = New System.Drawing.Size(1663, 31)
         Me.ToolStrip6.TabIndex = 6
         Me.ToolStrip6.Text = "ToolStrip6"
         '
@@ -1472,23 +1601,23 @@ Partial Class Employees
         Me.ToolStripButton7.Image = CType(resources.GetObject("ToolStripButton7.Image"), System.Drawing.Image)
         Me.ToolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton7.Name = "ToolStripButton7"
-        Me.ToolStripButton7.Size = New System.Drawing.Size(111, 24)
+        Me.ToolStripButton7.Size = New System.Drawing.Size(142, 28)
         Me.ToolStripButton7.Text = "إنهاء خدمة موظف"
         '
         'ToolStripSeparator23
         '
         Me.ToolStripSeparator23.Name = "ToolStripSeparator23"
-        Me.ToolStripSeparator23.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator23.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator24
         '
         Me.ToolStripSeparator24.Name = "ToolStripSeparator24"
-        Me.ToolStripSeparator24.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator24.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripLabel9
         '
         Me.ToolStripLabel9.Name = "ToolStripLabel9"
-        Me.ToolStripLabel9.Size = New System.Drawing.Size(37, 24)
+        Me.ToolStripLabel9.Size = New System.Drawing.Size(46, 28)
         Me.ToolStripLabel9.Text = "بحث"
         '
         'ToolStripTextBox6
@@ -1496,22 +1625,22 @@ Partial Class Employees
         Me.ToolStripTextBox6.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox6.Name = "ToolStripTextBox6"
-        Me.ToolStripTextBox6.Size = New System.Drawing.Size(200, 27)
+        Me.ToolStripTextBox6.Size = New System.Drawing.Size(265, 31)
         '
         'ToolStripSeparator25
         '
         Me.ToolStripSeparator25.Name = "ToolStripSeparator25"
-        Me.ToolStripSeparator25.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator25.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator26
         '
         Me.ToolStripSeparator26.Name = "ToolStripSeparator26"
-        Me.ToolStripSeparator26.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator26.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripLabel10
         '
         Me.ToolStripLabel10.Name = "ToolStripLabel10"
-        Me.ToolStripLabel10.Size = New System.Drawing.Size(81, 24)
+        Me.ToolStripLabel10.Size = New System.Drawing.Size(101, 28)
         Me.ToolStripLabel10.Text = "سبب الإنهاء"
         '
         'ToolStripComboBox4
@@ -1520,16 +1649,17 @@ Partial Class Employees
         Me.ToolStripComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.ToolStripComboBox4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ToolStripComboBox4.Name = "ToolStripComboBox4"
-        Me.ToolStripComboBox4.Size = New System.Drawing.Size(200, 27)
+        Me.ToolStripComboBox4.Size = New System.Drawing.Size(265, 31)
         '
         'TabPage7
         '
         Me.TabPage7.Controls.Add(Me.DataGridView7)
         Me.TabPage7.Controls.Add(Me.ToolStrip7)
-        Me.TabPage7.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage7.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage7.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage7.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage7.TabIndex = 6
         Me.TabPage7.Text = "التحقيقات و مجالس المحاسبة"
         Me.TabPage7.UseVisualStyleBackColor = True
@@ -1554,14 +1684,17 @@ Partial Class Employees
         Me.DataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView7.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn6, Me.InvestigationIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn6, Me.EmployeeNameDataGridViewTextBoxColumn5, Me.Infraction, Me.InfractionDate, Me.InvestigationDateDataGridViewTextBoxColumn, Me.DecisionDataGridViewTextBoxColumn, Me.DecisionDateDataGridViewTextBoxColumn, Me.AdversaryDataGridViewTextBoxColumn, Me.AdversaryInterval, Me.DataGridViewTextBoxColumn6})
         Me.DataGridView7.DataSource = Me.InvestigationsBindingSource
-        Me.DataGridView7.Location = New System.Drawing.Point(3, 32)
+        Me.DataGridView7.Location = New System.Drawing.Point(4, 39)
+        Me.DataGridView7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView7.Name = "DataGridView7"
-        Me.DataGridView7.Size = New System.Drawing.Size(1245, 411)
+        Me.DataGridView7.RowHeadersWidth = 51
+        Me.DataGridView7.Size = New System.Drawing.Size(1660, 506)
         Me.DataGridView7.TabIndex = 9
         '
         'DataGridViewButtonColumn6
         '
         Me.DataGridViewButtonColumn6.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn6.MinimumWidth = 6
         Me.DataGridViewButtonColumn6.Name = "DataGridViewButtonColumn6"
         Me.DataGridViewButtonColumn6.ReadOnly = True
         Me.DataGridViewButtonColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -1574,21 +1707,26 @@ Partial Class Employees
         '
         Me.InvestigationIDDataGridViewTextBoxColumn.DataPropertyName = "InvestigationID"
         Me.InvestigationIDDataGridViewTextBoxColumn.HeaderText = "InvestigationID"
+        Me.InvestigationIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.InvestigationIDDataGridViewTextBoxColumn.Name = "InvestigationIDDataGridViewTextBoxColumn"
         Me.InvestigationIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.InvestigationIDDataGridViewTextBoxColumn.Visible = False
+        Me.InvestigationIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeIDDataGridViewTextBoxColumn6
         '
         Me.EmployeeIDDataGridViewTextBoxColumn6.DataPropertyName = "EmployeeID"
         Me.EmployeeIDDataGridViewTextBoxColumn6.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn6.MinimumWidth = 6
         Me.EmployeeIDDataGridViewTextBoxColumn6.Name = "EmployeeIDDataGridViewTextBoxColumn6"
         Me.EmployeeIDDataGridViewTextBoxColumn6.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn6.Width = 125
         '
         'EmployeeNameDataGridViewTextBoxColumn5
         '
         Me.EmployeeNameDataGridViewTextBoxColumn5.DataPropertyName = "EmployeeName"
         Me.EmployeeNameDataGridViewTextBoxColumn5.HeaderText = "الإسم"
+        Me.EmployeeNameDataGridViewTextBoxColumn5.MinimumWidth = 6
         Me.EmployeeNameDataGridViewTextBoxColumn5.Name = "EmployeeNameDataGridViewTextBoxColumn5"
         Me.EmployeeNameDataGridViewTextBoxColumn5.Width = 200
         '
@@ -1596,12 +1734,15 @@ Partial Class Employees
         '
         Me.Infraction.DataPropertyName = "Infraction"
         Me.Infraction.HeaderText = "المخالفة"
+        Me.Infraction.MinimumWidth = 6
         Me.Infraction.Name = "Infraction"
+        Me.Infraction.Width = 125
         '
         'InfractionDate
         '
         Me.InfractionDate.DataPropertyName = "InfractionDate"
         Me.InfractionDate.HeaderText = "تاريخ المخالفة"
+        Me.InfractionDate.MinimumWidth = 6
         Me.InfractionDate.Name = "InfractionDate"
         Me.InfractionDate.Width = 150
         '
@@ -1609,6 +1750,7 @@ Partial Class Employees
         '
         Me.InvestigationDateDataGridViewTextBoxColumn.DataPropertyName = "InvestigationDate"
         Me.InvestigationDateDataGridViewTextBoxColumn.HeaderText = "تاريخ التحقيق"
+        Me.InvestigationDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.InvestigationDateDataGridViewTextBoxColumn.Name = "InvestigationDateDataGridViewTextBoxColumn"
         Me.InvestigationDateDataGridViewTextBoxColumn.Width = 150
         '
@@ -1616,12 +1758,15 @@ Partial Class Employees
         '
         Me.DecisionDataGridViewTextBoxColumn.DataPropertyName = "Decision"
         Me.DecisionDataGridViewTextBoxColumn.HeaderText = "القرار"
+        Me.DecisionDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.DecisionDataGridViewTextBoxColumn.Name = "DecisionDataGridViewTextBoxColumn"
+        Me.DecisionDataGridViewTextBoxColumn.Width = 125
         '
         'DecisionDateDataGridViewTextBoxColumn
         '
         Me.DecisionDateDataGridViewTextBoxColumn.DataPropertyName = "DecisionDate"
         Me.DecisionDateDataGridViewTextBoxColumn.HeaderText = "تاريخ القرار"
+        Me.DecisionDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.DecisionDateDataGridViewTextBoxColumn.Name = "DecisionDateDataGridViewTextBoxColumn"
         Me.DecisionDateDataGridViewTextBoxColumn.Width = 150
         '
@@ -1629,12 +1774,15 @@ Partial Class Employees
         '
         Me.AdversaryDataGridViewTextBoxColumn.DataPropertyName = "Adversary"
         Me.AdversaryDataGridViewTextBoxColumn.HeaderText = "العقوبة"
+        Me.AdversaryDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.AdversaryDataGridViewTextBoxColumn.Name = "AdversaryDataGridViewTextBoxColumn"
+        Me.AdversaryDataGridViewTextBoxColumn.Width = 125
         '
         'AdversaryInterval
         '
         Me.AdversaryInterval.DataPropertyName = "AdversaryInterval"
         Me.AdversaryInterval.HeaderText = "مدة العقوبة"
+        Me.AdversaryInterval.MinimumWidth = 6
         Me.AdversaryInterval.Name = "AdversaryInterval"
         Me.AdversaryInterval.Width = 150
         '
@@ -1642,7 +1790,9 @@ Partial Class Employees
         '
         Me.DataGridViewTextBoxColumn6.DataPropertyName = "Status"
         Me.DataGridViewTextBoxColumn6.HeaderText = "الحالة"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Width = 125
         '
         'InvestigationsBindingSource
         '
@@ -1652,10 +1802,11 @@ Partial Class Employees
         'ToolStrip7
         '
         Me.ToolStrip7.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip7.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip7.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton8, Me.ToolStripSeparator27, Me.ToolStripSeparator28, Me.ToolStripLabel11, Me.ToolStripTextBox7, Me.ToolStripSeparator29, Me.ToolStripSeparator30})
-        Me.ToolStrip7.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip7.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip7.Name = "ToolStrip7"
-        Me.ToolStrip7.Size = New System.Drawing.Size(1245, 26)
+        Me.ToolStrip7.Size = New System.Drawing.Size(1663, 30)
         Me.ToolStrip7.TabIndex = 8
         Me.ToolStrip7.Text = "ToolStrip7"
         '
@@ -1666,23 +1817,23 @@ Partial Class Employees
         Me.ToolStripButton8.Image = CType(resources.GetObject("ToolStripButton8.Image"), System.Drawing.Image)
         Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton8.Name = "ToolStripButton8"
-        Me.ToolStripButton8.Size = New System.Drawing.Size(168, 23)
+        Me.ToolStripButton8.Size = New System.Drawing.Size(218, 27)
         Me.ToolStripButton8.Text = "إضافة تحقيق/مجلس محاسبة"
         '
         'ToolStripSeparator27
         '
         Me.ToolStripSeparator27.Name = "ToolStripSeparator27"
-        Me.ToolStripSeparator27.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator27.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator28
         '
         Me.ToolStripSeparator28.Name = "ToolStripSeparator28"
-        Me.ToolStripSeparator28.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator28.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripLabel11
         '
         Me.ToolStripLabel11.Name = "ToolStripLabel11"
-        Me.ToolStripLabel11.Size = New System.Drawing.Size(37, 23)
+        Me.ToolStripLabel11.Size = New System.Drawing.Size(46, 27)
         Me.ToolStripLabel11.Text = "بحث"
         '
         'ToolStripTextBox7
@@ -1690,26 +1841,27 @@ Partial Class Employees
         Me.ToolStripTextBox7.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox7.Name = "ToolStripTextBox7"
-        Me.ToolStripTextBox7.Size = New System.Drawing.Size(200, 26)
+        Me.ToolStripTextBox7.Size = New System.Drawing.Size(265, 30)
         '
         'ToolStripSeparator29
         '
         Me.ToolStripSeparator29.Name = "ToolStripSeparator29"
-        Me.ToolStripSeparator29.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator29.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator30
         '
         Me.ToolStripSeparator30.Name = "ToolStripSeparator30"
-        Me.ToolStripSeparator30.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator30.Size = New System.Drawing.Size(6, 30)
         '
         'TabPage8
         '
         Me.TabPage8.Controls.Add(Me.DataGridView8)
         Me.TabPage8.Controls.Add(Me.ToolStrip8)
-        Me.TabPage8.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage8.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage8.Name = "TabPage8"
-        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage8.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage8.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage8.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage8.TabIndex = 7
         Me.TabPage8.Text = "الترفيعات"
         Me.TabPage8.UseVisualStyleBackColor = True
@@ -1734,14 +1886,17 @@ Partial Class Employees
         Me.DataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView8.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn7, Me.PositionIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn7, Me.EmployeeNameDataGridViewTextBoxColumn6, Me.FromJobIDDataGridViewTextBoxColumn, Me.JobName1DataGridViewTextBoxColumn, Me.JobIDDataGridViewTextBoxColumn1, Me.JobName2DataGridViewTextBoxColumn, Me.FromClassIDDataGridViewTextBoxColumn, Me.ClassName1DataGridViewTextBoxColumn, Me.ClassIDDataGridViewTextBoxColumn1, Me.ClassName2DataGridViewTextBoxColumn, Me.PositionDateDataGridViewTextBoxColumn, Me.DataGridViewTextBoxColumn7})
         Me.DataGridView8.DataSource = Me.EmployeePositionsBindingSource1
-        Me.DataGridView8.Location = New System.Drawing.Point(3, 32)
+        Me.DataGridView8.Location = New System.Drawing.Point(4, 39)
+        Me.DataGridView8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView8.Name = "DataGridView8"
-        Me.DataGridView8.Size = New System.Drawing.Size(1245, 411)
+        Me.DataGridView8.RowHeadersWidth = 51
+        Me.DataGridView8.Size = New System.Drawing.Size(1660, 506)
         Me.DataGridView8.TabIndex = 11
         '
         'DataGridViewButtonColumn7
         '
         Me.DataGridViewButtonColumn7.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn7.MinimumWidth = 6
         Me.DataGridViewButtonColumn7.Name = "DataGridViewButtonColumn7"
         Me.DataGridViewButtonColumn7.ReadOnly = True
         Me.DataGridViewButtonColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -1754,20 +1909,25 @@ Partial Class Employees
         '
         Me.PositionIDDataGridViewTextBoxColumn.DataPropertyName = "positionID"
         Me.PositionIDDataGridViewTextBoxColumn.HeaderText = "positionID"
+        Me.PositionIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.PositionIDDataGridViewTextBoxColumn.Name = "PositionIDDataGridViewTextBoxColumn"
         Me.PositionIDDataGridViewTextBoxColumn.Visible = False
+        Me.PositionIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeIDDataGridViewTextBoxColumn7
         '
         Me.EmployeeIDDataGridViewTextBoxColumn7.DataPropertyName = "EmployeeID"
         Me.EmployeeIDDataGridViewTextBoxColumn7.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn7.MinimumWidth = 6
         Me.EmployeeIDDataGridViewTextBoxColumn7.Name = "EmployeeIDDataGridViewTextBoxColumn7"
         Me.EmployeeIDDataGridViewTextBoxColumn7.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn7.Width = 125
         '
         'EmployeeNameDataGridViewTextBoxColumn6
         '
         Me.EmployeeNameDataGridViewTextBoxColumn6.DataPropertyName = "EmployeeName"
         Me.EmployeeNameDataGridViewTextBoxColumn6.HeaderText = "الإســـم"
+        Me.EmployeeNameDataGridViewTextBoxColumn6.MinimumWidth = 6
         Me.EmployeeNameDataGridViewTextBoxColumn6.Name = "EmployeeNameDataGridViewTextBoxColumn6"
         Me.EmployeeNameDataGridViewTextBoxColumn6.Width = 200
         '
@@ -1775,13 +1935,16 @@ Partial Class Employees
         '
         Me.FromJobIDDataGridViewTextBoxColumn.DataPropertyName = "FromJobID"
         Me.FromJobIDDataGridViewTextBoxColumn.HeaderText = "FromJobID"
+        Me.FromJobIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.FromJobIDDataGridViewTextBoxColumn.Name = "FromJobIDDataGridViewTextBoxColumn"
         Me.FromJobIDDataGridViewTextBoxColumn.Visible = False
+        Me.FromJobIDDataGridViewTextBoxColumn.Width = 125
         '
         'JobName1DataGridViewTextBoxColumn
         '
         Me.JobName1DataGridViewTextBoxColumn.DataPropertyName = "JobName1"
         Me.JobName1DataGridViewTextBoxColumn.HeaderText = "من الفئة"
+        Me.JobName1DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.JobName1DataGridViewTextBoxColumn.Name = "JobName1DataGridViewTextBoxColumn"
         Me.JobName1DataGridViewTextBoxColumn.Width = 200
         '
@@ -1789,13 +1952,16 @@ Partial Class Employees
         '
         Me.JobIDDataGridViewTextBoxColumn1.DataPropertyName = "JobID"
         Me.JobIDDataGridViewTextBoxColumn1.HeaderText = "JobID"
+        Me.JobIDDataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.JobIDDataGridViewTextBoxColumn1.Name = "JobIDDataGridViewTextBoxColumn1"
         Me.JobIDDataGridViewTextBoxColumn1.Visible = False
+        Me.JobIDDataGridViewTextBoxColumn1.Width = 125
         '
         'JobName2DataGridViewTextBoxColumn
         '
         Me.JobName2DataGridViewTextBoxColumn.DataPropertyName = "JobName2"
         Me.JobName2DataGridViewTextBoxColumn.HeaderText = "إلى الفئة"
+        Me.JobName2DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.JobName2DataGridViewTextBoxColumn.Name = "JobName2DataGridViewTextBoxColumn"
         Me.JobName2DataGridViewTextBoxColumn.Width = 200
         '
@@ -1803,13 +1969,16 @@ Partial Class Employees
         '
         Me.FromClassIDDataGridViewTextBoxColumn.DataPropertyName = "FromClassID"
         Me.FromClassIDDataGridViewTextBoxColumn.HeaderText = "FromClassID"
+        Me.FromClassIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.FromClassIDDataGridViewTextBoxColumn.Name = "FromClassIDDataGridViewTextBoxColumn"
         Me.FromClassIDDataGridViewTextBoxColumn.Visible = False
+        Me.FromClassIDDataGridViewTextBoxColumn.Width = 125
         '
         'ClassName1DataGridViewTextBoxColumn
         '
         Me.ClassName1DataGridViewTextBoxColumn.DataPropertyName = "className1"
         Me.ClassName1DataGridViewTextBoxColumn.HeaderText = "من الوظيفة"
+        Me.ClassName1DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.ClassName1DataGridViewTextBoxColumn.Name = "ClassName1DataGridViewTextBoxColumn"
         Me.ClassName1DataGridViewTextBoxColumn.Width = 200
         '
@@ -1817,13 +1986,16 @@ Partial Class Employees
         '
         Me.ClassIDDataGridViewTextBoxColumn1.DataPropertyName = "ClassID"
         Me.ClassIDDataGridViewTextBoxColumn1.HeaderText = "ClassID"
+        Me.ClassIDDataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.ClassIDDataGridViewTextBoxColumn1.Name = "ClassIDDataGridViewTextBoxColumn1"
         Me.ClassIDDataGridViewTextBoxColumn1.Visible = False
+        Me.ClassIDDataGridViewTextBoxColumn1.Width = 125
         '
         'ClassName2DataGridViewTextBoxColumn
         '
         Me.ClassName2DataGridViewTextBoxColumn.DataPropertyName = "className2"
         Me.ClassName2DataGridViewTextBoxColumn.HeaderText = "إلى الوظيفة"
+        Me.ClassName2DataGridViewTextBoxColumn.MinimumWidth = 6
         Me.ClassName2DataGridViewTextBoxColumn.Name = "ClassName2DataGridViewTextBoxColumn"
         Me.ClassName2DataGridViewTextBoxColumn.Width = 200
         '
@@ -1831,13 +2003,17 @@ Partial Class Employees
         '
         Me.PositionDateDataGridViewTextBoxColumn.DataPropertyName = "PositionDate"
         Me.PositionDateDataGridViewTextBoxColumn.HeaderText = "تاريخ الترفيع"
+        Me.PositionDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.PositionDateDataGridViewTextBoxColumn.Name = "PositionDateDataGridViewTextBoxColumn"
+        Me.PositionDateDataGridViewTextBoxColumn.Width = 125
         '
         'DataGridViewTextBoxColumn7
         '
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "Status"
         Me.DataGridViewTextBoxColumn7.HeaderText = "الحالة"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.Width = 125
         '
         'EmployeePositionsBindingSource1
         '
@@ -1852,10 +2028,11 @@ Partial Class Employees
         'ToolStrip8
         '
         Me.ToolStrip8.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip8.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip8.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton9, Me.ToolStripSeparator31, Me.ToolStripSeparator32, Me.ToolStripLabel12, Me.ToolStripTextBox8, Me.ToolStripSeparator33, Me.ToolStripSeparator34})
-        Me.ToolStrip8.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip8.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip8.Name = "ToolStrip8"
-        Me.ToolStrip8.Size = New System.Drawing.Size(1245, 26)
+        Me.ToolStrip8.Size = New System.Drawing.Size(1663, 30)
         Me.ToolStrip8.TabIndex = 10
         Me.ToolStrip8.Text = "ToolStrip8"
         '
@@ -1866,23 +2043,23 @@ Partial Class Employees
         Me.ToolStripButton9.Image = CType(resources.GetObject("ToolStripButton9.Image"), System.Drawing.Image)
         Me.ToolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton9.Name = "ToolStripButton9"
-        Me.ToolStripButton9.Size = New System.Drawing.Size(82, 23)
+        Me.ToolStripButton9.Size = New System.Drawing.Size(106, 27)
         Me.ToolStripButton9.Text = "ترفيع موظف"
         '
         'ToolStripSeparator31
         '
         Me.ToolStripSeparator31.Name = "ToolStripSeparator31"
-        Me.ToolStripSeparator31.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator31.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator32
         '
         Me.ToolStripSeparator32.Name = "ToolStripSeparator32"
-        Me.ToolStripSeparator32.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator32.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripLabel12
         '
         Me.ToolStripLabel12.Name = "ToolStripLabel12"
-        Me.ToolStripLabel12.Size = New System.Drawing.Size(37, 23)
+        Me.ToolStripLabel12.Size = New System.Drawing.Size(46, 27)
         Me.ToolStripLabel12.Text = "بحث"
         '
         'ToolStripTextBox8
@@ -1890,26 +2067,27 @@ Partial Class Employees
         Me.ToolStripTextBox8.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox8.Name = "ToolStripTextBox8"
-        Me.ToolStripTextBox8.Size = New System.Drawing.Size(200, 26)
+        Me.ToolStripTextBox8.Size = New System.Drawing.Size(265, 30)
         '
         'ToolStripSeparator33
         '
         Me.ToolStripSeparator33.Name = "ToolStripSeparator33"
-        Me.ToolStripSeparator33.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator33.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator34
         '
         Me.ToolStripSeparator34.Name = "ToolStripSeparator34"
-        Me.ToolStripSeparator34.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator34.Size = New System.Drawing.Size(6, 30)
         '
         'TabPage9
         '
         Me.TabPage9.Controls.Add(Me.DataGridView9)
         Me.TabPage9.Controls.Add(Me.ToolStrip9)
-        Me.TabPage9.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage9.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage9.Name = "TabPage9"
-        Me.TabPage9.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage9.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage9.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage9.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage9.TabIndex = 8
         Me.TabPage9.Text = "الدورات التدريبية"
         Me.TabPage9.UseVisualStyleBackColor = True
@@ -1934,14 +2112,17 @@ Partial Class Employees
         Me.DataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView9.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn8, Me.TrainingIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn8, Me.TrainingNameDataGridViewTextBoxColumn, Me.BeginDateDataGridViewTextBoxColumn, Me.EndDateDataGridViewTextBoxColumn, Me.TrainingPlaceDataGridViewTextBoxColumn, Me.DecisionNoDataGridViewTextBoxColumn, Me.DecisionDateDataGridViewTextBoxColumn1, Me.DecisionDocumentDataGridViewImageColumn})
         Me.DataGridView9.DataSource = Me.EmployeesTrainingsBindingSource
-        Me.DataGridView9.Location = New System.Drawing.Point(3, 32)
+        Me.DataGridView9.Location = New System.Drawing.Point(4, 39)
+        Me.DataGridView9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView9.Name = "DataGridView9"
-        Me.DataGridView9.Size = New System.Drawing.Size(1245, 411)
+        Me.DataGridView9.RowHeadersWidth = 51
+        Me.DataGridView9.Size = New System.Drawing.Size(1660, 506)
         Me.DataGridView9.TabIndex = 13
         '
         'DataGridViewButtonColumn8
         '
         Me.DataGridViewButtonColumn8.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn8.MinimumWidth = 6
         Me.DataGridViewButtonColumn8.Name = "DataGridViewButtonColumn8"
         Me.DataGridViewButtonColumn8.ReadOnly = True
         Me.DataGridViewButtonColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -1954,21 +2135,26 @@ Partial Class Employees
         '
         Me.TrainingIDDataGridViewTextBoxColumn.DataPropertyName = "TrainingID"
         Me.TrainingIDDataGridViewTextBoxColumn.HeaderText = "TrainingID"
+        Me.TrainingIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.TrainingIDDataGridViewTextBoxColumn.Name = "TrainingIDDataGridViewTextBoxColumn"
         Me.TrainingIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.TrainingIDDataGridViewTextBoxColumn.Visible = False
+        Me.TrainingIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeIDDataGridViewTextBoxColumn8
         '
         Me.EmployeeIDDataGridViewTextBoxColumn8.DataPropertyName = "EmployeeID"
         Me.EmployeeIDDataGridViewTextBoxColumn8.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn8.MinimumWidth = 6
         Me.EmployeeIDDataGridViewTextBoxColumn8.Name = "EmployeeIDDataGridViewTextBoxColumn8"
         Me.EmployeeIDDataGridViewTextBoxColumn8.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn8.Width = 125
         '
         'DataGridViewTextBoxColumn8
         '
         Me.DataGridViewTextBoxColumn8.DataPropertyName = "EmployeeName"
         Me.DataGridViewTextBoxColumn8.HeaderText = "الإســـــم"
+        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         Me.DataGridViewTextBoxColumn8.Width = 300
         '
@@ -1976,6 +2162,7 @@ Partial Class Employees
         '
         Me.TrainingNameDataGridViewTextBoxColumn.DataPropertyName = "TrainingName"
         Me.TrainingNameDataGridViewTextBoxColumn.HeaderText = "اسم الدورة"
+        Me.TrainingNameDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.TrainingNameDataGridViewTextBoxColumn.Name = "TrainingNameDataGridViewTextBoxColumn"
         Me.TrainingNameDataGridViewTextBoxColumn.Width = 200
         '
@@ -1983,6 +2170,7 @@ Partial Class Employees
         '
         Me.BeginDateDataGridViewTextBoxColumn.DataPropertyName = "BeginDate"
         Me.BeginDateDataGridViewTextBoxColumn.HeaderText = "بداية الدورة"
+        Me.BeginDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.BeginDateDataGridViewTextBoxColumn.Name = "BeginDateDataGridViewTextBoxColumn"
         Me.BeginDateDataGridViewTextBoxColumn.Width = 150
         '
@@ -1990,6 +2178,7 @@ Partial Class Employees
         '
         Me.EndDateDataGridViewTextBoxColumn.DataPropertyName = "EndDate"
         Me.EndDateDataGridViewTextBoxColumn.HeaderText = "نهاية الدورة"
+        Me.EndDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.EndDateDataGridViewTextBoxColumn.Name = "EndDateDataGridViewTextBoxColumn"
         Me.EndDateDataGridViewTextBoxColumn.Width = 150
         '
@@ -1997,6 +2186,7 @@ Partial Class Employees
         '
         Me.TrainingPlaceDataGridViewTextBoxColumn.DataPropertyName = "TrainingPlace"
         Me.TrainingPlaceDataGridViewTextBoxColumn.HeaderText = "مكان الدورة"
+        Me.TrainingPlaceDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.TrainingPlaceDataGridViewTextBoxColumn.Name = "TrainingPlaceDataGridViewTextBoxColumn"
         Me.TrainingPlaceDataGridViewTextBoxColumn.Width = 200
         '
@@ -2004,20 +2194,26 @@ Partial Class Employees
         '
         Me.DecisionNoDataGridViewTextBoxColumn.DataPropertyName = "DecisionNo"
         Me.DecisionNoDataGridViewTextBoxColumn.HeaderText = "رقم القرار"
+        Me.DecisionNoDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.DecisionNoDataGridViewTextBoxColumn.Name = "DecisionNoDataGridViewTextBoxColumn"
+        Me.DecisionNoDataGridViewTextBoxColumn.Width = 125
         '
         'DecisionDateDataGridViewTextBoxColumn1
         '
         Me.DecisionDateDataGridViewTextBoxColumn1.DataPropertyName = "DecisionDate"
         Me.DecisionDateDataGridViewTextBoxColumn1.HeaderText = "تاريخ القرار"
+        Me.DecisionDateDataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.DecisionDateDataGridViewTextBoxColumn1.Name = "DecisionDateDataGridViewTextBoxColumn1"
+        Me.DecisionDateDataGridViewTextBoxColumn1.Width = 125
         '
         'DecisionDocumentDataGridViewImageColumn
         '
         Me.DecisionDocumentDataGridViewImageColumn.DataPropertyName = "DecisionDocument"
         Me.DecisionDocumentDataGridViewImageColumn.HeaderText = "DecisionDocument"
+        Me.DecisionDocumentDataGridViewImageColumn.MinimumWidth = 6
         Me.DecisionDocumentDataGridViewImageColumn.Name = "DecisionDocumentDataGridViewImageColumn"
         Me.DecisionDocumentDataGridViewImageColumn.Visible = False
+        Me.DecisionDocumentDataGridViewImageColumn.Width = 125
         '
         'EmployeesTrainingsBindingSource
         '
@@ -2032,10 +2228,11 @@ Partial Class Employees
         'ToolStrip9
         '
         Me.ToolStrip9.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip9.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip9.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton10, Me.ToolStripSeparator35, Me.ToolStripSeparator36, Me.ToolStripLabel13, Me.ToolStripTextBox9, Me.ToolStripSeparator37, Me.ToolStripSeparator38})
-        Me.ToolStrip9.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip9.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip9.Name = "ToolStrip9"
-        Me.ToolStrip9.Size = New System.Drawing.Size(1245, 26)
+        Me.ToolStrip9.Size = New System.Drawing.Size(1663, 30)
         Me.ToolStrip9.TabIndex = 12
         Me.ToolStrip9.Text = "ToolStrip9"
         '
@@ -2046,23 +2243,23 @@ Partial Class Employees
         Me.ToolStripButton10.Image = CType(resources.GetObject("ToolStripButton10.Image"), System.Drawing.Image)
         Me.ToolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton10.Name = "ToolStripButton10"
-        Me.ToolStripButton10.Size = New System.Drawing.Size(161, 23)
+        Me.ToolStripButton10.Size = New System.Drawing.Size(211, 27)
         Me.ToolStripButton10.Text = "إضافة دورة تدريبية لموظف"
         '
         'ToolStripSeparator35
         '
         Me.ToolStripSeparator35.Name = "ToolStripSeparator35"
-        Me.ToolStripSeparator35.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator35.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator36
         '
         Me.ToolStripSeparator36.Name = "ToolStripSeparator36"
-        Me.ToolStripSeparator36.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator36.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripLabel13
         '
         Me.ToolStripLabel13.Name = "ToolStripLabel13"
-        Me.ToolStripLabel13.Size = New System.Drawing.Size(37, 23)
+        Me.ToolStripLabel13.Size = New System.Drawing.Size(46, 27)
         Me.ToolStripLabel13.Text = "بحث"
         '
         'ToolStripTextBox9
@@ -2070,26 +2267,27 @@ Partial Class Employees
         Me.ToolStripTextBox9.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox9.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox9.Name = "ToolStripTextBox9"
-        Me.ToolStripTextBox9.Size = New System.Drawing.Size(200, 26)
+        Me.ToolStripTextBox9.Size = New System.Drawing.Size(265, 30)
         '
         'ToolStripSeparator37
         '
         Me.ToolStripSeparator37.Name = "ToolStripSeparator37"
-        Me.ToolStripSeparator37.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator37.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator38
         '
         Me.ToolStripSeparator38.Name = "ToolStripSeparator38"
-        Me.ToolStripSeparator38.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator38.Size = New System.Drawing.Size(6, 30)
         '
         'TabPage10
         '
         Me.TabPage10.Controls.Add(Me.DataGridView10)
         Me.TabPage10.Controls.Add(Me.ToolStrip10)
-        Me.TabPage10.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage10.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage10.Name = "TabPage10"
-        Me.TabPage10.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage10.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage10.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage10.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage10.TabIndex = 9
         Me.TabPage10.Text = "المؤهلات العلمية"
         Me.TabPage10.UseVisualStyleBackColor = True
@@ -2114,14 +2312,17 @@ Partial Class Employees
         Me.DataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView10.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn9, Me.EmployeeQualificationIDDataGridViewTextBoxColumn, Me.EmployeeIDDataGridViewTextBoxColumn9, Me.EmployeeNameDataGridViewTextBoxColumn7, Me.QualIDDataGridViewTextBoxColumn, Me.QualificationName, Me.IssueDateDataGridViewTextBoxColumn, Me.CountryDataGridViewTextBoxColumn, Me.CityDataGridViewTextBoxColumn, Me.InstituteDataGridViewTextBoxColumn, Me.FacultyDataGridViewTextBoxColumn, Me.SpecializationDataGridViewTextBoxColumn1})
         Me.DataGridView10.DataSource = Me.EmployeesQualificationsBindingSource
-        Me.DataGridView10.Location = New System.Drawing.Point(3, 32)
+        Me.DataGridView10.Location = New System.Drawing.Point(4, 39)
+        Me.DataGridView10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView10.Name = "DataGridView10"
-        Me.DataGridView10.Size = New System.Drawing.Size(1245, 411)
+        Me.DataGridView10.RowHeadersWidth = 51
+        Me.DataGridView10.Size = New System.Drawing.Size(1660, 506)
         Me.DataGridView10.TabIndex = 15
         '
         'DataGridViewButtonColumn9
         '
         Me.DataGridViewButtonColumn9.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn9.MinimumWidth = 6
         Me.DataGridViewButtonColumn9.Name = "DataGridViewButtonColumn9"
         Me.DataGridViewButtonColumn9.ReadOnly = True
         Me.DataGridViewButtonColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -2134,21 +2335,26 @@ Partial Class Employees
         '
         Me.EmployeeQualificationIDDataGridViewTextBoxColumn.DataPropertyName = "EmployeeQualificationID"
         Me.EmployeeQualificationIDDataGridViewTextBoxColumn.HeaderText = "EmployeeQualificationID"
+        Me.EmployeeQualificationIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.EmployeeQualificationIDDataGridViewTextBoxColumn.Name = "EmployeeQualificationIDDataGridViewTextBoxColumn"
         Me.EmployeeQualificationIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.EmployeeQualificationIDDataGridViewTextBoxColumn.Visible = False
+        Me.EmployeeQualificationIDDataGridViewTextBoxColumn.Width = 125
         '
         'EmployeeIDDataGridViewTextBoxColumn9
         '
         Me.EmployeeIDDataGridViewTextBoxColumn9.DataPropertyName = "EmployeeID"
         Me.EmployeeIDDataGridViewTextBoxColumn9.HeaderText = "EmployeeID"
+        Me.EmployeeIDDataGridViewTextBoxColumn9.MinimumWidth = 6
         Me.EmployeeIDDataGridViewTextBoxColumn9.Name = "EmployeeIDDataGridViewTextBoxColumn9"
         Me.EmployeeIDDataGridViewTextBoxColumn9.Visible = False
+        Me.EmployeeIDDataGridViewTextBoxColumn9.Width = 125
         '
         'EmployeeNameDataGridViewTextBoxColumn7
         '
         Me.EmployeeNameDataGridViewTextBoxColumn7.DataPropertyName = "EmployeeName"
         Me.EmployeeNameDataGridViewTextBoxColumn7.HeaderText = "الإســــم"
+        Me.EmployeeNameDataGridViewTextBoxColumn7.MinimumWidth = 6
         Me.EmployeeNameDataGridViewTextBoxColumn7.Name = "EmployeeNameDataGridViewTextBoxColumn7"
         Me.EmployeeNameDataGridViewTextBoxColumn7.Width = 200
         '
@@ -2156,19 +2362,24 @@ Partial Class Employees
         '
         Me.QualIDDataGridViewTextBoxColumn.DataPropertyName = "QualID"
         Me.QualIDDataGridViewTextBoxColumn.HeaderText = "QualID"
+        Me.QualIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.QualIDDataGridViewTextBoxColumn.Name = "QualIDDataGridViewTextBoxColumn"
         Me.QualIDDataGridViewTextBoxColumn.Visible = False
+        Me.QualIDDataGridViewTextBoxColumn.Width = 125
         '
         'QualificationName
         '
         Me.QualificationName.DataPropertyName = "QualificationName"
         Me.QualificationName.HeaderText = "المؤهل"
+        Me.QualificationName.MinimumWidth = 6
         Me.QualificationName.Name = "QualificationName"
+        Me.QualificationName.Width = 125
         '
         'IssueDateDataGridViewTextBoxColumn
         '
         Me.IssueDateDataGridViewTextBoxColumn.DataPropertyName = "IssueDate"
         Me.IssueDateDataGridViewTextBoxColumn.HeaderText = "تاريخ الحصول"
+        Me.IssueDateDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.IssueDateDataGridViewTextBoxColumn.Name = "IssueDateDataGridViewTextBoxColumn"
         Me.IssueDateDataGridViewTextBoxColumn.Width = 150
         '
@@ -2176,6 +2387,7 @@ Partial Class Employees
         '
         Me.CountryDataGridViewTextBoxColumn.DataPropertyName = "Country"
         Me.CountryDataGridViewTextBoxColumn.HeaderText = "الدولة"
+        Me.CountryDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.CountryDataGridViewTextBoxColumn.Name = "CountryDataGridViewTextBoxColumn"
         Me.CountryDataGridViewTextBoxColumn.Width = 150
         '
@@ -2183,6 +2395,7 @@ Partial Class Employees
         '
         Me.CityDataGridViewTextBoxColumn.DataPropertyName = "City"
         Me.CityDataGridViewTextBoxColumn.HeaderText = "المدينة"
+        Me.CityDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.CityDataGridViewTextBoxColumn.Name = "CityDataGridViewTextBoxColumn"
         Me.CityDataGridViewTextBoxColumn.Width = 150
         '
@@ -2190,6 +2403,7 @@ Partial Class Employees
         '
         Me.InstituteDataGridViewTextBoxColumn.DataPropertyName = "Institute"
         Me.InstituteDataGridViewTextBoxColumn.HeaderText = "الجامعة/المعهد"
+        Me.InstituteDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.InstituteDataGridViewTextBoxColumn.Name = "InstituteDataGridViewTextBoxColumn"
         Me.InstituteDataGridViewTextBoxColumn.Width = 150
         '
@@ -2197,6 +2411,7 @@ Partial Class Employees
         '
         Me.FacultyDataGridViewTextBoxColumn.DataPropertyName = "Faculty"
         Me.FacultyDataGridViewTextBoxColumn.HeaderText = "الكلية"
+        Me.FacultyDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.FacultyDataGridViewTextBoxColumn.Name = "FacultyDataGridViewTextBoxColumn"
         Me.FacultyDataGridViewTextBoxColumn.Width = 150
         '
@@ -2204,6 +2419,7 @@ Partial Class Employees
         '
         Me.SpecializationDataGridViewTextBoxColumn1.DataPropertyName = "Specialization"
         Me.SpecializationDataGridViewTextBoxColumn1.HeaderText = "التخصص"
+        Me.SpecializationDataGridViewTextBoxColumn1.MinimumWidth = 6
         Me.SpecializationDataGridViewTextBoxColumn1.Name = "SpecializationDataGridViewTextBoxColumn1"
         Me.SpecializationDataGridViewTextBoxColumn1.Width = 150
         '
@@ -2215,10 +2431,11 @@ Partial Class Employees
         'ToolStrip10
         '
         Me.ToolStrip10.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip10.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip10.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton11, Me.ToolStripSeparator39, Me.ToolStripSeparator40, Me.ToolStripLabel14, Me.ToolStripTextBox10, Me.ToolStripSeparator41, Me.ToolStripSeparator42})
-        Me.ToolStrip10.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip10.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip10.Name = "ToolStrip10"
-        Me.ToolStrip10.Size = New System.Drawing.Size(1245, 26)
+        Me.ToolStrip10.Size = New System.Drawing.Size(1663, 30)
         Me.ToolStrip10.TabIndex = 14
         Me.ToolStrip10.Text = "ToolStrip10"
         '
@@ -2229,23 +2446,23 @@ Partial Class Employees
         Me.ToolStripButton11.Image = CType(resources.GetObject("ToolStripButton11.Image"), System.Drawing.Image)
         Me.ToolStripButton11.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton11.Name = "ToolStripButton11"
-        Me.ToolStripButton11.Size = New System.Drawing.Size(117, 23)
+        Me.ToolStripButton11.Size = New System.Drawing.Size(148, 27)
         Me.ToolStripButton11.Text = "إضافة مؤهل علمي"
         '
         'ToolStripSeparator39
         '
         Me.ToolStripSeparator39.Name = "ToolStripSeparator39"
-        Me.ToolStripSeparator39.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator39.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator40
         '
         Me.ToolStripSeparator40.Name = "ToolStripSeparator40"
-        Me.ToolStripSeparator40.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator40.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripLabel14
         '
         Me.ToolStripLabel14.Name = "ToolStripLabel14"
-        Me.ToolStripLabel14.Size = New System.Drawing.Size(37, 23)
+        Me.ToolStripLabel14.Size = New System.Drawing.Size(46, 27)
         Me.ToolStripLabel14.Text = "بحث"
         '
         'ToolStripTextBox10
@@ -2253,17 +2470,17 @@ Partial Class Employees
         Me.ToolStripTextBox10.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox10.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox10.Name = "ToolStripTextBox10"
-        Me.ToolStripTextBox10.Size = New System.Drawing.Size(200, 26)
+        Me.ToolStripTextBox10.Size = New System.Drawing.Size(265, 30)
         '
         'ToolStripSeparator41
         '
         Me.ToolStripSeparator41.Name = "ToolStripSeparator41"
-        Me.ToolStripSeparator41.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator41.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator42
         '
         Me.ToolStripSeparator42.Name = "ToolStripSeparator42"
-        Me.ToolStripSeparator42.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator42.Size = New System.Drawing.Size(6, 30)
         '
         'EmployeesHolidaysTableAdapter
         '
@@ -2308,10 +2525,11 @@ Partial Class Employees
         '
         'Employees
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1259, 478)
+        Me.ClientSize = New System.Drawing.Size(1679, 588)
         Me.Controls.Add(Me.TabControl1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Employees"

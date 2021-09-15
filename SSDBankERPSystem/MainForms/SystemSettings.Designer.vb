@@ -25,6 +25,8 @@ Partial Class SystemSettings
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SystemSettings))
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -32,11 +34,13 @@ Partial Class SystemSettings
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.BranchIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BranchCodeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BranchNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BranchesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.HrDBDataSet = New SSDBankERPSystem.hrDBDataSet()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
@@ -47,6 +51,10 @@ Partial Class SystemSettings
         Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewButtonColumn1 = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.BranchIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DepartmentIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DepartmentNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DepartmentsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
@@ -93,14 +101,6 @@ Partial Class SystemSettings
         Me.DepartmentsTableAdapter = New SSDBankERPSystem.hrDBDataSetTableAdapters.DepartmentsTableAdapter()
         Me.ClassesTableAdapter = New SSDBankERPSystem.hrDBDataSetTableAdapters.ClassesTableAdapter()
         Me.DocumentsTypesTableAdapter = New SSDBankERPSystem.hrDBDataSetTableAdapters.DocumentsTypesTableAdapter()
-        Me.Edit = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.BranchIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BranchCodeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BranchNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewButtonColumn1 = New System.Windows.Forms.DataGridViewButtonColumn()
-        Me.BranchIDDataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DepartmentIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DepartmentNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -130,21 +130,23 @@ Partial Class SystemSettings
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.TabControl1.RightToLeftLayout = True
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1259, 478)
+        Me.TabControl1.Size = New System.Drawing.Size(1679, 588)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage1
         '
         Me.TabPage1.Controls.Add(Me.DataGridView1)
         Me.TabPage1.Controls.Add(Me.ToolStrip1)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "الإدارات"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -167,10 +169,54 @@ Partial Class SystemSettings
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Edit, Me.BranchIDDataGridViewTextBoxColumn, Me.BranchCodeDataGridViewTextBoxColumn, Me.BranchNameDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.BranchesBindingSource
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 29)
+        Me.DataGridView1.Location = New System.Drawing.Point(4, 35)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1245, 414)
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.Size = New System.Drawing.Size(1663, 513)
         Me.DataGridView1.TabIndex = 1
+        '
+        'Edit
+        '
+        Me.Edit.HeaderText = "Edit"
+        Me.Edit.MinimumWidth = 6
+        Me.Edit.Name = "Edit"
+        Me.Edit.ReadOnly = True
+        Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.Edit.Text = "..."
+        Me.Edit.ToolTipText = "Edit"
+        Me.Edit.Width = 80
+        '
+        'BranchIDDataGridViewTextBoxColumn
+        '
+        Me.BranchIDDataGridViewTextBoxColumn.DataPropertyName = "BranchID"
+        Me.BranchIDDataGridViewTextBoxColumn.HeaderText = "BranchID"
+        Me.BranchIDDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.BranchIDDataGridViewTextBoxColumn.Name = "BranchIDDataGridViewTextBoxColumn"
+        Me.BranchIDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.BranchIDDataGridViewTextBoxColumn.Visible = False
+        Me.BranchIDDataGridViewTextBoxColumn.Width = 125
+        '
+        'BranchCodeDataGridViewTextBoxColumn
+        '
+        Me.BranchCodeDataGridViewTextBoxColumn.DataPropertyName = "BranchCode"
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.BranchCodeDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
+        Me.BranchCodeDataGridViewTextBoxColumn.HeaderText = "رمز الإدارة"
+        Me.BranchCodeDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.BranchCodeDataGridViewTextBoxColumn.Name = "BranchCodeDataGridViewTextBoxColumn"
+        Me.BranchCodeDataGridViewTextBoxColumn.Width = 200
+        '
+        'BranchNameDataGridViewTextBoxColumn
+        '
+        Me.BranchNameDataGridViewTextBoxColumn.DataPropertyName = "BranchName"
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.BranchNameDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
+        Me.BranchNameDataGridViewTextBoxColumn.HeaderText = "إسم الإدارة"
+        Me.BranchNameDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.BranchNameDataGridViewTextBoxColumn.Name = "BranchNameDataGridViewTextBoxColumn"
+        Me.BranchNameDataGridViewTextBoxColumn.Width = 1000
         '
         'BranchesBindingSource
         '
@@ -185,10 +231,11 @@ Partial Class SystemSettings
         'ToolStrip1
         '
         Me.ToolStrip1.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripSeparator1, Me.ToolStripSeparator2, Me.ToolStripLabel1, Me.ToolStripTextBox1})
-        Me.ToolStrip1.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip1.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1245, 26)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1663, 31)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -199,23 +246,23 @@ Partial Class SystemSettings
         Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
         Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(73, 23)
+        Me.ToolStripButton1.Size = New System.Drawing.Size(94, 28)
         Me.ToolStripButton1.Text = "إضافة إدارة"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripLabel1
         '
         Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(37, 23)
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(46, 28)
         Me.ToolStripLabel1.Text = "بحث"
         '
         'ToolStripTextBox1
@@ -223,16 +270,17 @@ Partial Class SystemSettings
         Me.ToolStripTextBox1.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox1.Name = "ToolStripTextBox1"
-        Me.ToolStripTextBox1.Size = New System.Drawing.Size(200, 26)
+        Me.ToolStripTextBox1.Size = New System.Drawing.Size(265, 31)
         '
         'TabPage2
         '
         Me.TabPage2.Controls.Add(Me.DataGridView2)
         Me.TabPage2.Controls.Add(Me.ToolStrip2)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "الأقسام"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -255,10 +303,51 @@ Partial Class SystemSettings
         Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn1, Me.BranchIDDataGridViewTextBoxColumn1, Me.DepartmentIDDataGridViewTextBoxColumn, Me.DepartmentNameDataGridViewTextBoxColumn})
         Me.DataGridView2.DataSource = Me.DepartmentsBindingSource
         Me.DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView2.Location = New System.Drawing.Point(3, 30)
+        Me.DataGridView2.Location = New System.Drawing.Point(4, 35)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(1245, 413)
+        Me.DataGridView2.RowHeadersWidth = 51
+        Me.DataGridView2.Size = New System.Drawing.Size(1663, 513)
         Me.DataGridView2.TabIndex = 3
+        '
+        'DataGridViewButtonColumn1
+        '
+        Me.DataGridViewButtonColumn1.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn1.MinimumWidth = 6
+        Me.DataGridViewButtonColumn1.Name = "DataGridViewButtonColumn1"
+        Me.DataGridViewButtonColumn1.ReadOnly = True
+        Me.DataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewButtonColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.DataGridViewButtonColumn1.Text = "..."
+        Me.DataGridViewButtonColumn1.ToolTipText = "Edit"
+        Me.DataGridViewButtonColumn1.Width = 80
+        '
+        'BranchIDDataGridViewTextBoxColumn1
+        '
+        Me.BranchIDDataGridViewTextBoxColumn1.DataPropertyName = "BranchID"
+        Me.BranchIDDataGridViewTextBoxColumn1.HeaderText = "BranchID"
+        Me.BranchIDDataGridViewTextBoxColumn1.MinimumWidth = 6
+        Me.BranchIDDataGridViewTextBoxColumn1.Name = "BranchIDDataGridViewTextBoxColumn1"
+        Me.BranchIDDataGridViewTextBoxColumn1.Visible = False
+        Me.BranchIDDataGridViewTextBoxColumn1.Width = 125
+        '
+        'DepartmentIDDataGridViewTextBoxColumn
+        '
+        Me.DepartmentIDDataGridViewTextBoxColumn.DataPropertyName = "DepartmentID"
+        Me.DepartmentIDDataGridViewTextBoxColumn.HeaderText = "DepartmentID"
+        Me.DepartmentIDDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.DepartmentIDDataGridViewTextBoxColumn.Name = "DepartmentIDDataGridViewTextBoxColumn"
+        Me.DepartmentIDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.DepartmentIDDataGridViewTextBoxColumn.Visible = False
+        Me.DepartmentIDDataGridViewTextBoxColumn.Width = 125
+        '
+        'DepartmentNameDataGridViewTextBoxColumn
+        '
+        Me.DepartmentNameDataGridViewTextBoxColumn.DataPropertyName = "DepartmentName"
+        Me.DepartmentNameDataGridViewTextBoxColumn.HeaderText = "القسم"
+        Me.DepartmentNameDataGridViewTextBoxColumn.MinimumWidth = 6
+        Me.DepartmentNameDataGridViewTextBoxColumn.Name = "DepartmentNameDataGridViewTextBoxColumn"
+        Me.DepartmentNameDataGridViewTextBoxColumn.Width = 1200
         '
         'DepartmentsBindingSource
         '
@@ -268,10 +357,11 @@ Partial Class SystemSettings
         'ToolStrip2
         '
         Me.ToolStrip2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip2.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton2, Me.ToolStripSeparator3, Me.ToolStripSeparator4, Me.ToolStripLabel2, Me.ToolStripTextBox2, Me.ToolStripSeparator5, Me.ToolStripSeparator6, Me.ToolStripLabel3, Me.ToolStripComboBox1})
-        Me.ToolStrip2.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip2.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip2.Name = "ToolStrip2"
-        Me.ToolStrip2.Size = New System.Drawing.Size(1245, 27)
+        Me.ToolStrip2.Size = New System.Drawing.Size(1663, 31)
         Me.ToolStrip2.TabIndex = 2
         Me.ToolStrip2.Text = "ToolStrip2"
         '
@@ -282,23 +372,23 @@ Partial Class SystemSettings
         Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(75, 24)
+        Me.ToolStripButton2.Size = New System.Drawing.Size(95, 28)
         Me.ToolStripButton2.Text = "إضافة قسم"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripLabel2
         '
         Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(37, 24)
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(46, 28)
         Me.ToolStripLabel2.Text = "بحث"
         '
         'ToolStripTextBox2
@@ -306,22 +396,22 @@ Partial Class SystemSettings
         Me.ToolStripTextBox2.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox2.Name = "ToolStripTextBox2"
-        Me.ToolStripTextBox2.Size = New System.Drawing.Size(200, 27)
+        Me.ToolStripTextBox2.Size = New System.Drawing.Size(265, 31)
         '
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator6
         '
         Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripLabel3
         '
         Me.ToolStripLabel3.Name = "ToolStripLabel3"
-        Me.ToolStripLabel3.Size = New System.Drawing.Size(47, 24)
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(59, 28)
         Me.ToolStripLabel3.Text = "الإدارة"
         '
         'ToolStripComboBox1
@@ -330,16 +420,17 @@ Partial Class SystemSettings
         Me.ToolStripComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.ToolStripComboBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ToolStripComboBox1.Name = "ToolStripComboBox1"
-        Me.ToolStripComboBox1.Size = New System.Drawing.Size(250, 27)
+        Me.ToolStripComboBox1.Size = New System.Drawing.Size(332, 31)
         '
         'TabPage3
         '
         Me.TabPage3.Controls.Add(Me.DataGridView3)
         Me.TabPage3.Controls.Add(Me.ToolStrip3)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "الوظائف"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -362,14 +453,17 @@ Partial Class SystemSettings
         Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn2, Me.JobIDDataGridViewTextBoxColumn, Me.ClassIDDataGridViewTextBoxColumn, Me.ClassNameDataGridViewTextBoxColumn})
         Me.DataGridView3.DataSource = Me.ClassesBindingSource
         Me.DataGridView3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView3.Location = New System.Drawing.Point(3, 30)
+        Me.DataGridView3.Location = New System.Drawing.Point(4, 35)
+        Me.DataGridView3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.Size = New System.Drawing.Size(1245, 413)
+        Me.DataGridView3.RowHeadersWidth = 51
+        Me.DataGridView3.Size = New System.Drawing.Size(1663, 513)
         Me.DataGridView3.TabIndex = 5
         '
         'DataGridViewButtonColumn2
         '
         Me.DataGridViewButtonColumn2.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn2.MinimumWidth = 6
         Me.DataGridViewButtonColumn2.Name = "DataGridViewButtonColumn2"
         Me.DataGridViewButtonColumn2.ReadOnly = True
         Me.DataGridViewButtonColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -382,21 +476,26 @@ Partial Class SystemSettings
         '
         Me.JobIDDataGridViewTextBoxColumn.DataPropertyName = "JobID"
         Me.JobIDDataGridViewTextBoxColumn.HeaderText = "JobID"
+        Me.JobIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.JobIDDataGridViewTextBoxColumn.Name = "JobIDDataGridViewTextBoxColumn"
         Me.JobIDDataGridViewTextBoxColumn.Visible = False
+        Me.JobIDDataGridViewTextBoxColumn.Width = 125
         '
         'ClassIDDataGridViewTextBoxColumn
         '
         Me.ClassIDDataGridViewTextBoxColumn.DataPropertyName = "ClassID"
         Me.ClassIDDataGridViewTextBoxColumn.HeaderText = "ClassID"
+        Me.ClassIDDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.ClassIDDataGridViewTextBoxColumn.Name = "ClassIDDataGridViewTextBoxColumn"
         Me.ClassIDDataGridViewTextBoxColumn.ReadOnly = True
         Me.ClassIDDataGridViewTextBoxColumn.Visible = False
+        Me.ClassIDDataGridViewTextBoxColumn.Width = 125
         '
         'ClassNameDataGridViewTextBoxColumn
         '
         Me.ClassNameDataGridViewTextBoxColumn.DataPropertyName = "ClassName"
         Me.ClassNameDataGridViewTextBoxColumn.HeaderText = "الوظيفة"
+        Me.ClassNameDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.ClassNameDataGridViewTextBoxColumn.Name = "ClassNameDataGridViewTextBoxColumn"
         Me.ClassNameDataGridViewTextBoxColumn.Width = 1200
         '
@@ -408,10 +507,11 @@ Partial Class SystemSettings
         'ToolStrip3
         '
         Me.ToolStrip3.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip3.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton3, Me.ToolStripSeparator7, Me.ToolStripSeparator8, Me.ToolStripLabel4, Me.ToolStripTextBox3, Me.ToolStripSeparator9, Me.ToolStripSeparator10, Me.ToolStripLabel5, Me.ToolStripComboBox2})
-        Me.ToolStrip3.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip3.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip3.Name = "ToolStrip3"
-        Me.ToolStrip3.Size = New System.Drawing.Size(1245, 27)
+        Me.ToolStrip3.Size = New System.Drawing.Size(1663, 31)
         Me.ToolStrip3.TabIndex = 4
         Me.ToolStrip3.Text = "ToolStrip3"
         '
@@ -422,23 +522,23 @@ Partial Class SystemSettings
         Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(85, 24)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(109, 28)
         Me.ToolStripButton3.Text = "إضافة وظيفة"
         '
         'ToolStripSeparator7
         '
         Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator7.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator8
         '
         Me.ToolStripSeparator8.Name = "ToolStripSeparator8"
-        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator8.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripLabel4
         '
         Me.ToolStripLabel4.Name = "ToolStripLabel4"
-        Me.ToolStripLabel4.Size = New System.Drawing.Size(37, 24)
+        Me.ToolStripLabel4.Size = New System.Drawing.Size(46, 28)
         Me.ToolStripLabel4.Text = "بحث"
         '
         'ToolStripTextBox3
@@ -446,22 +546,22 @@ Partial Class SystemSettings
         Me.ToolStripTextBox3.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox3.Name = "ToolStripTextBox3"
-        Me.ToolStripTextBox3.Size = New System.Drawing.Size(200, 27)
+        Me.ToolStripTextBox3.Size = New System.Drawing.Size(265, 31)
         '
         'ToolStripSeparator9
         '
         Me.ToolStripSeparator9.Name = "ToolStripSeparator9"
-        Me.ToolStripSeparator9.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator9.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator10
         '
         Me.ToolStripSeparator10.Name = "ToolStripSeparator10"
-        Me.ToolStripSeparator10.Size = New System.Drawing.Size(6, 27)
+        Me.ToolStripSeparator10.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripLabel5
         '
         Me.ToolStripLabel5.Name = "ToolStripLabel5"
-        Me.ToolStripLabel5.Size = New System.Drawing.Size(39, 24)
+        Me.ToolStripLabel5.Size = New System.Drawing.Size(49, 28)
         Me.ToolStripLabel5.Text = "الفئة"
         '
         'ToolStripComboBox2
@@ -470,16 +570,17 @@ Partial Class SystemSettings
         Me.ToolStripComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.ToolStripComboBox2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold)
         Me.ToolStripComboBox2.Name = "ToolStripComboBox2"
-        Me.ToolStripComboBox2.Size = New System.Drawing.Size(250, 27)
+        Me.ToolStripComboBox2.Size = New System.Drawing.Size(332, 31)
         '
         'TabPage4
         '
         Me.TabPage4.Controls.Add(Me.DataGridView4)
         Me.TabPage4.Controls.Add(Me.ToolStrip4)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 28)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 32)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(1251, 446)
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Size = New System.Drawing.Size(1671, 552)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "أنواع المستندات"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -502,14 +603,17 @@ Partial Class SystemSettings
         Me.DataGridView4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewButtonColumn3, Me.Column1, Me.DocumentNameDataGridViewTextBoxColumn})
         Me.DataGridView4.DataSource = Me.DocumentsTypesBindingSource
         Me.DataGridView4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView4.Location = New System.Drawing.Point(3, 29)
+        Me.DataGridView4.Location = New System.Drawing.Point(4, 34)
+        Me.DataGridView4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView4.Name = "DataGridView4"
-        Me.DataGridView4.Size = New System.Drawing.Size(1245, 414)
+        Me.DataGridView4.RowHeadersWidth = 51
+        Me.DataGridView4.Size = New System.Drawing.Size(1663, 514)
         Me.DataGridView4.TabIndex = 7
         '
         'DataGridViewButtonColumn3
         '
         Me.DataGridViewButtonColumn3.HeaderText = "Edit"
+        Me.DataGridViewButtonColumn3.MinimumWidth = 6
         Me.DataGridViewButtonColumn3.Name = "DataGridViewButtonColumn3"
         Me.DataGridViewButtonColumn3.ReadOnly = True
         Me.DataGridViewButtonColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
@@ -522,14 +626,17 @@ Partial Class SystemSettings
         '
         Me.Column1.DataPropertyName = "DocumentTypeID"
         Me.Column1.HeaderText = "Column1"
+        Me.Column1.MinimumWidth = 6
         Me.Column1.Name = "Column1"
         Me.Column1.ReadOnly = True
         Me.Column1.Visible = False
+        Me.Column1.Width = 125
         '
         'DocumentNameDataGridViewTextBoxColumn
         '
         Me.DocumentNameDataGridViewTextBoxColumn.DataPropertyName = "DocumentName"
         Me.DocumentNameDataGridViewTextBoxColumn.HeaderText = "إسم المستند"
+        Me.DocumentNameDataGridViewTextBoxColumn.MinimumWidth = 6
         Me.DocumentNameDataGridViewTextBoxColumn.Name = "DocumentNameDataGridViewTextBoxColumn"
         Me.DocumentNameDataGridViewTextBoxColumn.Width = 1200
         '
@@ -541,10 +648,11 @@ Partial Class SystemSettings
         'ToolStrip4
         '
         Me.ToolStrip4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStrip4.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton4, Me.ToolStripSeparator11, Me.ToolStripSeparator12, Me.ToolStripLabel6, Me.ToolStripTextBox4, Me.ToolStripSeparator13, Me.ToolStripSeparator14})
-        Me.ToolStrip4.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip4.Location = New System.Drawing.Point(4, 4)
         Me.ToolStrip4.Name = "ToolStrip4"
-        Me.ToolStrip4.Size = New System.Drawing.Size(1245, 26)
+        Me.ToolStrip4.Size = New System.Drawing.Size(1663, 30)
         Me.ToolStrip4.TabIndex = 6
         Me.ToolStrip4.Text = "ToolStrip4"
         '
@@ -555,23 +663,23 @@ Partial Class SystemSettings
         Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(109, 23)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(140, 27)
         Me.ToolStripButton4.Text = "إضافة إسم مستند"
         '
         'ToolStripSeparator11
         '
         Me.ToolStripSeparator11.Name = "ToolStripSeparator11"
-        Me.ToolStripSeparator11.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator11.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator12
         '
         Me.ToolStripSeparator12.Name = "ToolStripSeparator12"
-        Me.ToolStripSeparator12.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator12.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripLabel6
         '
         Me.ToolStripLabel6.Name = "ToolStripLabel6"
-        Me.ToolStripLabel6.Size = New System.Drawing.Size(37, 23)
+        Me.ToolStripLabel6.Size = New System.Drawing.Size(46, 27)
         Me.ToolStripLabel6.Text = "بحث"
         '
         'ToolStripTextBox4
@@ -579,17 +687,17 @@ Partial Class SystemSettings
         Me.ToolStripTextBox4.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ToolStripTextBox4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripTextBox4.Name = "ToolStripTextBox4"
-        Me.ToolStripTextBox4.Size = New System.Drawing.Size(200, 26)
+        Me.ToolStripTextBox4.Size = New System.Drawing.Size(265, 30)
         '
         'ToolStripSeparator13
         '
         Me.ToolStripSeparator13.Name = "ToolStripSeparator13"
-        Me.ToolStripSeparator13.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator13.Size = New System.Drawing.Size(6, 30)
         '
         'ToolStripSeparator14
         '
         Me.ToolStripSeparator14.Name = "ToolStripSeparator14"
-        Me.ToolStripSeparator14.Size = New System.Drawing.Size(6, 26)
+        Me.ToolStripSeparator14.Size = New System.Drawing.Size(6, 30)
         '
         'BranchesTableAdapter
         '
@@ -607,82 +715,13 @@ Partial Class SystemSettings
         '
         Me.DocumentsTypesTableAdapter.ClearBeforeFill = True
         '
-        'Edit
-        '
-        Me.Edit.HeaderText = "Edit"
-        Me.Edit.Name = "Edit"
-        Me.Edit.ReadOnly = True
-        Me.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Edit.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.Edit.Text = "..."
-        Me.Edit.ToolTipText = "Edit"
-        Me.Edit.Width = 80
-        '
-        'BranchIDDataGridViewTextBoxColumn
-        '
-        Me.BranchIDDataGridViewTextBoxColumn.DataPropertyName = "BranchID"
-        Me.BranchIDDataGridViewTextBoxColumn.HeaderText = "BranchID"
-        Me.BranchIDDataGridViewTextBoxColumn.Name = "BranchIDDataGridViewTextBoxColumn"
-        Me.BranchIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.BranchIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'BranchCodeDataGridViewTextBoxColumn
-        '
-        Me.BranchCodeDataGridViewTextBoxColumn.DataPropertyName = "BranchCode"
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.BranchCodeDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle3
-        Me.BranchCodeDataGridViewTextBoxColumn.HeaderText = "رمز الإدارة"
-        Me.BranchCodeDataGridViewTextBoxColumn.Name = "BranchCodeDataGridViewTextBoxColumn"
-        Me.BranchCodeDataGridViewTextBoxColumn.Width = 200
-        '
-        'BranchNameDataGridViewTextBoxColumn
-        '
-        Me.BranchNameDataGridViewTextBoxColumn.DataPropertyName = "BranchName"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.BranchNameDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle4
-        Me.BranchNameDataGridViewTextBoxColumn.HeaderText = "إسم الإدارة"
-        Me.BranchNameDataGridViewTextBoxColumn.Name = "BranchNameDataGridViewTextBoxColumn"
-        Me.BranchNameDataGridViewTextBoxColumn.Width = 1000
-        '
-        'DataGridViewButtonColumn1
-        '
-        Me.DataGridViewButtonColumn1.HeaderText = "Edit"
-        Me.DataGridViewButtonColumn1.Name = "DataGridViewButtonColumn1"
-        Me.DataGridViewButtonColumn1.ReadOnly = True
-        Me.DataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridViewButtonColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
-        Me.DataGridViewButtonColumn1.Text = "..."
-        Me.DataGridViewButtonColumn1.ToolTipText = "Edit"
-        Me.DataGridViewButtonColumn1.Width = 80
-        '
-        'BranchIDDataGridViewTextBoxColumn1
-        '
-        Me.BranchIDDataGridViewTextBoxColumn1.DataPropertyName = "BranchID"
-        Me.BranchIDDataGridViewTextBoxColumn1.HeaderText = "BranchID"
-        Me.BranchIDDataGridViewTextBoxColumn1.Name = "BranchIDDataGridViewTextBoxColumn1"
-        Me.BranchIDDataGridViewTextBoxColumn1.Visible = False
-        '
-        'DepartmentIDDataGridViewTextBoxColumn
-        '
-        Me.DepartmentIDDataGridViewTextBoxColumn.DataPropertyName = "DepartmentID"
-        Me.DepartmentIDDataGridViewTextBoxColumn.HeaderText = "DepartmentID"
-        Me.DepartmentIDDataGridViewTextBoxColumn.Name = "DepartmentIDDataGridViewTextBoxColumn"
-        Me.DepartmentIDDataGridViewTextBoxColumn.ReadOnly = True
-        Me.DepartmentIDDataGridViewTextBoxColumn.Visible = False
-        '
-        'DepartmentNameDataGridViewTextBoxColumn
-        '
-        Me.DepartmentNameDataGridViewTextBoxColumn.DataPropertyName = "DepartmentName"
-        Me.DepartmentNameDataGridViewTextBoxColumn.HeaderText = "القسم"
-        Me.DepartmentNameDataGridViewTextBoxColumn.Name = "DepartmentNameDataGridViewTextBoxColumn"
-        Me.DepartmentNameDataGridViewTextBoxColumn.Width = 1200
-        '
         'SystemSettings
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1259, 478)
+        Me.ClientSize = New System.Drawing.Size(1679, 588)
         Me.Controls.Add(Me.TabControl1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "SystemSettings"

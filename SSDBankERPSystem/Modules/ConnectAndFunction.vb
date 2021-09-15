@@ -21,7 +21,9 @@ Module ConnectAndFunction
         Try
             cnn = New SqlConnection
             'cnn.ConnectionString = "Data Source=.;Initial Catalog=EmployeesCardDB;Integrated Security=True"
-            cnn.ConnectionString = "Data Source=HP;Initial Catalog=hrDB;User ID=sa; Password=sheps79"
+            'cnn.ConnectionString = "Data Source=HP;Initial Catalog=hrDB;User ID=sa; Password=sheps79"
+            cnn.ConnectionString = "Data Source=.;Initial Catalog=hrDB;User ID=sa; Password=saam"
+
             cnn.Open()
         Catch ex As Exception
             MsgBox(" مشكلة في الشبكة ، لا يمكن الوصول الى قاعدة البيانات ", MsgBoxStyle.Exclamation, "خطأ في الاتصال ")

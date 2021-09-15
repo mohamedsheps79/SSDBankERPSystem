@@ -213,10 +213,10 @@
     <Compile Include="MainForms\ExportEmployees.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForms\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="MainForms\Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
     </Compile>
-    <Compile Include="MainForms\Form1.vb">
+    <Compile Include="MainForms\Reports.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForms\Home.Designer.vb">
@@ -383,8 +383,8 @@
     <EmbeddedResource Include="MainForms\ExportEmployees.resx">
       <DependentUpon>ExportEmployees.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForms\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="MainForms\Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForms\Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
